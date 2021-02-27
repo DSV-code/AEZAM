@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html {
+    font-size: 62.5%;
+}
+h1{
+    color: purple;
+    font-family: serif;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 3rem;
+}
+.nav {
+    margin-top: 1rem;
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 2rem;
+}
+.nav li {
+    display: inline-block;
+}
+.nav a {
+    color: white;
+    background-color: #13a4a4;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    text-decoration: none;
+}
+.nav .blog {
+    background-color: red;
+}
