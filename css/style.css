@@ -69,6 +69,8 @@ header img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* width: 100%; */
+    min-width: 320px;
     height: 250px; 
 }
 .main-img-container .main-img-container--scroll {
