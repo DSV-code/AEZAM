@@ -17,7 +17,7 @@
 }
 html {
     font-size: 62.5%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Encode Sans', sans-serif;
 }
 body {
     font-size: 1.6rem;
@@ -45,7 +45,7 @@ header img {
     max-width: 500px;
     max-height: 50px;
     list-style: none;
-    background: var(--Aezam-grend);
+    background: var(--Aezam-green);
 }
 .header--nav-container ul {
     display: flex;
