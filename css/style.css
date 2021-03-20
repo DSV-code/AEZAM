@@ -8,7 +8,8 @@
 
 :root{
     /*Colors*/
-    --Aezam-green: #116b1d;  
+    --Aezam-green: #116b1d; 
+    --Aezam-backgorund: #F7F5FB;
 }
 * {
     box-sizing: border-box;
@@ -18,6 +19,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Encode Sans', sans-serif;
+    background-color: var(--Aezam-backgorund);
 }
 body {
     font-size: 1.6rem;
@@ -97,6 +99,88 @@ header img {
     font-size: 2rem;
     height: 2rem;
 }
+.main-about-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-width: 288px;
+    max-width: 700px;
+    height: 218px;
+    margin: 30px auto;
+    text-align: center;
+    align-self: center;
+    background-color: #ffffff;
+    border:  1px solid black;
+}
+.main-about-container--button {
+    position: absolute;
+    left: calc(50% - 118px);
+    top: -20px;
+    display: block;
+    padding: 3px;
+    width: 217px;
+    height: 32px;
+    background-color: var(--Aezam-green);
+    /* Sombras */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:  1px solid black;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+.main-about-container--button span {
+    display: inline-block;
+    width: 15px;
+    height: 20px;
+    margin-left: 10px;
+    background-image: url('../assets/icons/ArrowRight.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.main-about-container--img{
+    width: 40%;
+    min-width: 100px;
+    max-width: 200px;
+    height: 165px;
+    margin: 25px 10px;
+    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main-about-container--text{
+    display: flex;
+    width: 60%;
+    min-width: 20px;
+    height: 165px;
+    margin: 25px 2px;
+    align-items: center;
+}
+.main-about-container--text p{
+    margin: 10px;
+    line-height: 2rem;
+    font-size: 1.3rem;
+}
+
+.main-about-container--arrow span {
+    position: absolute;
+    left: calc(100% - 40px);
+    top: 180px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/CircleArrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+    color: black;
+}
+    
     
 /* .header { */
     /* display: flex; */
