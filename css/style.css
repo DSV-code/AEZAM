@@ -5,7 +5,6 @@
     4. Visuals
     5. Others
 */
-
 :root{
     /*Colors*/
     --Aezam-green: #116b1d; 
@@ -19,58 +18,43 @@
 html {
     font-size: 62.5%;
     font-family: 'Encode Sans', sans-serif;
-    background-color: var(--Aezam-backgorund);
+    background-color: var(--Aezam-green);
 }
 body {
     font-size: 1.6rem;
 }
-/*----------------------- HEADER -----------------------*/
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    text-align: center;
+
+header nav {
+    font-size: 1.6rem;
+    background-color: rgba(17, 107, 29, 0.28);
 }
-header img {
+header nav div a img {
     width: 200px;
     height: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.header--nav-container {
-    width: 100%;
-    min-width: 320px;
-    max-width: 500px;
-    max-height: 50px;
-    list-style: none;
-    background: var(--Aezam-green);
-}
-.header--nav-container ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+header .navbar-toggler {
+    width: 50px;
     height: 50px;
 }
-.header--nav-container li {
-    display: inline-block;
+header div .collapse {
+    text-align: right;
+    color: var(--Aezam-green);
 }
-.header--nav-container a {
-    padding: 0 10px;
-    font-size: 1.6rem;
-    flex-direction: column;
-    text-decoration: none;
-    color: white;
+header div ul .navbar-nav {
+    font-size: 2rem;
+    height: 2rem;
 }
+header ul li .nav-link{
+    text-align: right;
+
+}
+
 .main-img-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    /* width: 100%; */
     min-width: 320px;
     height: 250px; 
 }
@@ -369,52 +353,4 @@ header img {
     vertical-align: text-bottom;
 }
 /*----------------------- FOOTER -----------------------*/
-    
-    
-/* .header { */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* justify-content: space-around; */
-/* } */
-/* .headerLogo{ */
-    /* flex-grow: 1; */
-/* } */
-/* .headerLogo img{ */
-    /* width: 30rem; */
-    /* height: 10rem; */
-/* } */
-/* .nav{ */
-    /* background: #116b1d; */
-    /* padding: 2rem; */
-    /* list-style: none; */
-    /* text-align: center; */
-    /* width: 70vw; */
-    /* height: 10rem; */
-/* } */
-/* .nav .navList{ */
-    /* padding-top: 2rem; */
-/* } */
-/* .nav .navList li{ */
-    /* display: inline-block; */
-    /* margin: auto; */
-/* } */
-/* .nav a{ */
-    /* font-size: 2rem; */
-    /* margin: 1rem 0; */
-    /* padding-left: 2rem; */
-    /* padding-right: 2rem; */
-    /* text-decoration: none; */
-    /* color: white; */
-/* } */
-/*  */
-/*  */
-/* h1{ */
-    /* color: purple; */
-    /* font-family: serif; */
-    /* margin-bottom: 1rem; */
-/* } */
-/* .title { */
-    /* font-size: 3rem; */
-/* } */
-/*  */
-/*  */
+ 
