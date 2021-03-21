@@ -5,7 +5,6 @@
     4. Visuals
     5. Others
 */
-
 :root{
     /*Colors*/
     --Aezam-green: #116b1d;  
@@ -203,3 +202,10 @@ header img {
 /* } */
 /*  */
 /*  */
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+  }
