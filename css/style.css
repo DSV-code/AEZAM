@@ -24,6 +24,7 @@ body {
     font-size: 1.6rem;
 }
 
+/*----------------------- HEADER -----------------------*/
 header nav {
     font-size: 1.6rem;
     background-color: rgba(17, 107, 29, 0.28);
@@ -50,11 +51,11 @@ header ul li .nav-link{
     text-align: right;
 
 }
-
 .main-img-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* width: 100%; */
     min-width: 320px;
     height: 250px; 
 }
@@ -75,12 +76,124 @@ header ul li .nav-link{
     background-position: center;
     background-size: cover;
 }
-.main-img-container h2 {
-    align-items: center;
+/*-----------------------SERVICE & SUPPORT -----------------------*/
+.main-service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    height: 500px;
+    margin: 16px auto;
     text-align: center;
-    margin: 10px 0 0 0;
+    align-self: center;
+    background-color: rgba(17, 107, 29, 0.28);
+    border: 1px solid black;
+}
+.main-service-container--button {
+    position: absolute;
+    left: calc(50% - 109px);
+    top: -16px;
+    display: block;
+    padding: auto auto;
+    width: 217px;
+    height: 32px;
+    background-color: var(--Aezam-green);
+    /* Sombras */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:  1px solid black;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+.main-service-container--engineering{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 20px;
+    height: 150px;
+    margin: 30px;
+    align-items: center;
+    text-align: right;
+}
+.main-service-container--accounting{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    min-width: 20px;
+    height: 150px;
+    margin: 30px;
+    align-items: center;
+    text-align: left;
+}
+.main-service-container--img{
+    min-width: 50px;
+    max-width: 100px;
+    height: 50px;
+    max-height: 200px;
+    margin: auto;
+    background-image: url('../assets/imgs/pexels-charlotte-may-5947121.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main-service-container--text-principal {
+    margin: 30px 0px;
+    text-align: left;
+    line-height: 2rem;
     font-size: 2rem;
-    height: 2rem;
+    font-weight: bold;
+}
+.main-service-container--text {
+    margin: auto;
+    line-height: 2rem;
+    font-size: 1.6rem;
+}
+.main-service-container--arrow-engineering {
+    position: absolute;
+    left: calc(100% - 200px);
+    top: 210px;
+    display: block;
+    padding: 4.5px;
+    width: 110px;
+    height: 32px;
+    background-color: var(--Aezam-green);
+    /* Sombras */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+.main-service-container--arrow-engineering span {
+    display: inline-block;
+    width: 15px;
+    height: 17px;
+    margin-left: 8px;
+    background-image: url('../assets/icons/ArrowRight.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.main-service-container--arrow-accounting span {
+    position: absolute;
+    left: calc(100% - 150px);
+    top: 455px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/CircleArrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 /*-----------------------ABOUT US -----------------------*/
 .main-about-container {
