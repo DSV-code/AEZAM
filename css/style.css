@@ -204,8 +204,9 @@ header img {
 /*  */
 
 footer {
-    text-align: center;
-    padding: 3px;
-    background-color: DarkSalmon;
+    border-top: 10px black;
+    text-align:left;
+    padding: 20px;
+    background-color: var(--Aezam-green);
     color: white;
   }
