@@ -32,14 +32,15 @@ header {
     align-items:center;
     width: 100%;
     min-width: 320px;
-    height: auto;
-    text-align: center;
+    height: 150px;
 }
-header img {
-    width: 200px;
-    height: 80px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+header img .main-img--Logo{
+    width: 150px;
+    height: 45px;
+}
+header img .main-img--List{
+    width: 45px;
+    height: 45px;
 }
 .header--nav-container {
     width: 100%;
