@@ -18,7 +18,7 @@
 html {
     font-size: 62.5%;
     font-family: 'Encode Sans', sans-serif;
-    background-color: var(--Aezam-green);
+    background-color: var(--Aezam-backgorund);
 }
 body {
     font-size: 1.6rem;
@@ -467,15 +467,39 @@ header ul li .nav-link{
     vertical-align: text-bottom;
 }
 /*----------------------- FOOTER -----------------------*/
-.footer-square-container {
-    position: relative;
-    width: 100%;
-    min-width: 288px;
-    max-width: 700px;
-    height: 270px;
-    margin: 30px auto;
-    text-align: center;
-    margin: 10px 0 0 0;
+.nav-footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: #F7F5FB;
+    border-top-width: 0.25rem;
+    border-top-color: rgba(0, 0, 0, 0.25);
+    border-top-style: solid;
+}
+.nav-footer-more-info{
     font-size: 2rem;
-    height: 2rem;
-}   
+    margin: 1rem;
+    padding: 0.5rem;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+    border-bottom-width: 0.25rem;
+    border-bottom-style: solid;
+}
+.nav-footer-options {
+    margin: 1rem;
+    padding: 0.8rem;
+    list-style: none;
+    text-align: left;
+}
+.nav-footer-options a {
+    display:block;
+}
+.nav-footer-additional-info{
+    height: 4vh;
+    background-color: #116b1d;
+    color: white;
+    font-size: 1rem;
+}
+.nav-footer-tertiary-info{
+    margin: 1rem;
+    padding: 0.9rem;
+}
+
