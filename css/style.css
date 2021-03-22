@@ -33,12 +33,13 @@ header {
     width: 100%;
     min-width: 320px;
     height: 150px;
+    text-align: left;
 }
-header img .main-img--Logo{
+.main-img--Logo{
     width: 150px;
     height: 45px;
 }
-header img .main-img--List{
+.main-img--List{
     width: 45px;
     height: 45px;
 }
