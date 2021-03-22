@@ -25,32 +25,48 @@ body {
 }
 
 /*----------------------- HEADER -----------------------*/
-header nav {
-    font-size: 1.6rem;
-    background-color: rgba(17, 107, 29, 0.28);
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
 }
-header nav div a img {
+header img {
     width: 200px;
     height: 80px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-header .navbar-toggler {
-    width: 50px;
+.header--nav-container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    max-height: 50px;
+    list-style: none;
+    background: var(--Aezam-green);
+}
+.header--nav-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     height: 50px;
 }
-header div .collapse {
-    text-align: right;
-    color: var(--Aezam-green);
+.header--nav-container li {
+    display: inline-block;
 }
-header div ul .navbar-nav {
-    font-size: 2rem;
-    height: 2rem;
+.header--nav-container a {
+    padding: 0 10px;
+    font-size: 1.6rem;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
 }
-header ul li .nav-link{
-    text-align: right;
-
-}
+/*-----------------------SCROLL IMAGES -----------------------*/
 .main-img-container {
     display: flex;
     flex-wrap: wrap;
