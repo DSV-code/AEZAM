@@ -375,6 +375,7 @@ header {
     vertical-align: text-bottom;
 }
 .main-works-container--img_text{
+    position: relative;
     display: flex;
     width: 100%;
     height: 120px;
@@ -384,7 +385,7 @@ header {
     width: 20%;
     height: 100px;
     margin: 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/MallaPuestaTierra-3072x4096.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -393,7 +394,7 @@ header {
     width: 20%;
     height: 100px;
     margin: 10px;
-    background-image: url('../assets/imgs/pexels-nadezhda-moryak-5595490.jpg');
+    background-image: url('../assets/imgs/Tablero-150x200.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -402,7 +403,7 @@ header {
     width: 20%;
     height: 100px;
     margin: 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/Equipo.JPG');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -411,25 +412,17 @@ header {
     width: 20%;
     height: 100px;
     margin: 10px;
-    background-image: url('../assets/imgs/pexels-nadezhda-moryak-5595490.jpg');
+    background-image: url('../assets/imgs/Analizador-150x200.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--text{
-    display: flex;
-    width: 90%;
-    height: 60px;
-    align-items: center;
-}
-.main-works-container--textblock{
-    width: 100%;
-    min-width: 60px;
-    margin: 10px;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.5rem;
+.main-works-container--img_text p{
+    width: 20%;
+    height: 100px;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 120px;
 }
 .main-works-container--arrow span {
     position: absolute;
@@ -457,11 +450,11 @@ header {
 }
 .main-choose-container--button {
     position: absolute;
-    left: calc(50% - 85px);
+    left: calc(50% - 108.5px);
     top: 10px;
     display: block;
     padding: 3px;
-    width: 170px;
+    width: 217px;
     height: 32px;
     background: rgba(17, 107, 29, 0.28);
     /* Sombras */
@@ -478,7 +471,7 @@ header {
     max-width: 200px;
     height: 165px;
     margin: 55px 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/Tablero-2448x3264.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -502,7 +495,7 @@ header {
     left: calc(100% - 125px);
     top: 230px;
     display: block;
-    padding: 6px;
+    padding: 8px;
     width: 115px;
     height: 32px;
     background-color: var(--Aezam-green);
@@ -517,9 +510,9 @@ header {
 .main-choose-container--arrow span {
     display: inline-block;
     width: 15px;
-    height: 17px;
+    height: 15px;
     margin-left: 8px;
-    background-image: url('../assets/icons/ArrowRight.svg');
+    background-image: url('../assets/icons/CaretDoubleRight.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
