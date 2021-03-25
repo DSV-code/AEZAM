@@ -81,7 +81,7 @@ header {
     justify-content: center;
     /* width: 100%; */
     min-width: 320px;
-    height: 250px; 
+    height: 230px; 
 }
 .main-img-container .main-img-container--scroll {
     display: flex;
