@@ -76,12 +76,9 @@ header {
 }
 /*-----------------------SCROLL IMAGES -----------------------*/
 .main-img-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* width: 100%; */
+    width: 100%;
+    height: 250px; 
     min-width: 320px;
-    height: 230px; 
 }
 .main-img-container .main-img-container--scroll {
     display: flex;
@@ -92,13 +89,15 @@ header {
 }
 .main-img-container .main-img-container--scroll img {
     width: 100%;
-    height: 220px;
-    min-width: 150px;
+    height: 210px;
+    min-width: 280px;
     max-width: 300px;
+    position: relative;
     padding: 0 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    scroll-snap-align: center;
 }
 /*-----------------------SERVICE & SUPPORT -----------------------*/
 .main-service-container {
@@ -272,7 +271,7 @@ header {
 }
 .main-about-container--button {
     position: absolute;
-    left: calc(50% - 118px);
+    left: calc(50% - 108.5px);
     top: -20px;
     display: block;
     padding: 3px;
@@ -305,7 +304,7 @@ header {
     max-width: 200px;
     height: 165px;
     margin: 25px 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -322,7 +321,7 @@ header {
 .main-about-container--text p{
     margin: 10px;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .main-about-container--arrow span {
     position: absolute;
@@ -349,11 +348,11 @@ header {
 }
 .main-works-container--button {
     position: absolute;
-    left: calc(50% - 85px);
+    left: calc(50% - 108.5px);
     top: 10px;
     display: block;
     padding: 3px;
-    width: 170px;
+    width: 217px;
     height: 32px;
     background: rgba(108, 168, 175, 0.33);
     /* Sombras */
@@ -375,13 +374,13 @@ header {
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
-.main-works-container--img{
+.main-works-container--img_text{
     display: flex;
     width: 100%;
     height: 120px;
     margin-top: 50px;
 }
-.main-works-container--img1{
+.main-works-container--block1{
     width: 20%;
     height: 100px;
     margin: 10px;
@@ -390,7 +389,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img2{
+.main-works-container--block2{
     width: 20%;
     height: 100px;
     margin: 10px;
@@ -399,7 +398,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img3{
+.main-works-container--block3{
     width: 20%;
     height: 100px;
     margin: 10px;
@@ -408,7 +407,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img4{
+.main-works-container--block4{
     width: 20%;
     height: 100px;
     margin: 10px;
@@ -496,7 +495,7 @@ header {
 .main-choose-container--text p{
     margin: 10px;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .main-choose-container--arrow {
     position: absolute;
@@ -510,7 +509,7 @@ header {
     /* Sombras */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
@@ -527,4 +526,34 @@ header {
     vertical-align: text-bottom;
 }
 /*----------------------- FOOTER -----------------------*/
+footer
+{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: greenyellow;
+}
+footer section
+{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul
+{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer .left li
+{
+    margin: 10px 0px;
+}
+footer .left a
+{
+    text-decoration: none;
+    color: #FFFFFF;
+}
  
