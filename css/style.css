@@ -37,13 +37,9 @@ header {
     text-align: center;
     padding: 15px 0px;
 }
-/*header img .main-img--Logo*/
 .main-img--Logo{
     width: 150px;
     height: 50px;
-    /* align-items: center;
-    justify-content: center;
-    justify-items: center; */
 }
 .main-img--List{
     width: 50px;
@@ -76,12 +72,9 @@ header {
 }
 /*-----------------------SCROLL IMAGES -----------------------*/
 .main-img-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* width: 100%; */
+    width: 100%;
+    height: 220px; 
     min-width: 320px;
-    height: 230px; 
 }
 .main-img-container .main-img-container--scroll {
     display: flex;
@@ -92,9 +85,11 @@ header {
 }
 .main-img-container .main-img-container--scroll img {
     width: 100%;
-    height: 220px;
-    min-width: 150px;
+    height: 210px;
+    min-width: 280px;
     max-width: 300px;
+    position: relative;
+    scroll-snap-align: center;
     padding: 0 5px;
     background-repeat: no-repeat;
     background-position: center;
@@ -121,7 +116,8 @@ header {
     left: calc(50% - 109px);
     top: -16px;
     display: block;
-    padding: auto auto;
+    padding: 3px;
+    /* padding: auto auto; */
     width: 217px;
     height: 32px;
     background-color: var(--Aezam-green);
@@ -156,8 +152,16 @@ header {
     height: 57px;
     top: 5px;
     left: 9px;
-    /* margin: auto; */
-    background-image: url('../assets/icons/Engineering.svg');
+    background-color:rgba(210, 57, 24, 0.33);
+    border-radius: 28.5px;
+}
+.main-service-container--img-engineering span{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 10.5px;
+    left: 10.5px;
+    background-image: url('../assets/icons/Icon-Engineering.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -175,7 +179,7 @@ header {
     line-height: 22px;
     color: black;
 }
-.main-service-container--text {
+.main-service-container--text-engineering {
     position: absolute;
     width: 261px;
     height: 66px;
@@ -184,6 +188,19 @@ header {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+}
+.main-service-container--text-accounting {
+    position: absolute;
+    width: 261px;
+    height: 66px;
+    top: 62.03px;
+    left: 46.08px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
     line-height: 15px;
     text-align: center;
     color: black;
@@ -194,14 +211,13 @@ header {
     right: 1.4%;
     top: 80.61%;
     bottom: 3.64%;
-    padding: 6px 8.5px 7px;
+    padding: 6px 7px 7px;
     width: 105px;
     height: 26px;
     background-color: var(--Aezam-green);
     font-style: normal;
     font-weight: bold;
-    font-size: 1rem;
-    line-height: 12.5px;
+    font-size: 1.2rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     text-decoration: none;
@@ -212,7 +228,7 @@ header {
     position: absolute;
     width: 16px;
     height: 16px;
-    top: 6.03px;
+    top: 5px;
     left: 75.91px;
     background-image: url('../assets/icons/ArrowRight.svg');
     background-position: center;
@@ -220,7 +236,7 @@ header {
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
-.main-service-container--accounting{
+.main-service-container--accounting {
     position: relative;
     width: 100%;
     min-width: 335px;
@@ -233,13 +249,22 @@ header {
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
-.main-service-container--img-accounting{
+.main-service-container--img-accounting {
     position: absolute;
     width: 57px;
     height: 57px;
     top: 5px;
     left: 9px;
-    background-image: url('../assets/icons/Accounting.svg');
+    background-color:rgba(242, 200, 103, 0.33);
+    border-radius: 28.5px;
+}
+.main-service-container--img-accounting span {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 10.5px;
+    left: 10.5px;
+    background-image: url('../assets/icons/Icon-Accounting.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
