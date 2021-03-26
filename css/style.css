@@ -340,8 +340,10 @@ header {
     width: 100%;
     min-width: 288px;
     max-width: 700px;
-    height: 260px;
+    height: 370px;
     margin: 30px auto;
+    padding-top: 50px;
+    padding-left: 40px;
     text-align: center;
     background-color: #ffffff;
     border:  1px solid black;
@@ -349,7 +351,7 @@ header {
 .main-works-container--button {
     position: absolute;
     left: calc(50% - 108.5px);
-    top: 10px;
+    top: 15px;
     display: block;
     padding: 3px;
     width: 217px;
@@ -376,95 +378,127 @@ header {
 }
 .main-works-container--img_text{
     position: relative;
-    display: flex;
-    width: 100%;
-    height: 120px;
-    margin-top: 50px;
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+    padding: 7px;
+    background-color: #F7F8F9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
-.main-works-container--block1{
-    position: relative;
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/MallaPuestaTierra-3072x4096.jpg');
+.main-works-container--img_text .icons1{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/works_1.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
+.main-works-container--img_text .icons2{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/works_2.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--img_text .icons3{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/works_3.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--img_text .icons4{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/works_4.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--block1{
+    width: 36px;
+    height: 36px;
+    background-color: #12264F;
+    border-radius: 36px;
+}
 .main-works-container--block1 span{
     position: absolute;
     left: calc(100% + 2px);
-    top: 40px;
+    top: 20px;
     width: 20px;
-    height: 20px;
-    background-image: url('../assets/icons/ArrowRight2.svg');
+    height: 90px;
+    background-image: url('../assets/icons/Arrow_1.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .main-works-container--block2{
-    position: relative;
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/Tablero-150x200.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    background-color: #06436F;
+    border-radius: 36px;
 }
 .main-works-container--block2 span{
     position: absolute;
-    left: calc(100% + 2px);
-    top: 40px;
+    left: calc(10% - 50px);
+    top: 20px;
     width: 20px;
-    height: 20px;
-    background-image: url('../assets/icons/ArrowRight2.svg');
+    height: 90px;
+    background-image: url('../assets/icons/Arrow_2.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .main-works-container--block3{
-    position: relative;
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/Equipo.JPG');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    background-color: var(--Aezam-green);
+    border-radius: 36px;
 }
 .main-works-container--block3 span{
     position: absolute;
     left: calc(100% + 2px);
-    top: 40px;
+    top: 20px;
     width: 20px;
-    height: 20px;
-    background-image: url('../assets/icons/ArrowRight2.svg');
+    height: 90px;
+    background-image: url('../assets/icons/Arrow_3.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .main-works-container--block4{
-    position: relative;
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/Analizador-150x200.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px;
+    background-color: #6CA8AF;
+    border-radius: 36px;
 }
 .main-works-container--img_text p{
-    width: 20%;
-    height: 100px;
+    width: 200px;
+    height: 20px;
     position: absolute;
-    font-size: 1.2rem;
-    top: 120px;
+    font-size: 1.4rem;
+    top: 17px;
+    left: 50px;
 }
 .main-works-container--arrow span {
     position: absolute;
     left: calc(100% - 40px);
-    top: 220px;
+    top: 330px;
     width: 30px;
     height: 30px;
     background-image: url('../assets/icons/CircleArrow.svg');
