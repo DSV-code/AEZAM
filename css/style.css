@@ -76,12 +76,9 @@ header {
 }
 /*-----------------------SCROLL IMAGES -----------------------*/
 .main-img-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* width: 100%; */
+    width: 100%;
+    height: 250px; 
     min-width: 320px;
-    height: 230px; 
 }
 .main-img-container .main-img-container--scroll {
     display: flex;
@@ -92,13 +89,15 @@ header {
 }
 .main-img-container .main-img-container--scroll img {
     width: 100%;
-    height: 220px;
-    min-width: 150px;
+    height: 210px;
+    min-width: 280px;
     max-width: 300px;
+    position: relative;
     padding: 0 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    scroll-snap-align: center;
 }
 /*-----------------------SERVICE & SUPPORT -----------------------*/
 .main-service-container {
@@ -272,7 +271,7 @@ header {
 }
 .main-about-container--button {
     position: absolute;
-    left: calc(50% - 118px);
+    left: calc(50% - 108.5px);
     top: -20px;
     display: block;
     padding: 3px;
@@ -305,7 +304,7 @@ header {
     max-width: 200px;
     height: 165px;
     margin: 25px 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -322,7 +321,7 @@ header {
 .main-about-container--text p{
     margin: 10px;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .main-about-container--arrow span {
     position: absolute;
@@ -341,19 +340,21 @@ header {
     width: 100%;
     min-width: 288px;
     max-width: 700px;
-    height: 260px;
+    height: 370px;
     margin: 30px auto;
+    padding-top: 50px;
+    padding-left: 40px;
     text-align: center;
     background-color: #ffffff;
     border:  1px solid black;
 }
 .main-works-container--button {
     position: absolute;
-    left: calc(50% - 85px);
-    top: 10px;
+    left: calc(50% - 108.5px);
+    top: 15px;
     display: block;
     padding: 3px;
-    width: 170px;
+    width: 217px;
     height: 32px;
     background: rgba(108, 168, 175, 0.33);
     /* Sombras */
@@ -375,67 +376,129 @@ header {
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
-.main-works-container--img{
-    display: flex;
-    width: 100%;
-    height: 120px;
-    margin-top: 50px;
+.main-works-container--img_text{
+    position: relative;
+    width: 250px;
+    height: 50px;
+    margin: 20px;
+    padding: 7px;
+    background-color: #F7F8F9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
-.main-works-container--img1{
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+.main-works-container--img_text .icons1{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/works_1.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img2{
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/pexels-nadezhda-moryak-5595490.jpg');
+.main-works-container--img_text .icons2{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/works_2.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img3{
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+.main-works-container--img_text .icons3{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/works_3.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img4{
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/pexels-nadezhda-moryak-5595490.jpg');
+.main-works-container--img_text .icons4{
+    position: absolute;
+    left: 13px;
+    top: 13px;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/works_4.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--text{
-    display: flex;
-    width: 90%;
-    height: 60px;
-    align-items: center;
+.main-works-container--block1{
+    width: 36px;
+    height: 36px;
+    background-color: #12264F;
+    border-radius: 36px;
 }
-.main-works-container--textblock{
-    width: 100%;
-    min-width: 60px;
-    margin: 10px;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.5rem;
+.main-works-container--block1 span{
+    position: absolute;
+    left: calc(100% + 2px);
+    top: 20px;
+    width: 20px;
+    height: 90px;
+    background-image: url('../assets/icons/Arrow_1.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--block2{
+    width: 36px;
+    height: 36px;
+    background-color: #06436F;
+    border-radius: 36px;
+}
+.main-works-container--block2 span{
+    position: absolute;
+    left: calc(10% - 50px);
+    top: 20px;
+    width: 20px;
+    height: 90px;
+    background-image: url('../assets/icons/Arrow_2.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--block3{
+    width: 36px;
+    height: 36px;
+    background-color: var(--Aezam-green);
+    border-radius: 36px;
+}
+.main-works-container--block3 span{
+    position: absolute;
+    left: calc(100% + 2px);
+    top: 20px;
+    width: 20px;
+    height: 90px;
+    background-image: url('../assets/icons/Arrow_3.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--block4{
+    width: 36px;
+    height: 36px;
+    background-color: #6CA8AF;
+    border-radius: 36px;
+}
+.main-works-container--img_text p{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 17px;
+    left: 50px;
 }
 .main-works-container--arrow span {
     position: absolute;
     left: calc(100% - 40px);
-    top: 220px;
+    top: 330px;
     width: 30px;
     height: 30px;
     background-image: url('../assets/icons/CircleArrow.svg');
@@ -458,11 +521,11 @@ header {
 }
 .main-choose-container--button {
     position: absolute;
-    left: calc(50% - 85px);
+    left: calc(50% - 108.5px);
     top: 10px;
     display: block;
     padding: 3px;
-    width: 170px;
+    width: 217px;
     height: 32px;
     background: rgba(17, 107, 29, 0.28);
     /* Sombras */
@@ -479,7 +542,7 @@ header {
     max-width: 200px;
     height: 165px;
     margin: 55px 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/Tablero-2448x3264.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -496,21 +559,21 @@ header {
 .main-choose-container--text p{
     margin: 10px;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .main-choose-container--arrow {
     position: absolute;
     left: calc(100% - 125px);
     top: 230px;
     display: block;
-    padding: 6px;
+    padding: 8px;
     width: 115px;
     height: 32px;
     background-color: var(--Aezam-green);
     /* Sombras */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
@@ -518,13 +581,47 @@ header {
 .main-choose-container--arrow span {
     display: inline-block;
     width: 15px;
-    height: 17px;
+    height: 15px;
     margin-left: 8px;
-    background-image: url('../assets/icons/ArrowRight.svg');
+    background-image: url('../assets/icons/CaretDoubleRight.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
 /*----------------------- FOOTER -----------------------*/
- 
+.nav-footer {
+    width: 100vw;
+    height: 150px;
+    background-color: #F7F5FB;
+    border-top-width: 0.25rem;
+    border-top-color: rgba(0, 0, 0, 0.25);
+    border-top-style: solid;
+}
+.nav-footer-more-info{
+    font-size: 2rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+    border-bottom-width: 0.25rem;
+    border-bottom-style: solid;
+}
+.nav-footer-options {
+    margin: 1rem;
+    padding: 0.8rem;
+    list-style: none;
+    text-align: left;
+}
+.nav-footer-options a {
+    display:block;
+}
+.nav-footer-additional-info{
+    height: 4vh;
+    background-color: #116b1d;
+    color: white;
+    font-size: 1rem;
+}
+.nav-footer-tertiary-info{
+    margin: 1rem;
+    padding: 0.9rem;
+}
