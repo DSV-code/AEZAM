@@ -1,0 +1,29 @@
+.main-img--List{
+    width: 0px;
+    height: 0px;
+}
+.header--nav-container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    max-height: 50px;
+    list-style: none;
+    background: var(--Aezam-green);
+}
+.header--nav-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+.header--nav-container li {
+    display: inline-block;
+}
+.header--nav-container a {
+    padding: 0 10px;
+    font-size: 1.6rem;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
