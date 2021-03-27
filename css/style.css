@@ -19,45 +19,66 @@ html {
     font-size: 62.5%;
     font-family: 'Encode Sans', sans-serif;
     background-color: var(--Aezam-backgorund);
+    /* max-width: 1024px; */
 }
 body {
     font-size: 1.6rem;
 }
 
 /*----------------------- HEADER -----------------------*/
-header nav {
-    font-size: 1.6rem;
-    background-color: rgba(17, 107, 29, 0.28);
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    padding: 15px 0px;
 }
-header nav div a img {
-    width: 200px;
-    height: 80px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+/*header img .main-img--Logo*/
+.main-img--Logo{
+    width: 150px;
+    height: 50px;
+    /* align-items: center;
+    justify-content: center;
+    justify-items: center; */
 }
-header .navbar-toggler {
+.main-img--List{
     width: 50px;
     height: 50px;
 }
-header div .collapse {
-    text-align: right;
-    color: var(--Aezam-green);
+.header--nav-container {
+    width: 100%;
+    min-width: 320px;
+    max-width: 600px;
+    max-height: 50px;
+    list-style: none;
+    background: var(--Aezam-green);
 }
-header div ul .navbar-nav {
-    font-size: 2rem;
-    height: 2rem;
-}
-header ul li .nav-link{
-    text-align: right;
-
-}
-.main-img-container {
+.header--nav-container ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    /* width: 100%; */
-    min-width: 320px;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+}
+.header--nav-container li {
+    display: inline-block;
+}
+.header--nav-container a {
+    /* padding: 0 10px; */
+    font-size: 0rem;
+    /* flex-direction: column;
+    text-decoration: none;
+    color: white; */
+}
+/*-----------------------SCROLL IMAGES -----------------------*/
+.main-img-container {
+    width: 100%;
     height: 250px; 
+    min-width: 320px;
 }
 .main-img-container .main-img-container--scroll {
     display: flex;
@@ -68,13 +89,15 @@ header ul li .nav-link{
 }
 .main-img-container .main-img-container--scroll img {
     width: 100%;
-    height: 220px;
-    min-width: 150px;
+    height: 210px;
+    min-width: 280px;
     max-width: 300px;
+    position: relative;
     padding: 0 5px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    scroll-snap-align: center;
 }
 /*-----------------------SERVICE & SUPPORT -----------------------*/
 .main-service-container {
@@ -85,7 +108,7 @@ header ul li .nav-link{
     width: 100%;
     min-width: 320px;
     max-width: 640px;
-    height: 500px;
+    height: 412px;
     margin: 16px auto;
     text-align: center;
     align-self: center;
@@ -111,85 +134,122 @@ header ul li .nav-link{
     color: #ffffff;
 }
 .main-service-container--engineering{
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-around; */
+    position: relative;
     width: 100%;
-    min-width: 20px;
-    height: 150px;
-    margin: 30px;
-    align-items: center;
-    text-align: right;
-}
-.main-service-container--accounting{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    min-width: 20px;
-    height: 150px;
-    margin: 30px;
+    min-width: 335px;
+    max-width: 340px;
+    height: 165px;
+    margin: 30px 9.5px 11px;
     align-items: center;
     text-align: left;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
 }
-.main-service-container--img{
-    min-width: 50px;
-    max-width: 100px;
-    height: 50px;
-    max-height: 200px;
-    margin: auto;
-    background-image: url('../assets/imgs/pexels-charlotte-may-5947121.jpg');
+.main-service-container--img-engineering{
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 5px;
+    left: 9px;
+    /* margin: auto; */
+    background-image: url('../assets/icons/Engineering.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
 .main-service-container--text-principal {
-    margin: 30px 0px;
-    text-align: left;
-    line-height: 2rem;
-    font-size: 2rem;
+    position: absolute;
+    width: 111px;
+    height: 23px;
+    top: 22px;
+    left: 75px;
+    font-style: normal;
     font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
 }
 .main-service-container--text {
-    margin: auto;
-    line-height: 2rem;
-    font-size: 1.6rem;
+    position: absolute;
+    width: 261px;
+    height: 66px;
+    top: 62.03px;
+    left: 46.08px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: black;
 }
 .main-service-container--arrow-engineering {
     position: absolute;
-    left: calc(100% - 200px);
-    top: 210px;
-    display: block;
-    padding: 4.5px;
-    width: 110px;
-    height: 32px;
+    left: 67.48%;
+    right: 1.4%;
+    top: 80.61%;
+    bottom: 3.64%;
+    padding: 6px 8.5px 7px;
+    width: 105px;
+    height: 26px;
     background-color: var(--Aezam-green);
-    /* Sombras */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 12.5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    font-size: 1.4rem;
-    font-weight: bold;
     text-decoration: none;
+    text-align: left;
     color: #ffffff;
 }
 .main-service-container--arrow-engineering span {
-    display: inline-block;
-    width: 15px;
-    height: 17px;
-    margin-left: 8px;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 6.03px;
+    left: 75.91px;
     background-image: url('../assets/icons/ArrowRight.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
+.main-service-container--accounting{
+    position: relative;
+    width: 100%;
+    min-width: 335px;
+    max-width: 340px;
+    height: 165px;
+    margin: 11px 9.5px 30px;
+    align-items: center;
+    text-align: left;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.main-service-container--img-accounting{
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 5px;
+    left: 9px;
+    background-image: url('../assets/icons/Accounting.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
 .main-service-container--arrow-accounting span {
     position: absolute;
-    left: calc(100% - 150px);
-    top: 455px;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
+    top: 132.03px;
+    left: 296.08px;
     background-image: url('../assets/icons/CircleArrow.svg');
     background-position: center;
     background-size: cover;
@@ -211,7 +271,7 @@ header ul li .nav-link{
 }
 .main-about-container--button {
     position: absolute;
-    left: calc(50% - 118px);
+    left: calc(50% - 108.5px);
     top: -20px;
     display: block;
     padding: 3px;
@@ -244,7 +304,7 @@ header ul li .nav-link{
     max-width: 200px;
     height: 165px;
     margin: 25px 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -261,7 +321,7 @@ header ul li .nav-link{
 .main-about-container--text p{
     margin: 10px;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .main-about-container--arrow span {
     position: absolute;
@@ -288,11 +348,11 @@ header ul li .nav-link{
 }
 .main-works-container--button {
     position: absolute;
-    left: calc(50% - 85px);
+    left: calc(50% - 108.5px);
     top: 10px;
     display: block;
     padding: 3px;
-    width: 170px;
+    width: 217px;
     height: 32px;
     background: rgba(108, 168, 175, 0.33);
     /* Sombras */
@@ -314,62 +374,92 @@ header ul li .nav-link{
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
-.main-works-container--img{
+.main-works-container--img_text{
+    position: relative;
     display: flex;
     width: 100%;
     height: 120px;
     margin-top: 50px;
 }
-.main-works-container--img1{
+.main-works-container--block1{
+    position: relative;
     width: 20%;
     height: 100px;
     margin: 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/MallaPuestaTierra-3072x4096.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img2{
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/pexels-nadezhda-moryak-5595490.jpg');
+.main-works-container--block1 span{
+    position: absolute;
+    left: calc(100% + 2px);
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/ArrowRight2.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img3{
+.main-works-container--block2{
+    position: relative;
     width: 20%;
     height: 100px;
     margin: 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/Tablero-150x200.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--img4{
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/pexels-nadezhda-moryak-5595490.jpg');
+.main-works-container--block2 span{
+    position: absolute;
+    left: calc(100% + 2px);
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/ArrowRight2.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-works-container--text{
-    display: flex;
-    width: 90%;
-    height: 60px;
-    align-items: center;
-}
-.main-works-container--textblock{
-    width: 100%;
-    min-width: 60px;
+.main-works-container--block3{
+    position: relative;
+    width: 20%;
+    height: 100px;
     margin: 10px;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: bold;
-    line-height: 1.5rem;
+    background-image: url('../assets/imgs/Equipo.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--block3 span{
+    position: absolute;
+    left: calc(100% + 2px);
+    top: 40px;
+    width: 20px;
+    height: 20px;
+    background-image: url('../assets/icons/ArrowRight2.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--block4{
+    position: relative;
+    width: 20%;
+    height: 100px;
+    margin: 10px;
+    background-image: url('../assets/imgs/Analizador-150x200.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--img_text p{
+    width: 20%;
+    height: 100px;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 120px;
 }
 .main-works-container--arrow span {
     position: absolute;
@@ -392,17 +482,16 @@ header ul li .nav-link{
     height: 270px;
     margin: 30px auto;
     text-align: center;
-    margin: 10px 0 0 0;
-    font-size: 2rem;
-    height: 2rem;
-}   
+    align-self: center;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
 .main-choose-container--button {
     position: absolute;
-    left: calc(50% - 85px);
+    left: calc(50% - 108.5px);
     top: 10px;
     display: block;
     padding: 3px;
-    width: 170px;
+    width: 217px;
     height: 32px;
     background: rgba(17, 107, 29, 0.28);
     /* Sombras */
@@ -419,7 +508,7 @@ header ul li .nav-link{
     max-width: 200px;
     height: 165px;
     margin: 55px 10px;
-    background-image: url('../assets/imgs/pexels-daria-shevtsova-1845287.jpg');
+    background-image: url('../assets/imgs/Tablero-2448x3264.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -436,21 +525,21 @@ header ul li .nav-link{
 .main-choose-container--text p{
     margin: 10px;
     line-height: 2rem;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .main-choose-container--arrow {
     position: absolute;
     left: calc(100% - 125px);
     top: 230px;
     display: block;
-    padding: 6px;
+    padding: 8px;
     width: 115px;
     height: 32px;
     background-color: var(--Aezam-green);
     /* Sombras */
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
@@ -458,9 +547,9 @@ header ul li .nav-link{
 .main-choose-container--arrow span {
     display: inline-block;
     width: 15px;
-    height: 17px;
+    height: 15px;
     margin-left: 8px;
-    background-image: url('../assets/icons/ArrowRight.svg');
+    background-image: url('../assets/icons/CaretDoubleRight.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -469,7 +558,7 @@ header ul li .nav-link{
 /*----------------------- FOOTER -----------------------*/
 .nav-footer {
     width: 100vw;
-    height: 30vh;
+    height: 150px;
     background-color: #F7F5FB;
     border-top-width: 0.25rem;
     border-top-color: rgba(0, 0, 0, 0.25);
@@ -502,4 +591,3 @@ header ul li .nav-link{
     margin: 1rem;
     padding: 0.9rem;
 }
-
