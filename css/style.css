@@ -351,11 +351,7 @@ header {
 .main-works-container--button {
     position: absolute;
     left: calc(50% - 108.5px);
-<<<<<<< HEAD
-    top: 10px;
-=======
     top: 15px;
->>>>>>> master
     display: block;
     padding: 3px;
     width: 217px;
@@ -382,19 +378,6 @@ header {
 }
 .main-works-container--img_text{
     position: relative;
-<<<<<<< HEAD
-    display: flex;
-    width: 100%;
-    height: 120px;
-    margin-top: 50px;
-}
-.main-works-container--block1{
-    position: relative;
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/MallaPuestaTierra-3072x4096.jpg');
-=======
     width: 250px;
     height: 50px;
     margin: 20px;
@@ -410,30 +393,10 @@ header {
     width: 24px;
     height: 24px;
     background-image: url('../assets/icons/works_1.svg');
->>>>>>> master
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-.main-works-container--block1 span{
-    position: absolute;
-    left: calc(100% + 2px);
-    top: 40px;
-    width: 20px;
-    height: 20px;
-    background-image: url('../assets/icons/ArrowRight2.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main-works-container--block2{
-    position: relative;
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/Tablero-150x200.jpg');
-=======
 .main-works-container--img_text .icons2{
     position: absolute;
     left: 13px;
@@ -441,41 +404,10 @@ header {
     width: 24px;
     height: 24px;
     background-image: url('../assets/icons/works_2.svg');
->>>>>>> master
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-.main-works-container--block2 span{
-    position: absolute;
-    left: calc(100% + 2px);
-    top: 40px;
-    width: 20px;
-    height: 20px;
-    background-image: url('../assets/icons/ArrowRight2.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main-works-container--block3{
-    position: relative;
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/Equipo.JPG');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.main-works-container--block3 span{
-    position: absolute;
-    left: calc(100% + 2px);
-    top: 40px;
-    width: 20px;
-    height: 20px;
-    background-image: url('../assets/icons/ArrowRight2.svg');
-=======
 .main-works-container--img_text .icons3{
     position: absolute;
     left: 13px;
@@ -483,19 +415,10 @@ header {
     width: 24px;
     height: 24px;
     background-image: url('../assets/icons/works_3.svg');
->>>>>>> master
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-.main-works-container--block4{
-    position: relative;
-    width: 20%;
-    height: 100px;
-    margin: 10px;
-    background-image: url('../assets/imgs/Analizador-150x200.jpg');
-=======
 .main-works-container--img_text .icons4{
     position: absolute;
     left: 13px;
@@ -503,19 +426,10 @@ header {
     width: 24px;
     height: 24px;
     background-image: url('../assets/icons/works_4.svg');
->>>>>>> master
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-<<<<<<< HEAD
-.main-works-container--img_text p{
-    width: 20%;
-    height: 100px;
-    position: absolute;
-    font-size: 1.2rem;
-    top: 120px;
-=======
 .main-works-container--block1{
     width: 36px;
     height: 36px;
@@ -580,7 +494,6 @@ header {
     font-size: 1.4rem;
     top: 17px;
     left: 50px;
->>>>>>> master
 }
 .main-works-container--arrow span {
     position: absolute;
@@ -678,12 +591,23 @@ header {
 }
 /*----------------------- FOOTER -----------------------*/
 .nav-footer {
-    width: 100vw;
+    position: relative;
+    width: 100%;
+    min-width: 288px;
+    max-width: 700px;
     height: 150px;
     background-color: #F7F5FB;
     border-top-width: 0.25rem;
     border-top-color: rgba(0, 0, 0, 0.25);
     border-top-style: solid;
+}
+.nav-footer .fotter-logo{
+    position: absolute;
+    left: 225px;
+    top: 80px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .nav-footer-more-info{
     font-size: 2rem;
@@ -694,6 +618,7 @@ header {
     border-bottom-style: solid;
 }
 .nav-footer-options {
+    font-size: 1.3rem;
     margin: 1rem;
     padding: 0.8rem;
     list-style: none;
@@ -702,13 +627,63 @@ header {
 .nav-footer-options a {
     display:block;
 }
+
 .nav-footer-additional-info{
-    height: 4vh;
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-width: 288px;
+    max-width: 700px;
+    height: 40px;
     background-color: #116b1d;
     color: white;
     font-size: 1rem;
 }
 .nav-footer-tertiary-info{
-    margin: 1rem;
+    margin: 0.6rem;
     padding: 0.9rem;
+}
+.nav-footer-additional-info .facebook{
+    position: absolute;
+    left: 250px;
+    top: 0.9rem;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/Facebook.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-footer-additional-info .twitter{
+    position: absolute;
+    left: 275px;
+    top: 0.9rem;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/Twitter.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-footer-additional-info .instagram{
+    position: absolute;
+    left: 300px;
+    top: 0.9rem;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/Instagram.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-footer-additional-info .linkedin{
+    position: absolute;
+    left: 325px;
+    top: 0.9rem;
+    width: 24px;
+    height: 24px;
+    background-image: url('../assets/icons/Linkedin.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
