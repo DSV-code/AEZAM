@@ -506,6 +506,110 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/*----------------------- HOW IT WORKS 2 -----------------------*/
+.main-works-container2 {
+    position: relative;
+    width: 100%;
+    min-width: 288px;
+    max-width: 700px;
+    height: 370px;
+    margin: 30px auto;
+    padding-top: 50px;
+    padding-left: 40px;
+    text-align: center;
+    background: rgba(17, 107, 29, 0.28);
+}
+.main-works-container--button2 {
+    position: absolute;
+    left: calc(50% - 108.5px);
+    top: 15px;
+    display: block;
+    padding: 3px;
+    width: 217px;
+    height: 35px;
+    background: var(--Aezam-green);
+    /* Sombras */
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.main-works-container--img_text2{
+    position: relative;
+    width: 230px;
+    height: 50px;
+    margin: 20px;
+    left: 20px;
+    background-color: #F7F8F9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.main-works-container--img_text2 p{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 17px;
+    left: 15px;
+}
+.main-works-container--img_text2 .icons12{
+    position: absolute;
+    left:-40px;
+    top: -4px;
+    width: 50px;
+    height: 70px;
+    background-image: url('../assets/icons/Steps1.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--img_text2 .icons22{
+    position: absolute;
+    left:-40px;
+    top: -13px;
+    width: 50px;
+    height: 80px;
+    background-image: url('../assets/icons/Steps2.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--img_text2 .icons32{
+    position: absolute;
+    left:-40px;
+    top: -13px;
+    width: 50px;
+    height: 80px;
+    background-image: url('../assets/icons/Steps3.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--img_text2 .icons42{
+    position: absolute;
+    left:-40px;
+    top: -13px;
+    width: 50px;
+    height: 70px;
+    background-image: url('../assets/icons/Steps4.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-works-container--arrow2 span {
+    position: absolute;
+    left: calc(100% - 40px);
+    top: 330px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/CircleArrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /*-----------------------WHY CHOOSE US -----------------------*/
 .main-choose-container {
     display: flex;
