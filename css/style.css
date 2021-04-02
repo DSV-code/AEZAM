@@ -699,7 +699,7 @@ header {
     width: 100%;
     min-width: 288px;
     height: 140px;
-    background-color: #F7F5FB;
+    background-color: var(--Aezam-backgorund);
 }
 .nav-footer-info-wrapper{
     width: 80%;
