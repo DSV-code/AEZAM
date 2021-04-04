@@ -37,6 +37,7 @@ header {
     text-align: center;
     padding: 15px 0px;
     background: #B7CEBD;
+    border: 1px solid black;
 }
 .main-img--Logo{
     width: 150px;
