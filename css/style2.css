@@ -1,0 +1,287 @@
+/*
+    1. Positioning
+    2. Box Model
+    3. Typography
+    4. Visuals
+    5. Others
+*/
+:root{
+    /*Colors*/
+    --Aezam-green: #116b1d; 
+    --Aezam-backgorund: #F7F5FB;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Encode Sans', sans-serif;
+    background-color: var(--Aezam-backgorund);
+    /* max-width: 1024px; */
+}
+body {
+    font-size: 1.6rem;
+}
+
+/*----------------------- HEADER -----------------------*/
+.header {
+    height: 70px;
+    background: #B7CEBD;
+    border: 1px solid black;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+.main-img--Logo{
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+}
+.main-img--List{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.header--nav-container {
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    transition: all 0.4s;
+    text-align: left;
+}
+.header--menu-container {
+    list-style: none;
+}
+.header--menu-container-link {
+    display: block;
+    padding: 10px;
+    background: var(--Aezam-green);
+    text-decoration: none;
+    color: #ffff;
+}
+.header--menu-container-link:hover {
+    background: #ffff;
+    color: var(--Aezam-green);
+}
+.mostrar {
+    left: 0;
+}
+/*-----------------------SCROLL IMAGES -----------------------*/
+.main-img-container {
+    margin-top: 10px;
+    width: 100%;
+    height: 220px; 
+    min-width: 320px;
+}
+.main-img-container--scroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main-img-container--scroll-img {
+    width: 100%;
+    height: 210px;
+    min-width: 280px;
+    max-width: 300px;
+    /* position: relative; */
+    scroll-snap-align: center;
+    padding: 0 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    scroll-snap-align: center;
+    border-radius: 10px;
+}
+/*-----------------------SERVICE & SUPPORT -----------------------*/
+.main-service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    height: 412px;
+    margin: 16px auto;
+    text-align: center;
+    align-self: center;
+    background-color: rgba(17, 107, 29, 0.28);
+    border: 1px solid black;
+}
+.main-service-container--button {
+    position: absolute;
+    left: calc(50% - 109px);
+    top: -16px;
+    display: block;
+    padding: 3px;
+    /* padding: auto auto; */
+    width: 217px;
+    height: 32px;
+    background-color: var(--Aezam-green);
+    /* Sombras */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:  1px solid black;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+}
+.main-service-container--engineering{
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+    position: relative;
+    width: 100%;
+    min-width: 335px;
+    max-width: 340px;
+    height: 165px;
+    margin: 30px 9.5px 11px;
+    align-items: center;
+    text-align: left;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.main-service-container--img-engineering{
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 5px;
+    left: 9px;
+    background-color:rgba(210, 57, 24, 0.33);
+    border-radius: 28.5px;
+}
+.main-service-container--img-engineering span{
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 10.5px;
+    left: 10.5px;
+    background-image: url('../assets/icons/Icon-Engineering.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main-service-container--text-principal {
+    position: absolute;
+    width: 111px;
+    height: 23px;
+    top: 22px;
+    left: 75px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: black;
+}
+.main-service-container--text-engineering {
+    position: absolute;
+    width: 261px;
+    height: 66px;
+    top: 62.03px;
+    left: 46.08px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    color: black;
+}
+.main-service-container--text-accounting {
+    position: absolute;
+    width: 261px;
+    height: 66px;
+    top: 62.03px;
+    left: 46.08px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: black;
+}
+.main-service-container--arrow-engineering {
+    position: absolute;
+    left: 67.48%;
+    right: 1.4%;
+    top: 80.61%;
+    bottom: 3.64%;
+    padding: 6px 7px 7px;
+    width: 105px;
+    height: 26px;
+    background-color: var(--Aezam-green);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: left;
+    color: #ffffff;
+}
+.main-service-container--arrow-engineering span {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    left: 75.91px;
+    background-image: url('../assets/icons/ArrowRight.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: text-bottom;
+}
+.main-service-container--accounting {
+    position: relative;
+    width: 100%;
+    min-width: 335px;
+    max-width: 340px;
+    height: 165px;
+    margin: 11px 9.5px 30px;
+    align-items: center;
+    text-align: left;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.main-service-container--img-accounting {
+    position: absolute;
+    width: 57px;
+    height: 57px;
+    top: 5px;
+    left: 9px;
+    background-color:rgba(242, 200, 103, 0.33);
+    border-radius: 28.5px;
+}
+.main-service-container--img-accounting span {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    top: 10.5px;
+    left: 10.5px;
+    background-image: url('../assets/icons/Icon-Accounting.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main-service-container--arrow-accounting span {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 132.03px;
+    left: 296.08px;
+    background-image: url('../assets/icons/CircleArrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
