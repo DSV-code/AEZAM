@@ -1,0 +1,71 @@
+@import 'styleVariables.css';
+
+/*----------------------- HEADER -----------------------*/
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 80px;
+    padding: 15px 20px;
+    background: var(--Aezam-lightGreen);
+}
+.header-img--logo{
+    width: 150px;
+    height: 50px;
+}
+.header-img--list{
+    width: 40px;
+    height: 40px;
+}
+.header-nav--container{
+    width: 100%;
+    min-width: 320px;
+    max-width: 600px;
+    max-height: 50px;
+    list-style: none;
+    background: var(--Aezam-green);
+}
+.header-nav--container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 0px;
+}
+.header-nav--container li {
+    display: inline-block;
+}
+.header-nav--container a {
+    font-size: 0rem;
+}
+/*-----------------------SCROLL IMAGES -----------------------*/
+.main-img--container {
+    margin-top: 10px;
+    width: 100%;
+    height: 220px; 
+    min-width: 320px;
+}
+.main-img--container .block--scroll{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.main-img--container .block--scroll img {
+    width: 100%;
+    height: 210px;
+    min-width: 280px;
+    max-width: 300px;
+    position: relative;
+    scroll-snap-align: center;
+    padding: 0 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    scroll-snap-align: center;
+    border-radius: 10px;
+}
+
+
