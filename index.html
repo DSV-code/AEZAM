@@ -16,17 +16,33 @@
     <!-- --------------------- HEADER --------------------- -->
     <header>
         <img class="header-img--logo" src="./assets/icons/Logo.svg" alt="Company logo">
-        <img class="header-img--list" id="header-img--list" src="./assets/icons/List.svg" alt="Menu list">
-        <nav class="header-nav--container" id="header-nav--container">
-            <img class="header-nav--next-arrow" id="header-nav--next-arrow" src="./assets/icons/NextArrow.svg" alt="Next arrow">
+        <img class="header-img--list" onClick="show_hide_header_nav__container('id-header-nav--container')"
+            src="./assets/icons/List.svg" alt="Menu list">
+        <nav class="header-nav--container" id="id-header-nav--container">
+            <img class="header-nav--next-arrow" onClick="show_hide_header_nav__container('id-header-nav--container')"
+                src="./assets/icons/NextArrow.svg" alt="Next arrow">
             <ul class="header-nav-container--menu">
-                <li><a class="header-nav-container-menu--list" href="#">Servicio y soporte</a></li>
+                <li>
+                    <a class="header-nav-container-menu--list" href="#">Servicio y soporte</a>
+                    <ul class="header-nav-container--submenu" id="id-header-nav-container--submenu">
+                        <li><a class="header-nav-container-submenu--list header-nav-container-menu--list"
+                                href="#">Ingeniería</a></li>
+                        <li><a class="header-nav-container-submenu--list header-nav-container-menu--list"
+                                href="#">Contabilidad</a></li>
+                    </ul>
+                </li>
                 <li><a class="header-nav-container-menu--list" href="#">Como funciona</a></li>
                 <li><a class="header-nav-container-menu--list" href="#">Sobre nosotros</a></li>
                 <li><a class="header-nav-container-menu--list" href="#">Porque elegirnos</a></li>
                 <li><a class="header-nav-container-menu--list" href="#">Contactanos</a></li>
             </ul>
-            <img class="header-nav--down-arrow" src="./assets/icons/DownArrow.svg" alt="Down arrow">
+            <!-- <img class="header-nav--down-arrow"
+                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu')"
+                src="./assets/icons/DownArrow.svg" alt="Down arrow"> -->
+            <div class="header-nav--down-arrow" id="id-header-nav--down-arrow"
+                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow')">
+            </div>
+            <!-- <img class="header-nav--up-arrow" src="./assets/icons/UpArrow.svg" alt="Up arrow"> -->
             <div class="header--line"></div>
             <p class="header--city">Bogotá</p>
             <p class="header--addres"> Calle 2 # XX-XX <br> Distrito capital <br> Colombia</p>
@@ -74,7 +90,8 @@
             <div class="block--img"></div>
             <div class="block--text">
                 <p>
-                    Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del equipo responsable y, sobre todo, explica la misión, visión y valores.
+                    Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del
+                    equipo responsable y, sobre todo, explica la misión, visión y valores.
                 </p>
             </div>
             <a href="" class="block--arrow"><span></span></a>
@@ -148,19 +165,19 @@
     <!-- --------------------- FOOTER --------------------- -->
     <footer role="contentinfo" class="nav-footer">
         <section class="nav-footer-info">
-                <div class="nav-footer-info-wrapper">
-                    <div class="footer-line-container"></div>
-                    <div class="nav-footer-primary-info">
-                        <p>Más Información</p>
-                        <div></div>
-                    </div>
-                    <div class="nav-footer-secondary-info">
-                        <a href="/">Contáctenos</a>
-                        <a href="/">Política de Privacidad</a>
-                        <a href="/">Términos y Condiciones</a>
-                    </div>
-                    <img href="/" class="fotter-logo" src="./assets/icons/Logo_2.svg" alt="Company logo">
+            <div class="nav-footer-info-wrapper">
+                <div class="footer-line-container"></div>
+                <div class="nav-footer-primary-info">
+                    <p>Más Información</p>
+                    <div></div>
                 </div>
+                <div class="nav-footer-secondary-info">
+                    <a href="/">Contáctenos</a>
+                    <a href="/">Política de Privacidad</a>
+                    <a href="/">Términos y Condiciones</a>
+                </div>
+                <img href="/" class="fotter-logo" src="./assets/icons/Logo_2.svg" alt="Company logo">
+            </div>
         </section>
         <section class="nav-footer-additional-info">
             <div class="nav-footer-tertiary-info">
@@ -176,4 +193,5 @@
     </footer>
     <script src="js/jsIndex.js"></script>
 </body>
+
 </html>

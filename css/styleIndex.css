@@ -4,7 +4,6 @@
 header {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
     width: 100%;
     min-width: 320px;
     height: 80px;
@@ -26,8 +25,10 @@ header {
     cursor: pointer;
 }
 .header-nav--container{
+    display: none;
     position: absolute;
-    left: -375px;
+    /* left: -375px; */
+    left: 125px;
     width: 250px;
     height: 667px;
     text-align: left;
@@ -38,6 +39,7 @@ header {
     position: absolute;
     top: 23px;
     left: 15px;
+    cursor: pointer;
 }
 .header-nav-container--menu {
     margin-top: 79px;
@@ -53,21 +55,42 @@ header {
     text-decoration: none;
     color: #ffff;
 }
-.header-nav-container-menu--list:hover {
+.header-nav-container-menu--list:hover{
+    width: 180px;
     background: #ffff;
     color: var(--Aezam-green);
 }
-.mostrar {
-    left: 125px;
+.header-nav-container--submenu{
+    display: none;
 }
-.ocultar {
-    left: -375px;
+.header-nav-container-submenu--list{
+    display: block;
+    margin-bottom: 26px;
+    margin-left: 50px;    
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #ffff;
 }
 .header-nav--down-arrow{
     position: absolute;
     top: 74px;
     left: 210px;
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/icons/DownArrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
+/* .header-nav--up-arrow{
+    display: none;
+    position: absolute;
+    top: 74px;
+    left: 210px;
+} */
 .header--line{
     position: absolute;
     top: 500px;
