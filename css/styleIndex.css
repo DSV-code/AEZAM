@@ -27,12 +27,17 @@ header {
 }
 .header-nav--container{
     position: absolute;
-    left: 125px;
+    left: -375px;
     width: 250px;
     height: 667px;
     text-align: left;
     list-style: none;
     background: var(--Aezam-green);
+}
+.header-nav--next-arrow{
+    position: absolute;
+    top: 23px;
+    left: 15px;
 }
 .header-nav-container--menu {
     margin-top: 79px;
@@ -41,8 +46,52 @@ header {
 .header-nav-container-menu--list {
     display: block;
     margin-bottom: 26px;
-    margin-left: 15px;
+    margin-left: 15px;    
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
     text-decoration: none;
+    color: #ffff;
+}
+.header-nav-container-menu--list:hover {
+    background: #ffff;
+    color: var(--Aezam-green);
+}
+.mostrar {
+    left: 125px;
+}
+.ocultar {
+    left: -375px;
+}
+.header-nav--down-arrow{
+    position: absolute;
+    top: 74px;
+    left: 210px;
+}
+.header--line{
+    position: absolute;
+    top: 500px;
+    width: 100px;
+    border-top: 1px solid white;
+}
+.header--city{
+    position: absolute;
+    top: 505px;
+    left: 20px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffff;
+}
+.header--addres{
+    position: absolute;
+    top: 538px;
+    left: 20px;
+    width: 200px;
+    height: 100px;
+    font-weight: 900;
+    font-size: 1.4rem;
+    line-height: 30px;
     color: #ffff;
 }
 /*-----------------------SCROLL IMAGES -----------------------*/
