@@ -34,6 +34,7 @@ header{
     text-align: left;
     list-style: none;
     background: var(--Aezam-green);
+    z-index: 2;
 }
 .header-nav--next-arrow {
     position: absolute;
