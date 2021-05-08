@@ -9,14 +9,14 @@ header {
     height: 80px;
     background: var(--Aezam-lightGreen);
 }
-.header-img--logo{
+.header-img--logo {
     position: absolute;
     top: 15px;
     left: 20px;
     width: 150px;
     height: 50px;
 }
-.header-img--list{
+.header-img--list {
     position: absolute;
     top: 20px;
     left: calc(100% - 60px);
@@ -24,7 +24,7 @@ header {
     height: 40px;
     cursor: pointer;
 }
-.header-nav--container{
+.header-nav--container {
     display: none;
     position: absolute;
     /* left: -375px; */
@@ -35,7 +35,7 @@ header {
     list-style: none;
     background: var(--Aezam-green);
 }
-.header-nav--next-arrow{
+.header-nav--next-arrow {
     position: absolute;
     top: 23px;
     left: 15px;
@@ -48,56 +48,50 @@ header {
 .header-nav-container-menu--list {
     display: block;
     margin-bottom: 26px;
-    margin-left: 15px;    
+    margin-left: 15px;
     font-weight: 900;
     font-size: 18px;
     line-height: 22px;
     text-decoration: none;
     color: #ffff;
 }
-.header-nav-container-menu--list:hover{
+.header-nav-container-menu--list:hover {
     width: 180px;
     background: #ffff;
     color: var(--Aezam-green);
 }
-.header-nav-container--submenu{
+.header-nav-container--submenu {
     display: none;
 }
-.header-nav-container-submenu--list{
+.header-nav-container-submenu--list {
     display: block;
     margin-bottom: 26px;
-    margin-left: 50px;    
+    margin-left: 50px;
     font-weight: 900;
     font-size: 18px;
     line-height: 22px;
     text-decoration: none;
     color: #ffff;
 }
-.header-nav--down-arrow{
+.header-nav--down-arrow {
     position: absolute;
     top: 74px;
     left: 210px;
-    width: 32px;
-    height: 32px;
-    background-image: url('../assets/icons/DownArrow.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     cursor: pointer;
 }
-/* .header-nav--up-arrow{
-    display: none;
+.header-nav--up-arrow {
     position: absolute;
     top: 74px;
     left: 210px;
-} */
-.header--line{
+    cursor: pointer;
+}
+.header--line {
     position: absolute;
     top: 500px;
     width: 100px;
     border-top: 1px solid white;
 }
-.header--city{
+.header--city {
     position: absolute;
     top: 505px;
     left: 20px;
@@ -106,7 +100,7 @@ header {
     line-height: 22px;
     color: #ffff;
 }
-.header--addres{
+.header--addres {
     position: absolute;
     top: 538px;
     left: 20px;
@@ -145,5 +139,3 @@ header {
     scroll-snap-align: center;
     border-radius: 10px;
 } */
-
-
