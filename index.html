@@ -16,10 +16,12 @@
     <!-- --------------------- HEADER --------------------- -->
     <header>
         <img class="header-img--logo" src="./assets/icons/Logo.svg" alt="Company logo">
-        <img class="header-img--list" onClick="show_hide_header_nav__container('id-header-nav--container')"
+        <img class="header-img--list"
+            onClick="show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow')"
             src="./assets/icons/List.svg" alt="Menu list">
         <nav class="header-nav--container" id="id-header-nav--container">
-            <img class="header-nav--next-arrow" onClick="show_hide_header_nav__container('id-header-nav--container')"
+            <img class="header-nav--next-arrow"
+                onClick="show_hide_header_nav__container('id-header-nav--container'), hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
                 src="./assets/icons/NextArrow.svg" alt="Next arrow">
             <ul class="header-nav-container--menu">
                 <li>
