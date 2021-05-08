@@ -221,6 +221,11 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+
+
+
 /*-----------------------ABOUT US -----------------------*/
 .main-about-container {
     display: flex;
@@ -660,6 +665,9 @@
     background-repeat: no-repeat;
     vertical-align: text-bottom;
 }
+
+
+
 /*----------------------- FOOTER -----------------------*/
 .nav-footer {
     position: relative;

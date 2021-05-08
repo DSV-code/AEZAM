@@ -1,7 +1,7 @@
 @import 'styleVariables.css';
 
 /*----------------------- HEADER -----------------------*/
-header {
+header{
     display: flex;
     align-items: center;
     width: 100%;
@@ -26,21 +26,21 @@ header {
     list-style: none;
     background: var(--Aezam-green);
 }
-.header-nav--container ul {
+.header-nav--container ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     height: 0px;
 }
-.header-nav--container li {
+.header-nav--container li{
     display: inline-block;
 }
-.header-nav--container a {
+.header-nav--container a{
     font-size: 0rem;
 }
 /*-----------------------SCROLL IMAGES -----------------------*/
-.main-img--container {
+.main-img--container{
     width: 100%;
     height: 260px; 
     min-width: 320px;
@@ -50,7 +50,7 @@ header {
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
-.main-img--container img {
+.main-img--container img{
     margin: 30px 4px;
     width: 100%;
     height: 200px;
@@ -64,22 +64,45 @@ header {
     border-radius: 10px;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
 }
-/*-----------------------SERVICE & SUPPORT -----------------------*/
-.main-service--container
-{
+/*-----------------------FIRST CONTAINER AND TITTLES -----------------------*/
+.main-first--container{
+    position: relative;
+    margin-top: 50px;
+    padding-bottom: 15px;
     width: 100%;
     min-width: 320px;
     height: 400;
     background-color: var(--Aezam-backgorund);
 }
-.main-container--title
-{
+.main-secondary--container{
+    position: relative;
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 15px;
+    width: 100%;
+    min-width: 320px;
+    height: 400;
+    background-color: var(--Aezam-backgorund);
+}
+.main-container--line{
+    position: absolute;
+    top: -35px;
+    position: absolute;
+    left: 20px;
+    width: 90%;
+    border-top: 1px solid #878787;
+}
+.main-container--title{
+    position: absolute;
+    left: calc(50% - 102px);
+    z-index: 1;
+    top: -50px;
     width: 205px;
     height: 31px;
     margin: 0 auto;
     text-align: center;
     align-self: center;
-    padding: 3px;
+    padding: 2px;
     background-color: var(--Aezam-green);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border:  1px solid black;
@@ -88,50 +111,202 @@ header {
     font-weight: bold;
     color: #ffffff;
 }
-.main-service-container-block--card
-{
+.arrow{
+    position: absolute;
+    top: calc(100% - 40px);
+    left: calc(100% - 40px);
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+/*-----------------------SERVICE AND SUPPORT -----------------------*/
+.main-service-container--card{
+    position: relative;
     width: 80%;
     min-width: 330px;
     max-width: 450px;
-    min-height: 150px;
+    min-height: 100px;
     margin: 15px auto;
-    padding: 15px;
+    padding: 10px;
+    align-items: baseline;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
-.main-service-container-block--card .block-card--title
-{
-    margin-bottom: 15px;
+.main-service-container--card .block-card--title{
+    margin: 10px 50px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.8rem;
 }
-.main-service-container-block--card .block-card--body
-{
+.main-service-container--card .block-card--body{
+    width: 80%;
+    margin: 15px auto;
+    text-align: center;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2rem;
     color: #808080;
 }
-.main-service-container-block--card .engineering
-{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url('../assets/icons/Engineering.svg');
+.main-service-container--card .icon{
+    position: absolute;
+    width: 40px;
+    height: 40px;
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
 }
-.main-service-container-block--card .accounting
-{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url('../assets/icons/Accounting.svg');
+/*----------------------- HOW IT WORKS -----------------------*/
+.main-works-container--card{
+    position: relative;
+    width: 70%;
+    min-width: 260px;
+    max-width: 450px;
+    min-height: 50px;
+    margin: 15px auto;
+    align-self: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+.main-works-container--card .icon{
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 0px;
+    width: 40px;
+    height: 40px;
     background-size: cover;
     background-position:center;
+    background-repeat: no-repeat;
+}
+.block-card--title{
+    margin-left: 50px;
+    font-size: 1.4rem;
+    line-height: 5rem;
+}
+/*----------------------- ABOUT AND CHOOSE -----------------------*/
+.main-secondary--img{
+    width: 40%;
+    height: 200px;
+    min-width: 100px;
+    max-width: 200px;
+    margin: 0px 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main-secondary--text{
+    display: flex;
+    width: 60%;
+    min-width: 20px;
+    margin: 0px 0px;
+    align-items: center;
+}
+.main-secondary--text p{
+    margin: 10px;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+/*----------------------- FOOTER -----------------------*/
+.footer--container{
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    background-color: var(--Aezam-backgorund);
+}
+.footer-container--title{
+    width: 100%;
+    min-width: 375px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    align-self: center;
+    padding: 2px;
+    background-color: var(--Aezam-green);
+    background-image: url('../assets/icons/Logo_White.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer-container--logo{
+    width: 40%;
+    height: 100px;
+    min-width: 100px;
+    max-width: 200px;
+    align-self: center;
+    background-image: url('../assets/icons/Logo_pi.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer-container--otros{
+    margin: 30px 0px 0px 10px;
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+.footer-container--otros div{ 
+    margin-top: 5px; 
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.footer-container--info a {
+    margin: 20px 0px 20px 30px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    display: block; 
+    text-decoration: none; 
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+.footer-container--additional-info{
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-width: 288px;
+    height: 40px;
+    background-color: var(--Aezam-green);
+    padding-left: 6px;
+    padding-top: 8px;
+    font-size: 1.2rem;
+    color: white; 
+}
+.facebook{
+    position: absolute;
+    left: calc(100% - 140px);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.twitter{
+    position: absolute;
+    left: calc(100% - 110px);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.instagram{
+    position: absolute;
+    left: calc(100% - 80px);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.linkedin{
+    position: absolute;
+    left: calc(100% - 50px);
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
