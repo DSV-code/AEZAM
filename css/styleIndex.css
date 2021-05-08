@@ -258,16 +258,13 @@ header{
     text-decoration: none; 
     color: rgba(0, 0, 0, 0.6);
 }
-
-
-
-
 .footer-container--additional-info{
     display: flex;
     position: relative;
     width: 100%;
     min-width: 288px;
     height: 40px;
+    align-items: center;
     background-color: var(--Aezam-green);
     padding-left: 6px;
     padding-top: 8px;
@@ -276,6 +273,7 @@ header{
 }
 .facebook{
     position: absolute;
+    top: 8px;
     left: calc(100% - 140px);
     width: 30px;
     height: 30px;
@@ -285,6 +283,7 @@ header{
 }
 .twitter{
     position: absolute;
+    top: 8px;
     left: calc(100% - 110px);
     width: 30px;
     height: 30px;
@@ -294,6 +293,7 @@ header{
 }
 .instagram{
     position: absolute;
+    top: 8px;
     left: calc(100% - 80px);
     width: 30px;
     height: 30px;
@@ -303,6 +303,7 @@ header{
 }
 .linkedin{
     position: absolute;
+    top: 8px;
     left: calc(100% - 50px);
     width: 30px;
     height: 30px;
