@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;500;700&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/imgs/Icon.jpg">
+    <link rel="stylesheet" href="./css/styleVariables.css">
     <link rel="stylesheet" href="./css/styleIndex.css" />
     <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 769px)">
 </head>
@@ -20,15 +22,14 @@
             onClick="show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow')"
             src="./assets/icons/List.svg" alt="Menu list">
         <nav class="header-nav--container" id="id-header-nav--container">
-            <img class="header-nav--next-arrow"
-                onClick="show_hide_header_nav__container('id-header-nav--container'), hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
+            <img class="header-nav--next-arrow" onClick="hide_header_nav__container('id-header-nav--container')"
                 src="./assets/icons/NextArrow.svg" alt="Next arrow">
             <ul class="header-nav-container--menu">
                 <li>
                     <a class="header-nav-container-menu--list" href="#">Servicio y soporte</a>
                     <ul class="header-nav-container--submenu" id="id-header-nav-container--submenu">
                         <li><a class="header-nav-container-submenu--list header-nav-container-menu--list"
-                                href="#">Ingeniería</a></li>
+                                href="ingenieria.html">Ingeniería</a></li>
                         <li><a class="header-nav-container-submenu--list header-nav-container-menu--list"
                                 href="#">Contabilidad</a></li>
                     </ul>
@@ -49,15 +50,16 @@
             <p class="header--addres"> Calle 2 # XX-XX <br> Distrito capital <br> Colombia</p>
         </nav>
     </header>
-    <!-- --------------------- SCROLL SECTION --------------------- -->
+    
     <main>
+        <!-- --------------------- SCROLL SECTION --------------------- -->
         <section class="main-img--container">
-                <img src="./assets/imgs/Analizador-280x210.jpg" alt="">
-                <img src="./assets/imgs/Tablero-280x210.jpg" alt="">
-                <img src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
-                <img src="./assets/imgs/Analizador-280x210.jpg" alt="">
-                <img src="./assets/imgs/Tablero-280x210.jpg" alt="">
-                <img src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Tablero-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Tablero-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
         </section>
         <!-- --------------------- SERVICE --------------------- -->
         <section class="main-first--container">
@@ -70,19 +72,29 @@
                     <span class="icon" style="background-image: url('../assets/icons/Engineering.svg');"></span>
                     <p class="block-card--title">Ingeniería</p>
                     <p class="block-card--body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
+                        volutpat.
                     </p>
-                    <span class="arrow" id="id-arrow" onmouseenter="mouseEnter()" onmouseleave="mouseLeave()" style="background-image: url('../assets/icons/CircleArrow.svg');"></span>
+                    <div class="arrow" style="background-image: url('../assets/icons/CircleArrow.svg');">
+                    </div>
+                    </div>
                 </article>
                 <article class="main-service-container--card">
-                    <span class="icon" style="background-image: url('../assets/icons/Accounting.svg');" ></span>
+                    <span class="icon" style="background-image: url('../assets/icons/Accounting.svg');"></span>
                     <p class="block-card--title">Administrativos</p>
                     <p class="block-card--body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
+                        volutpat.
                     </p>
                     <span class="arrow" style="background-image: url('../assets/icons/CircleArrow.svg');"></span>
                 </article>
             </section>
+        </section>
+        <section>
+            <div class="pruebaprueba">
+            </div>
+            <div class="prueba2">
+            </div>
         </section>
         <!-- --------------------- WORKS  --------------------- -->
         <section class="main-first--container">
@@ -96,15 +108,15 @@
                     <p class="block-card--title">Escuchamos tus necesidades</p>
                 </article>
                 <article class="main-works-container--card">
-                    <span class="icon" style="background-image: url('../assets/icons/Steps2.svg');" ></span>
+                    <span class="icon" style="background-image: url('../assets/icons/Steps2.svg');"></span>
                     <p class="block-card--title">Analizamos tus requisitos.</p>
                 </article>
                 <article class="main-works-container--card">
-                    <span class="icon" style="background-image: url('../assets/icons/Steps3.svg');" ></span>
+                    <span class="icon" style="background-image: url('../assets/icons/Steps3.svg');"></span>
                     <p class="block-card--title">Proponemos una solución.</p>
                 </article>
                 <article class="main-works-container--card">
-                    <span class="icon" style="background-image: url('../assets/icons/Steps4.svg');" ></span>
+                    <span class="icon" style="background-image: url('../assets/icons/Steps4.svg');"></span>
                     <p class="block-card--title">Entregamos un servicio.</p>
                 </article>
             </section>
@@ -116,7 +128,8 @@
             <div class="main-container--title">
                 <p>Nosotros</p>
             </div>
-            <div class="main-secondary--img" style="background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+            <div class="main-secondary--img"
+                style="background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
             <div class="main-secondary--text">
                 <p>
                     Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del
@@ -131,7 +144,8 @@
             <div class="main-container--title">
                 <p>Por qué Elegirnos</p>
             </div>
-            <div class="main-secondary--img" style="background-image: url('../assets/imgs/Tablero-2448x3264.jpg');"></div>
+            <div class="main-secondary--img" style="background-image: url('../assets/imgs/Tablero-2448x3264.jpg');">
+            </div>
             <div class="main-secondary--text">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat.
@@ -147,7 +161,10 @@
         <section class="footer--container">
             <div class="footer-container--logo"></div>
             <div>
-                <div class="footer-container--otros"><p>Otros</p><div></div></div>
+                <div class="footer-container--otros">
+                    <p>Otros</p>
+                    <div></div>
+                </div>
                 <div class="footer-container--info">
                     <a href="/">Contáctenos</a>
                     <a href="/">Política de Privacidad</a>
@@ -167,7 +184,7 @@
             </div>
         </section>
     </footer>
-    <script src="js/jsIndex.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

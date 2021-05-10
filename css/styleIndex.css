@@ -1,22 +1,24 @@
-@import 'styleVariables.css';
-
 /*----------------------- HEADER -----------------------*/
 header{
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
     min-width: 320px;
     height: 80px;
     background: var(--Aezam-lightGreen);
+    z-index: 2;
 }
-.header-img--logo {
+.header-img--logo{
     position: absolute;
     top: 15px;
     left: 20px;
     width: 150px;
     height: 50px;
 }
-.header-img--list {
+.header-img--list{
     position: absolute;
     top: 20px;
     left: calc(100% - 60px);
@@ -24,7 +26,7 @@ header{
     height: 40px;
     cursor: pointer;
 }
-.header-nav--container {
+.header-nav--container{
     display: none;
     position: absolute;
     /* left: -375px; */
@@ -36,17 +38,17 @@ header{
     background: var(--Aezam-green);
     z-index: 2;
 }
-.header-nav--next-arrow {
+.header-nav--next-arrow{
     position: absolute;
     top: 23px;
     left: 15px;
     cursor: pointer;
 }
-.header-nav-container--menu {
+.header-nav-container--menu{
     margin-top: 79px;
     list-style: none;
 }
-.header-nav-container-menu--list {
+.header-nav-container-menu--list{
     display: block;
     margin-bottom: 26px;
     margin-left: 15px;
@@ -56,15 +58,16 @@ header{
     text-decoration: none;
     color: #ffff;
 }
-.header-nav-container-menu--list:hover {
+.header-nav-container-menu--list:hover{
     width: 180px;
     background: #ffff;
     color: var(--Aezam-green);
 }
-.header-nav-container--submenu {
+.header-nav-container--submenu{
     display: none;
+    list-style: none;
 }
-.header-nav-container-submenu--list {
+.header-nav-container-submenu--list{
     display: block;
     margin-bottom: 26px;
     margin-left: 50px;
@@ -74,25 +77,25 @@ header{
     text-decoration: none;
     color: #ffff;
 }
-.header-nav--down-arrow {
+.header-nav--down-arrow{
     position: absolute;
     top: 74px;
     left: 210px;
     cursor: pointer;
 }
-.header-nav--up-arrow {
+.header-nav--up-arrow{
     position: absolute;
     top: 74px;
     left: 210px;
     cursor: pointer;
 }
-.header--line {
+.header--line{
     position: absolute;
     top: 500px;
     width: 100px;
     border-top: 1px solid white;
 }
-.header--city {
+.header--city{
     position: absolute;
     top: 505px;
     left: 20px;
@@ -101,7 +104,7 @@ header{
     line-height: 22px;
     color: #ffff;
 }
-.header--addres {
+.header--addres{
     position: absolute;
     top: 538px;
     left: 20px;
@@ -113,8 +116,8 @@ header{
     color: #ffff;
 }
 /*-----------------------SCROLL IMAGES -----------------------*/
-.main-img--container {
-    margin-top: 10px;
+.main-img--container{
+    margin-top: 80px;
     width: 100%;
     height: 260px; 
     min-width: 320px;
@@ -124,7 +127,7 @@ header{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
-.main-img--container img{
+.main-img-container--img{
     margin: 30px 4px;
     width: 100%;
     height: 200px;
@@ -137,6 +140,38 @@ header{
     scroll-snap-align: center;
     border-radius: 10px;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+}
+.pruebaprueba{
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/imgs/Analizador-150x200.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pruebaprueba:hover{
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/imgs/Equipo.JPG');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.prueba2{
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/icons/Facebook.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.prueba2:hover{
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/icons/CircleArrow.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 /*-----------------------FIRST CONTAINER AND TITTLES -----------------------*/
 .main-first--container{
@@ -161,7 +196,6 @@ header{
 .main-container--line{
     position: absolute;
     top: -35px;
-    position: absolute;
     left: 20px;
     width: 90%;
     border-top: 1px solid #878787;
