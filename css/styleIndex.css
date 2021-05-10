@@ -1,13 +1,15 @@
-@import 'styleVariables.css';
-
 /*----------------------- HEADER -----------------------*/
 header{
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    position: fixed;
+    top: 0;
     width: 100%;
     min-width: 320px;
     height: 80px;
     background: var(--Aezam-lightGreen);
+    z-index: 2;
 }
 .header-img--logo{
     position: absolute;
@@ -115,7 +117,7 @@ header{
 }
 /*-----------------------SCROLL IMAGES -----------------------*/
 .main-img--container{
-    margin-top: 10px;
+    margin-top: 80px;
     width: 100%;
     height: 260px; 
     min-width: 320px;
@@ -125,7 +127,7 @@ header{
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
 }
-.main-img--container img{
+.main-img-container--img{
     margin: 30px 4px;
     width: 100%;
     height: 200px;
@@ -194,7 +196,6 @@ header{
 .main-container--line{
     position: absolute;
     top: -35px;
-    position: absolute;
     left: 20px;
     width: 90%;
     border-top: 1px solid #878787;
