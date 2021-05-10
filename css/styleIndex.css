@@ -145,7 +145,7 @@ header{
 .main-first--container{
     position: relative;
     margin-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     width: 100%;
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
@@ -154,7 +154,7 @@ header{
     position: relative;
     display: flex;
     margin-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     width: 100%;
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
@@ -187,8 +187,8 @@ header{
 }
 .arrow{
     position: absolute;
-    top: calc(100% - 40px);
-    left: calc(100% - 40px);
+    top: calc(100% - 35px);
+    left: calc(50% + 130px);
     width: 32px;
     height: 32px;
     background-image: url('../assets/icons/CircleArrow.svg');
@@ -233,7 +233,7 @@ header{
     line-height: 2rem;
     color: #808080;
 }
-.main-service-container--card .icon{
+.main-service-container--card .icon1{
     position: absolute;
     width: 40px;
     height: 40px;
@@ -253,12 +253,22 @@ header{
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
-.main-works-container--card .icon{
+.main-works-container--card .icon2{
     position: absolute;
-    top: calc(50% - 20px);
+    top: calc(50% - 35px);
     left: 0px;
     width: 40px;
-    height: 40px;
+    height: 80px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.main-works-container--card .icon2_2{
+    position: absolute;
+    top: calc(50% - 23px);
+    left: 0px;
+    width: 40px;
+    height: 80px;
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -271,7 +281,7 @@ header{
 /*----------------------- ABOUT AND CHOOSE -----------------------*/
 .main-secondary--img{
     width: 40%;
-    height: 200px;
+    height: 180px;
     min-width: 100px;
     max-width: 200px;
     margin: 0px 10px;
@@ -288,9 +298,10 @@ header{
     align-items: center;
 }
 .main-secondary--text p{
-    margin: 10px;
+    margin: 0px 30px 0px 10px;
     line-height: 2rem;
     font-size: 1.4rem;
+    text-align: center;
 }
 /*----------------------- FOOTER -----------------------*/
 .footer--container{
@@ -303,10 +314,9 @@ header{
     width: 100%;
     min-width: 375px;
     height: 40px;
-    margin: 0 auto;
+    margin-top: 10px;
     text-align: center;
     align-self: center;
-    padding: 2px;
     background-color: var(--Aezam-green);
     background-image: url('../assets/icons/Logo_White.svg');
     background-position: center;
@@ -323,7 +333,7 @@ header{
     background-repeat: no-repeat;
 }
 .footer-container--otros{
-    margin: 30px 0px 0px 10px;
+    margin: 20px 0px 0px 10px;
     font-size: 1.6rem;
     line-height: 1.7rem;
     color: rgba(0, 0, 0, 0.6);
@@ -351,13 +361,12 @@ header{
     align-items: center;
     background-color: var(--Aezam-green);
     padding-left: 6px;
-    padding-top: 8px;
     font-size: 1.2rem;
     color: white; 
 }
 .facebook{
     position: absolute;
-    top: 8px;
+    top: 5px;
     left: calc(100% - 140px);
     width: 30px;
     height: 30px;
@@ -367,7 +376,7 @@ header{
 }
 .twitter{
     position: absolute;
-    top: 8px;
+    top: 5px;
     left: calc(100% - 110px);
     width: 30px;
     height: 30px;
@@ -377,7 +386,7 @@ header{
 }
 .instagram{
     position: absolute;
-    top: 8px;
+    top: 5px;
     left: calc(100% - 80px);
     width: 30px;
     height: 30px;
@@ -387,7 +396,7 @@ header{
 }
 .linkedin{
     position: absolute;
-    top: 8px;
+    top: 5px;
     left: calc(100% - 50px);
     width: 30px;
     height: 30px;
