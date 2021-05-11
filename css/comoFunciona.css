@@ -1,0 +1,26 @@
+/*----------------------- IMAGE -----------------------*/
+.main-first--container{
+    margin-top: 70px;
+    margin-left: 15px;
+}
+.main-container--img{
+    width: 345px;
+    height: 200px;
+    left: calc(100% - 360px);
+    top: calc(100% - 230px);
+    border-radius: 5px;
+}
+/*----------------------- TEXT -----------------------*/
+.main-text{
+    position: absolute;
+    width: 319px;
+    height: 364px;
+    left: 28px;
+    top: 316px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: justify;
+    color: black;
+}
