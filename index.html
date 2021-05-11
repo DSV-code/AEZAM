@@ -3,14 +3,15 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AEZAM LTDA</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;500;700&display=swap"
         rel="stylesheet">
     <link rel="shortcut icon" href="./assets/icons/Icono.svg">
-    <link rel="stylesheet" href="./css/styleVariables.css">
-    <link rel="stylesheet" href="./css/styleIndex.css" />
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 769px)">
 </head>
 
@@ -18,12 +19,12 @@
     <!-- --------------------- HEADER --------------------- -->
     <header>
         <img class="header-img--logo" src="./assets/icons/Logo.svg" alt="Company logo">
-        <img class="header-img--list"
+        <button class="header-img--list"
             onClick="show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow')"
-            src="./assets/icons/List.svg" alt="Menu list">
+            style="background-image: url('./assets/icons/List.svg');"></button>
         <nav class="header-nav--container" id="id-header-nav--container">
-            <img class="header-nav--next-arrow" onClick="hide_header_nav__container('id-header-nav--container')"
-                src="./assets/icons/NextArrow.svg" alt="Next arrow">
+            <button class="header-nav--next-arrow" onClick="hide_header_nav__container('id-header-nav--container')"
+                style="background-image: url(./assets/icons/NextArrow.svg);"></button>
             <ul class="header-nav-container--menu">
                 <li>
                     <a class="header-nav-container-menu--list" href="#">Servicio y soporte</a>
@@ -39,18 +40,18 @@
                 <li><a class="header-nav-container-menu--list" href="#">Porque elegirnos</a></li>
                 <li><a class="header-nav-container-menu--list" href="#">Contactanos</a></li>
             </ul>
-            <img class="header-nav--down-arrow" id="id-header-nav--down-arrow"
+            <button class="header-nav--down-up-arrow" id="id-header-nav--down-arrow"
                 onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
-                src="./assets/icons/DownArrow.svg" alt="Down arrow">
-            <img class="header-nav--up-arrow" id="id-header-nav--up-arrow"
+                style="background-image: url(./assets/icons/DownArrow.svg);"></button>
+            <button class="header-nav--down-up-arrow" id="id-header-nav--up-arrow"
                 onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
-                src="./assets/icons/UpArrow.svg" alt="Up arrow">
+                style="background-image: url(./assets/icons/UpArrow.svg);"></button>
             <div class="header--line"></div>
             <p class="header--city">Bogotá</p>
             <p class="header--addres"> Calle 2 # XX-XX <br> Distrito capital <br> Colombia</p>
         </nav>
     </header>
-    
+
     <main>
         <!-- --------------------- SCROLL SECTION --------------------- -->
         <section class="main-img--container">
@@ -72,17 +73,19 @@
                     <span class="icon1" style="background-image: url('../assets/icons/Engineering.svg');"></span>
                     <p class="block-card--title">Ingeniería</p>
                     <p class="block-card--body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
+                        volutpat. Ligula rutrum venenatis mi nec nisi.
                     </p>
-                    <span class="arrow"></span>
+                    <a href="ingenieria.html"><button class="arrow"></button></a> 
                 </article>
                 <article class="main-service-container--card">
                     <span class="icon1" style="background-image: url('../assets/icons/Accounting.svg');"></span>
                     <p class="block-card--title">Administrativos</p>
                     <p class="block-card--body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
+                        volutpat. Ligula rutrum venenatis mi nec nisi.
                     </p>
-                    <span class="arrow"></span>
+                    <button class="arrow"></button>
                 </article>
             </section>
         </section>
@@ -110,7 +113,7 @@
                     <p class="block-card--title-works">Entregamos un servicio.</p>
                 </article>
             </section>
-            <span class="arrow"></span>
+            <button class="arrow"></button>
         </section>
         <!-- --------------------- ABOUT --------------------- -->
         <section class="main-secondary--container">
@@ -126,7 +129,7 @@
                     equipo responsable y, sobre todo, explica la misión, visión y valores.
                 </p>
             </div>
-            <span class="arrow"></span>
+            <button class="arrow"></button>
         </section>
         <!-- --------------------- CHOOSE --------------------- -->
         <section class="main-secondary--container">
@@ -142,7 +145,7 @@
                     Ligula rutrum venenatis mi nec nisi.
                 </p>
             </div>
-            <span class="arrow"></span>
+            <button class="arrow"></button>
         </section>
     </main>
     <!-- --------------------- FOOTER --------------------- -->
@@ -152,7 +155,8 @@
             <div class="footer-container--logo"></div>
             <div>
                 <div class="footer-container--otros">
-                    <p>Otros</p><div class="footer-container--line"></div>
+                    <p>Otros</p>
+                    <div class="footer-container--line"></div>
                 </div>
                 <div class="footer-container--info">
                     <a href="/">Contáctenos</a>
@@ -162,7 +166,9 @@
             </div>
         </section>
         <section class="footer-container--additional-info">
-            <div><p>Copyright ©&nbsp;2021. All rights reserved.</p></div>
+            <div>
+                <p>Copyright ©&nbsp;2021. All rights reserved.</p>
+            </div>
             <div class="nav-footer-social-networks">
                 <span href="/" class="facebook" style="background-image: url('../assets/icons/Facebook.svg');"></span>
                 <span href="/" class="twitter" style="background-image: url('../assets/icons/Twitter.svg');"></span>

@@ -24,6 +24,8 @@ header{
     left: calc(100% - 60px);
     width: 40px;
     height: 40px;
+    background: none;
+    border: none;
     cursor: pointer;
 }
 .header-nav--container{
@@ -42,6 +44,10 @@ header{
     position: absolute;
     top: 23px;
     left: 15px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
     cursor: pointer;
 }
 .header-nav-container--menu{
@@ -77,16 +83,14 @@ header{
     text-decoration: none;
     color: #ffff;
 }
-.header-nav--down-arrow{
+.header-nav--down-up-arrow{
     position: absolute;
     top: 74px;
     left: 210px;
-    cursor: pointer;
-}
-.header-nav--up-arrow{
-    position: absolute;
-    top: 74px;
-    left: 210px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
     cursor: pointer;
 }
 .header--line{
@@ -191,6 +195,8 @@ header{
     left: calc(100% - 40px);
     width: 32px;
     height: 32px;
+    background: none;
+    border: none;
     background-image: url('../assets/icons/CircleArrow.svg');
     background-size: cover;
     background-position:center;
