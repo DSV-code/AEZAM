@@ -25,3 +25,17 @@ window.onload = function () {
     muestra_oculta('id-contenido07','id-arrow-07');
     muestra_oculta('id-contenido08','id-arrow-08');
 }
+function oculta(id){
+    if (document.getElementById){ //se obtiene el id
+        var aux = 0;
+        for (var i = 0; i < id.length; i = i+2) {
+            var el1 = document.getElementById(id[i]);
+            var el2 = document.getElementById(id[i+1]);
+            el1.style.display = 'none';
+            el2.style.backgroundImage = "url('../assets/icons/DownArrowBlue.svg')"
+            image[aux] = 'up';
+            aux++;
+         }
+    }
+}
+

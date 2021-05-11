@@ -15,8 +15,8 @@ header{
     position: absolute;
     width: 224px;
     height: 23px;
-    top: 9px;
-    left: 8px;
+    top: calc(0% + 9px);
+    left: calc(0% + 8px);
     font-style: normal;
     font-weight: 900;
     font-size: 1.8rem;
@@ -27,9 +27,16 @@ header{
     position: absolute;
     width: 32px;
     height: 32px;
-    top: 4px;
-    left: 330px;
+    top: calc(100% - 36px);
+    left: calc(100% - 46px);
     transform: rotate(-180deg);
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/CircleArrow.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 /*-----------------------SCROLL IMAGES -----------------------*/
 .main-img--container{
@@ -38,6 +45,9 @@ header{
 /*-----------------------FIRST CONTAINER AND TITTLES -----------------------*/
 .main-container--title{
     background-color: var(--Aezam-Service1);
+}
+.main-first--container{
+    padding-bottom: 50px;
 }
 .main-service-container--card{
     padding: 27px;
@@ -49,15 +59,12 @@ header{
 .arrow{
     top: calc(0% + 220px);
     left: calc(100% - 40px);
-    background: none;
-    border: none;
     background-image: url('../assets/icons/DownArrowBlue.svg');
 }
 .block-card--title{
     margin: 25px 0px 25px 0px;
     font-size: 1.4rem;
     font-weight: bold;
-    /* font-weight: 500; */
     line-height: 1.8rem;
 }
 .block-card--body{
@@ -83,4 +90,18 @@ header{
     font-weight: bold;  
     line-height: 1.7rem; 
     color: white;
+}
+.main-containter--arrow-init{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: calc(100% - 46px);
+    left: calc(50% - 16px);
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/UpArrowBlue.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }

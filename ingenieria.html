@@ -19,13 +19,13 @@
     <!-- --------------------- HEADER --------------------- -->
     <header>
         <a class="header--title">Servicio de ingeniería</a>
-        <a href="index.html"><img class="header-img--back-arrow" src="./assets/icons/CircleArrow.svg" alt="Back arrow">
+        <a href="index.html"><button class="header-img--back-arrow"> </button>
         </a>
     </header>
 
     <main>
         <!-- --------------------- SCROLL SECTION --------------------- -->
-        <section class="main-img--container">
+        <section class="main-img--container" id="scroll">
             <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
             <img class="main-img-container--img" src="./assets/imgs/Tablero-280x210.jpg" alt="">
             <img class="main-img-container--img" src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
@@ -50,7 +50,7 @@
                         <button class="main-container--button">
                             Solicitar información</button>
                     </div>
-                    <button class="arrow" id="id-arrow-01"  alt="Down arrow blue" style='cursor: pointer;' onClick="muestra_oculta('id-contenido01','id-arrow-01')"></button>
+                    <button class="arrow" id="id-arrow-01" onClick="muestra_oculta('id-contenido01','id-arrow-01')"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
@@ -62,7 +62,7 @@
                         <button class="main-container--button">
                             Solicitar información</button>
                     </div>
-                    <button class="arrow" id="id-arrow-02"  alt="Down arrow blue" style='cursor: pointer;' onClick="muestra_oculta('id-contenido02','id-arrow-02')"></button>
+                    <button class="arrow" id="id-arrow-02" onClick="muestra_oculta('id-contenido02','id-arrow-02')"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
@@ -74,7 +74,7 @@
                         <button class="main-container--button">
                             Solicitar información</button>
                     </div>
-                    <button class="arrow" id="id-arrow-03"  alt="Down arrow blue" style='cursor: pointer;' onClick="muestra_oculta('id-contenido03','id-arrow-03')"></button>
+                    <button class="arrow" id="id-arrow-03" onClick="muestra_oculta('id-contenido03','id-arrow-03')"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
@@ -86,7 +86,7 @@
                         <button class="main-container--button">
                             Solicitar información</button>
                     </div>
-                    <button class="arrow" id="id-arrow-04"  alt="Down arrow blue" style='cursor: pointer;' onClick="muestra_oculta('id-contenido04','id-arrow-04')"></button>
+                    <button class="arrow" id="id-arrow-04" onClick="muestra_oculta('id-contenido04','id-arrow-04')"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
@@ -98,7 +98,7 @@
                         <button class="main-container--button">
                             Solicitar información</button>
                     </div>
-                    <button class="arrow" id="id-arrow-05"  alt="Down arrow blue" style='cursor: pointer;' onClick="muestra_oculta('id-contenido05','id-arrow-05')"></button>
+                    <button class="arrow" id="id-arrow-05" onClick="muestra_oculta('id-contenido05','id-arrow-05')"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
@@ -110,7 +110,7 @@
                         <button class="main-container--button">
                             Solicitar información</button>
                     </div>
-                    <button class="arrow" id="id-arrow-06"  alt="Down arrow blue" style='cursor: pointer;' onClick="muestra_oculta('id-contenido06','id-arrow-06')"></button>
+                    <button class="arrow" id="id-arrow-06" onClick="muestra_oculta('id-contenido06','id-arrow-06')"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
@@ -122,7 +122,7 @@
                         <button class="main-container--button">
                             Solicitar información</button>
                     </div>
-                    <button class="arrow" id="id-arrow-07"  alt="Down arrow blue" style='cursor: pointer;' onClick="muestra_oculta('id-contenido07','id-arrow-07')"></button>
+                    <button class="arrow" id="id-arrow-07" onClick="muestra_oculta('id-contenido07','id-arrow-07')"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
@@ -134,9 +134,10 @@
                         <button class="main-container--button">
                             Solicitar información</button>
                     </div>
-                    <button class="arrow" id="id-arrow-08"  alt="Down arrow blue" style='cursor: pointer;' onClick="muestra_oculta('id-contenido08','id-arrow-08')"></button>
+                    <button class="arrow" id="id-arrow-08" onClick="muestra_oculta('id-contenido08','id-arrow-08')"></button>
                 </article>
             </section>
+            <a href="#scroll"><button class="main-containter--arrow-init" onClick="oculta(['id-contenido01','id-arrow-01','id-contenido02','id-arrow-02','id-contenido03','id-arrow-03','id-contenido04','id-arrow-04','id-contenido05','id-arrow-05','id-contenido06','id-arrow-06','id-contenido07','id-arrow-07','id-contenido08','id-arrow-08'])"></button></a>
         </section>
     </main>
     <script src="js/ingenieria.js"></script>
