@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AEZAM LTDA</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/icons/Icono.svg">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/ingenieria.css">
+    <link rel="stylesheet" href="./css/contabilidad.css">
+</head>
+
+<body>
+    <!-- --------------------- HEADER --------------------- -->
+    <header>
+        <a class="header--title">Servicio de contabilidad</a>
+        <a href="index.html"><button class="header-img--back-arrow"> </button>
+        </a>
+    </header>
+
+    <main>
+        <!-- --------------------- SCROLL SECTION --------------------- -->
+        <section class="main-img--container" id="scroll">
+            <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Tablero-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Tablero-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
+        </section>
+        <!-- --------------------- SERVICE --------------------- -->
+        <section class="main-first--container">
+            <div class="main-container--line"></div>
+            <div class="main-container--title">
+                <p>Servicios</p>
+            </div>
+            <section>
+                <article class="main-service-container--card">
+                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
+                    <p class="block-card--title">Asesoría en creación y liquidación de empresas</p>
+                    <div style="display: none;" id="id-contenido01">
+                        <p class="block-card--body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
+                        </p>
+                        <button class="main-container--button">
+                            Solicitar información</button>
+                    </div>
+                    <button class="arrow" id="id-arrow-01" onClick="muestra_oculta('id-contenido01','id-arrow-01')"></button>
+                </article>
+                <article class="main-service-container--card">
+                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
+                    <p class="block-card--title">Asesoria en liquidación y elaboración de impuestos</p>
+                    <div style="display: none;" id="id-contenido02">
+                        <p class="block-card--body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
+                        </p>
+                        <button class="main-container--button">
+                            Solicitar información</button>
+                    </div>
+                    <button class="arrow" id="id-arrow-02" onClick="muestra_oculta('id-contenido02','id-arrow-02')"></button>
+                </article>
+                <article class="main-service-container--card">
+                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
+                    <p class="block-card--title">Servicio de digitacion de informes contables</p>
+                    <div style="display: none;" id="id-contenido03">
+                        <p class="block-card--body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
+                        </p>
+                        <button class="main-container--button">
+                            Solicitar información</button>
+                    </div>
+                    <button class="arrow" id="id-arrow-03" onClick="muestra_oculta('id-contenido03','id-arrow-03')"></button>
+                </article>
+            </section>
+            <a href="#scroll"><button class="main-containter--arrow-init" onClick="oculta(['id-contenido01','id-arrow-01','id-contenido02','id-arrow-02','id-contenido03','id-arrow-03'])"></button></a>
+        </section>
+    </main>
+    <script src="js/ingenieria.js"></script>
+</body>
+
+</html>

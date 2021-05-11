@@ -1,4 +1,4 @@
-var image = ['down','down','down','down','down','down','down','down'];
+var image = ['up','up','up','up','up','up','up','up'];
 function muestra_oculta(id1,id2){
     if (document.getElementById){ //se obtiene el id
         var el1 = document.getElementById(id1);
@@ -16,15 +16,8 @@ function muestra_oculta(id1,id2){
     }
 }
 window.onload = function () {
-    muestra_oculta('id-contenido01','id-arrow-01');
-    muestra_oculta('id-contenido02','id-arrow-02');
-    muestra_oculta('id-contenido03','id-arrow-03');
-    muestra_oculta('id-contenido04','id-arrow-04');
-    muestra_oculta('id-contenido05','id-arrow-05');
-    muestra_oculta('id-contenido06','id-arrow-06');
-    muestra_oculta('id-contenido07','id-arrow-07');
-    muestra_oculta('id-contenido08','id-arrow-08');
 }
+
 function oculta(id){
     if (document.getElementById){ //se obtiene el id
         var aux = 0;

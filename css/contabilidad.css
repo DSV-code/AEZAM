@@ -1,0 +1,15 @@
+/*-----------------------FIRST CONTAINER AND TITTLES -----------------------*/
+.main-container--title{
+    background-color: var(--Aezam-Service2);
+}
+.arrow{
+    top: calc(0% + 220px);
+    left: calc(100% - 40px);
+    background-image: url('../assets/icons/DownArrowLightBlue.svg');
+}
+.main-container--button{
+    background-color: var(--Aezam-Service2);
+}
+.main-containter--arrow-init{
+    background-image: url('../assets/icons/UpArrowLightBlue.svg');
+}
