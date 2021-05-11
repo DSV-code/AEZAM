@@ -188,7 +188,7 @@ header{
 .arrow{
     position: absolute;
     top: calc(100% - 35px);
-    left: calc(50% + 130px);
+    left: calc(100% - 40px);
     width: 32px;
     height: 32px;
     background-image: url('../assets/icons/CircleArrow.svg');
@@ -213,30 +213,31 @@ header{
     min-height: 100px;
     margin: 15px auto;
     padding: 10px;
-    align-items: baseline;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     background-color: white;
 }
-.main-service-container--card .block-card--title{
-    margin: 10px 50px;
+.block-card--title{
+    margin: 14px 0px 15px 60px;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.8rem;
 }
-.main-service-container--card .block-card--body{
+.block-card--body{
     width: 80%;
-    margin: 15px auto;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2rem;
     color: #808080;
 }
-.main-service-container--card .icon1{
+.icon1{
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -253,7 +254,7 @@ header{
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
 }
-.main-works-container--card .icon2{
+.icon2{
     position: absolute;
     top: calc(50% - 35px);
     left: 0px;
@@ -263,7 +264,7 @@ header{
     background-position:center;
     background-repeat: no-repeat;
 }
-.main-works-container--card .icon2_2{
+.icon2_2{
     position: absolute;
     top: calc(50% - 23px);
     left: 0px;
@@ -273,10 +274,11 @@ header{
     background-position:center;
     background-repeat: no-repeat;
 }
-.block-card--title{
+.block-card--title-works{
     margin-left: 50px;
     font-size: 1.4rem;
     line-height: 5rem;
+    font-weight: bold;
 }
 /*----------------------- ABOUT AND CHOOSE -----------------------*/
 .main-secondary--img{
@@ -338,7 +340,7 @@ header{
     line-height: 1.7rem;
     color: rgba(0, 0, 0, 0.6);
 }
-.footer-container--otros div{ 
+.footer-container--line{ 
     margin-top: 5px; 
     color: rgba(0, 0, 0, 0.6);
     border-bottom: 1px solid rgba(0, 0, 0, 0.6);
