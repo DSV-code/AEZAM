@@ -38,6 +38,9 @@ header{
     background-repeat: no-repeat;
     cursor: pointer;
 }
+.header-img--back-arrow:hover{
+    background-image: url('../assets/icons/CaretCircleRight.svg');
+}
 /*-----------------------SCROLL IMAGES -----------------------*/
 .main-img--container{
     margin-top: 40px;

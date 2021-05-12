@@ -90,7 +90,7 @@ header{
     text-decoration: none;
     color: #ffff;
 }
-.header-nav--down-up-arrow{
+.header-nav--down-arrow{
     position: absolute;
     top: 74px;
     left: 210px;
@@ -104,8 +104,26 @@ header{
     background-repeat: no-repeat;
     cursor: pointer;
 }
-.header-nav--down-up-arrow:hover{
+.header-nav--down-arrow:hover{
     background-image: url('../assets/icons/FullWhiteDownArrow.svg');
+}
+.header-nav--up-arrow{
+    position: absolute;
+    top: 74px;
+    left: 210px;
+    width: 32px;
+    height: 32px;   
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/UpArrow.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.header-nav--up-arrow:hover{
+    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
+    transform: rotate(180deg);
 }
 .header--line{
     position: absolute;
