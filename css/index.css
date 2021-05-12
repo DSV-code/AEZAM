@@ -31,8 +31,7 @@ header{
 .header-nav--container{
     display: none;
     position: absolute;
-    /* left: -375px; */
-    left: 125px;
+    left: calc(100% - 250px);
     width: 250px;
     height: 667px;
     text-align: left;
