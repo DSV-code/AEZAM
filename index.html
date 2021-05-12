@@ -3,160 +3,168 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AEZAM LTDA</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;500;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./assets/icons/Icono.svg">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 769px)">
 </head>
 
 <body>
+    <!-- --------------------- HEADER --------------------- -->
     <header>
-        <img class="main-img--Logo" src="./assets/icons/Logo.svg" alt="Company logo">
-        <img class="main-img--List" src="./assets/icons/List.svg" alt="List of menu">
-        <nav class="header--nav-container">
-            <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Por qué elegirnos?</a></li>
-                <li><a href="#">Contactenos</a></li>
+        <img class="header-img--logo" src="./assets/icons/Logo.svg" alt="Company logo">
+        <button class="header-img--list"
+            onClick="show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow')"
+            style="background-image: url('./assets/icons/List.svg');"></button>
+        <nav class="header-nav--container" id="id-header-nav--container">
+            <button class="header-nav--next-arrow"
+                onClick="hide_header_nav__container('id-header-nav--container')"></button>
+            <ul class="header-nav-container--menu">
+                <li>
+                    <a class="header-nav-container-menu--list" href="#">Servicio y soporte</a>
+                    <ul class="header-nav-container--submenu" id="id-header-nav-container--submenu">
+                        <li><a class="header-nav-container-submenu--list header-nav-container-menu--list"
+                                href="ingenieria.html">Ingeniería</a></li>
+                        <li><a class="header-nav-container-submenu--list header-nav-container-menu--list"
+                                href="contabilidad.html">Contabilidad</a></li>
+                    </ul>
+                </li>
+                <li><a class="header-nav-container-menu--list" href="comoFunciona.html">Como funciona</a></li>
+                <li><a class="header-nav-container-menu--list" href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a class="header-nav-container-menu--list" href="porqueElegirnos.html">Porque elegirnos</a></li>
+                <li><a class="header-nav-container-menu--list" href="contactanos.html">Contáctanos</a></li>
             </ul>
+            <button class="header-nav--down-arrow" id="id-header-nav--down-arrow"
+                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"></button>
+            <button class="header-nav--up-arrow" id="id-header-nav--up-arrow"
+                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"></button>
+            <div class="header--line"></div>
+            <p class="header--city">Bogotá</p>
+            <p class="header--addres"> Calle 2 # XX-XX <br> Distrito capital <br> Colombia</p>
         </nav>
     </header>
 
     <main>
-        <section class="main-img-container">
-            <section class="main-img-container--scroll">
-                <img src="./assets/imgs/Analizador-280x210.jpg" alt="">
-                <img src="./assets/imgs/Tablero-280x210.jpg" alt="">
-                <img src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
-                <img src="./assets/imgs/Analizador-280x210.jpg" alt="">
-                <img src="./assets/imgs/Tablero-280x210.jpg" alt="">
-                <img src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
-            </section>
+        <!-- --------------------- SCROLL SECTION --------------------- -->
+        <section class="main-img--container">
+            <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Tablero-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/Tablero-280x210.jpg" alt="">
+            <img class="main-img-container--img" src="./assets/imgs/MallaPuestaTierra-280x210.jpg" alt="">
         </section>
         <!-- --------------------- SERVICE --------------------- -->
-        <section class="main-service-container">
-            <a href="#" class="main-service-container--button">Servicio y Soporte</a>
-            <div class="main-service-container--engineering">
-                <div class="main-service-container--img-engineering"><span></span></div>
-                <p class="main-service-container--text-principal">
-                    Ingeniería
-                </p>
-                <p class="main-service-container--text-engineering">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat.
-                </p>
-                <a href="#" class="main-service-container--arrow-engineering">Leer más <span></span> </a>
+        <section class="main-first--container">
+            <div class="main-container--line"></div>
+            <div class="main-container--title">
+                <p>Servicio y Soporte</p>
             </div>
-            <div class="main-service-container--accounting">
-                <div class="main-service-container--img-accounting"><span></span></div>
-                <p class="main-service-container--text-principal">
-                    Administrativos
-                </p>
-                <p class="main-service-container--text-accounting">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat.
-                </p>
-                <a href="#" class="main-service-container--arrow-accounting"><span></span></a>
+            <section>
+                <article class="main-service-container--card">
+                    <span class="icon1" style="background-image: url('../assets/icons/Engineering.svg');"></span>
+                    <p class="block-card--title">Ingeniería</p>
+                    <p class="block-card--body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
+                        volutpat. Ligula rutrum venenatis mi nec nisi.
+                    </p>
+                    <a href="ingenieria.html"><button class="arrow"></button></a>
+                </article>
+                <article class="main-service-container--card">
+                    <span class="icon1" style="background-image: url('../assets/icons/Accounting.svg');"></span>
+                    <p class="block-card--title">Administrativos</p>
+                    <p class="block-card--body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
+                        volutpat. Ligula rutrum venenatis mi nec nisi.
+                    </p>
+                    <a href="contabilidad.html"><button class="arrow"></button></a>
+                </article>
+            </section>
+        </section>
+        <!-- --------------------- WORKS  --------------------- -->
+        <section class="main-first--container">
+            <div class="main-container--line"></div>
+            <div class="main-container--title">
+                <p>Cómo funciona</p>
             </div>
+            <section>
+                <article class="main-works-container--card">
+                    <span class="icon2_2" style="background-image: url('../assets/icons/Steps1.svg');"></span>
+                    <p class="block-card--title-works">Escuchamos tus necesidades</p>
+                </article>
+                <article class="main-works-container--card">
+                    <span class="icon2" style="background-image: url('../assets/icons/Steps2.svg');"></span>
+                    <p class="block-card--title-works">Analizamos tus requisitos.</p>
+                </article>
+                <article class="main-works-container--card">
+                    <span class="icon2" style="background-image: url('../assets/icons/Steps3.svg');"></span>
+                    <p class="block-card--title-works">Proponemos una solución.</p>
+                </article>
+                <article class="main-works-container--card">
+                    <span class="icon2" style="background-image: url('../assets/icons/Steps4.svg');"></span>
+                    <p class="block-card--title-works">Entregamos un servicio.</p>
+                </article>
+            </section>
+            <a href="comoFunciona.html"><button class="arrow"></button></a>
         </section>
         <!-- --------------------- ABOUT --------------------- -->
-        <section class="main-about-container">
-            <a href="" class="main-about-container--button">Nosotros <span></span></a>
-            <div class="main-about-container--img"></div>
-            <div class="main-about-container--text">
+        <section class="main-secondary--container">
+            <div class="main-container--line"></div>
+            <div class="main-container--title">
+                <p>Nosotros</p>
+            </div>
+            <div class="main-secondary--img"
+                style="background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+            <div class="main-secondary--text">
                 <p>
-                    Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del equipo responsable y, sobre todo, explica la misión, visión y valores.
+                    Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del
+                    equipo responsable y, sobre todo, explica la misión, visión y valores.
                 </p>
             </div>
-            <a href="" class="main-about-container--arrow"><span></span></a>
-        </section>
-        <!-- --------------------- WORKS --------------------- -->
-        <section class="main-works-container">
-            <a href="" class="main-works-container--button">Cómo funciona<span></span></a>
-            <section class="main-works-container--img_text">
-                <div class="main-works-container--block1">
-                    <p>Escuchamos tus necesidades.</p>
-                    <span></span>
-                </div>
-                <span class="icons1"></span>
-            </section>
-            <section class="main-works-container--img_text">
-                <div class="main-works-container--block2">
-                    <p>Analizamos tus requisitos.</p>
-                    <span></span>
-                </div>
-                <span class="icons2"></span>
-            </section>
-            <section class="main-works-container--img_text">
-                <div class="main-works-container--block3">
-                    <p>Proponemos una solución.</p>
-                    <span></span>
-                </div>
-                <span class="icons3"></span>
-            </section>
-            <section class="main-works-container--img_text">
-                <div class="main-works-container--block4">
-                    <p>Entregamos un servicio.</p>
-                </div>
-                <span class="icons4"></span>
-            </section>
-            <a href="" class="main-works-container--arrow"><span></span></a>
-        </section>
-        <!-- --------------------- WORKS 2 --------------------- -->
-        <section class="main-works-container2">
-            <a href="" class="main-works-container--button2">Cómo funciona</a>
-            <section class="main-works-container--img_text2">
-                <p>Escuchamos tus necesidades.</p>
-                <span class="icons12"></span>
-            </section>
-            <section class="main-works-container--img_text2">
-                <p>Analizamos tus requisitos.</p>
-                <span class="icons22"></span>
-            </section>
-            <section class="main-works-container--img_text2">
-                <p>Proponemos una solución.</p>
-                <span class="icons32"></span>
-            </section>
-            <section class="main-works-container--img_text2">
-                <p>Entregamos un servicio.</p>
-                <span class="icons42"></span>
-            </section>
-            <a href="" class="main-works-container--arrow2"><span></span></a>
+            <a href="sobreNosotros.html"><button class="arrow"></button></a>
         </section>
         <!-- --------------------- CHOOSE --------------------- -->
-        <section class="main-choose-container">
-            <a href="" class="main-choose-container--button">Por qué elegirnos</a>
-            <div class="main-choose-container--text">
+        <section class="main-secondary--container">
+            <div class="main-container--line"></div>
+            <div class="main-container--title">
+                <p>Por qué Elegirnos</p>
+            </div>
+            <div class="main-secondary--img" style="background-image: url('../assets/imgs/Tablero-2448x3264.jpg');">
+            </div>
+            <div class="main-secondary--text">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat.
                     Ligula rutrum venenatis mi nec nisi.
                 </p>
             </div>
-            <div class="main-choose-container--img"></div>
-            <a href="" class="main-choose-container--arrow">Leer más<span></span></a>
+            <a href="porqueElegirnos.html"><button class="arrow"></button></a>
         </section>
     </main>
     <!-- --------------------- FOOTER --------------------- -->
-    <footer role="contentinfo" class="nav-footer">
-        <section class="nav-footer-info">
-                <div class="nav-footer-info-wrapper">
-                    <div class="footer-line-container"></div>
-                    <div class="nav-footer-primary-info">
-                        <p>Más Información</p>
-                        <div></div>
-                    </div>
-                    <div class="nav-footer-secondary-info">
-                        <a href="/">Contáctenos</a>
-                        <a href="/">Política de Privacidad</a>
-                        <a href="/">Términos y Condiciones</a>
-                    </div>
-                    <img href="/" class="fotter-logo" src="./assets/icons/Logo_2.svg" alt="Company logo">
+    <footer role="contentinfo">
+        <div class="footer-container--title"></div>
+        <section class="footer--container">
+            <div class="footer-container--logo"></div>
+            <div>
+                <div class="footer-container--otros">
+                    <p>Otros</p>
+                    <div class="footer-container--line"></div>
                 </div>
+                <div class="footer-container--info">
+                    <a href="contactanos.html">Contáctenos</a>
+                    <a href="/">Política de Privacidad</a>
+                    <a href="/">Términos y Condiciones</a>
+                </div>
+            </div>
         </section>
-        <section class="nav-footer-additional-info">
-            <div class="nav-footer-tertiary-info">
+        <section class="footer-container--additional-info">
+            <div>
                 <p>Copyright ©&nbsp;2021. All rights reserved.</p>
             </div>
             <div class="nav-footer-social-networks">
@@ -167,6 +175,7 @@
             </div>
         </section>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

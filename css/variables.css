@@ -1,0 +1,31 @@
+/*
+    1. Positioning
+    2. Box Model
+    3. Typography
+    4. Visuals
+    5. Others
+*/
+:root{
+    /*Colors*/
+    --Aezam-green: #116b1d; 
+    --Aezam-backgorund: #F7F5FB;
+    --Aezam-lightGreen: #B7CEBD;
+    --Aezam-Service1: #112A53;
+    --Aezam-Service2: #6CA8AF;
+
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Encode Sans', sans-serif;
+    background-color: var(--Aezam-backgorund)
+}
+body {
+    font-size: 1.6rem;
+}
+
+

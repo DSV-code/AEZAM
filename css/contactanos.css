@@ -1,0 +1,175 @@
+/*----------------------- IMAGE -----------------------*/
+.main-first--container{
+    padding-bottom: 20px;
+}
+.main-form--container{
+    width: 90%;
+    min-width: 320px;  
+    margin: 15px auto; 
+}
+.main-container--info{
+    position: relative;
+}
+.main-container--info input{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 21px;
+    padding: 0px 10px;
+    background: none;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.main-container--info input:focus{
+    border-color: #BF9C46;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: 0 none;
+}
+.main-container--name-section{
+    position: absolute;
+    padding: 0px 10px;
+    top: calc(0% - 25px);
+    left: calc(0% + 10px);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    background-color: var(--Aezam-backgorund);
+}
+.main-container--info textarea{
+    width: 100%;
+    height: 170px;
+    padding: 10px;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 300;
+    border: 2px solid #808080;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    resize: vertical;
+}
+.main-container--info textarea:focus{
+    border-color: var(--Aezam-green);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: 0 none;
+}
+.send-button{
+    width: 100%;
+    height: 31px;
+    margin: 20px auto;
+    padding: 2px;
+    background-color: var(--Aezam-green);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border:  1px solid black;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+.main-container--name-asunto{
+    position: absolute;
+    padding: 0px 10px;
+    top: calc(0% + 46px);
+    left: calc(0% + 10px);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    background-color: var(--Aezam-backgorund);
+    z-index: 1;
+}
+.main-contact--container{
+    position: relative;
+    width: 90%;
+    min-width: 320px;  
+    margin: 15px auto;
+    padding-bottom: 40px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.main-contact-container--info{
+    position: relative;
+    margin: 20px;
+}
+.main-contact-container--info span{
+    position: absolute;
+    left: calc(0% - 30px);
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.social-icons{
+    position: relative;
+    width: 100%;
+    height: 24PX;
+    min-width: 320px;
+    padding-bottom: 30px;
+}
+.social-icons--facebook{
+    position: absolute;
+    top: 5px;
+    left: calc(0% - 0px);
+    width: 10px;
+    height: 22px;
+    background-image: url('../assets/icons/FacebookGreen.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social-icons--twitter{
+    position: absolute;
+    top: 5px;
+    left: calc(0% + 30px);
+    width: 22px;
+    height: 22px;
+    background-image: url('../assets/icons/TwitterGreen.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social-icons--instagram{
+    position: absolute;
+    top: 5px;
+    left: calc(0% + 70px);
+    width: 22px;
+    height: 22px;
+    background-image: url('../assets/icons/InstagramGreen.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.social-icons--linkedin{
+    position: absolute;
+    top: 5px;
+    left: calc(0% + 110px);
+    width: 22px;
+    height: 22px;
+    background-image: url('../assets/icons/LinkedinGreen.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-container--map{
+    width: 100%;
+    height: 100px;
+    background: green;
+    margin: 20px auto;
+}
+.main-containter--arrow-init{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: calc(100% - 40px);
+    left: calc(50% - 16px);
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/UpArrowBlue.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.main-containter--arrow-init{
+    background-image: url('../assets/icons/UpArrowGreen.svg');
+}
