@@ -170,3 +170,6 @@
     background-repeat: no-repeat;
     cursor: pointer;
 }
+.main-containter--arrow-init{
+    background-image: url('../assets/icons/UpArrowGreen.svg');
+}
