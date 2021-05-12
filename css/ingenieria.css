@@ -45,6 +45,7 @@ header{
 /*-----------------------FIRST CONTAINER AND TITTLES -----------------------*/
 .main-container--title{
     background-color: var(--Aezam-Service1);
+    border:  1px solid var(--Aezam-Service1);
 }
 .main-first--container{
     padding-bottom: 50px;
@@ -61,6 +62,9 @@ header{
     top: calc(0% + 220px);
     left: calc(100% - 40px);
     background-image: url('../assets/icons/DownArrowBlue.svg');
+}
+.arrow:hover{
+    background-image: url('../assets/icons/FullBlueDownArrow.svg');
 }
 .block-card--title{
     text-align: left;
@@ -86,12 +90,13 @@ header{
     align-self: center;
     background-color: var(--Aezam-Service1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border:  1px solid black;
+    border:  1px solid var(--Aezam-Service1);
     border-radius: 5px;
     font-size: 1.4rem;
     font-weight: bold;  
     line-height: 1.7rem; 
     color: white;
+    cursor: pointer;
 }
 .main-containter--arrow-init{
     position: absolute;
@@ -106,4 +111,8 @@ header{
     background-position:center;
     background-repeat: no-repeat;
     cursor: pointer;
+}
+.main-containter--arrow-init:hover{
+    background-image: url('../assets/icons/FullBlueDownArrow.svg');
+    transform: rotate(180deg);
 }

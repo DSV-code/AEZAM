@@ -47,7 +47,15 @@ header{
     height: 32px;
     background: none;
     border: none;
+    background-image: url('../assets/icons/NextArrow.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
     cursor: pointer;
+}
+.header-nav--next-arrow:hover{
+    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
+    transform: rotate(-90deg);
 }
 .header-nav-container--menu{
     margin-top: 79px;
@@ -87,10 +95,17 @@ header{
     top: 74px;
     left: 210px;
     width: 32px;
-    height: 32px;
+    height: 32px;   
     background: none;
     border: none;
+    background-image: url('../assets/icons/DownArrow.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
     cursor: pointer;
+}
+.header-nav--down-up-arrow:hover{
+    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
 }
 .header--line{
     position: absolute;
@@ -182,7 +197,7 @@ header{
     padding: 2px;
     background-color: var(--Aezam-green);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border:  1px solid black;
+    border:  1px solid var(--Aezam-green);
     border-radius: 5px;
     font-size: 1.8rem;
     font-weight: bold;
