@@ -1,26 +1,54 @@
 /*----------------------- IMAGE -----------------------*/
 .main-first--container{
-    margin-top: 70px;
-    margin-left: 15px;
+    width: 0%;
+    min-width: 320px;
+    max-width: 450px;
+    margin: 70px 0px 30px 15px;
+    /* margin-top: 70px;
+    margin-bottom: 30px; */
+    padding-bottom: 0px;
 }
 .main-container--img{
     width: 345px;
     height: 200px;
-    left: calc(100% - 360px);
-    top: calc(100% - 230px);
     border-radius: 5px;
 }
 /*----------------------- TEXT -----------------------*/
 .main-text{
-    position: absolute;
-    width: 319px;
-    height: 364px;
-    left: 28px;
-    top: 316px;
+    width: 100%;
+    min-width: 320px;
+    margin: 46px 0px 30px 13px ;
     font-style: normal;
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2rem;
     text-align: justify;
     color: black;
+}
+.main-containter--arrow-init2{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    top: calc(100% - 46px);
+    left: calc(50%);
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/UpArrowGreen.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    /* position: absolute;
+    width: 32px;
+    height: 32px;
+    top: calc(100% - 46px);
+    left: calc(50% - 16px);
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/UpArrowBlue.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer; */
 }
