@@ -380,6 +380,7 @@ header{
     left: calc(100% - 140px);
     width: 30px;
     height: 30px;
+    background-image: url('../assets/icons/Facebook.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -390,6 +391,7 @@ header{
     left: calc(100% - 110px);
     width: 30px;
     height: 30px;
+    background-image: url('../assets/icons/Twitter.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -400,6 +402,7 @@ header{
     left: calc(100% - 80px);
     width: 30px;
     height: 30px;
+    background-image: url('../assets/icons/Instagram.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -410,6 +413,7 @@ header{
     left: calc(100% - 50px);
     width: 30px;
     height: 30px;
+    background-image: url('../assets/icons/Linkedin.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

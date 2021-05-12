@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AEZAM LTDA</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;300;500;700&display=swap"
+        rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/icons/Icono.svg">
+        <link rel="stylesheet" href="./css/variables.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/ingenieria.css">
+        <link rel="stylesheet" href="./css/comoFunciona.css">
+        <link rel="stylesheet" href="./css/contactanos.css">
+    </head>
+    <body>
+        <!-- --------------------- HEADER --------------------- -->
+        <header>
+            <a class="header--title">Contáctanos</a>
+            <a href="index.html"><button class="header-img--back-arrow"> </button>
+            </a>
+        </header>
+        <!-- --------------------- IMAGE --------------------- -->
+        <section class="main-first--container">
+            <img class="main-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="Image of a team working">
+        </section>
+        <!-- --------------------- FORMULARIO --------------------- -->
+        <section class = "main-form--container" >
+            <form action = "">
+                <label for = "nombre" class="main-container--info">
+                    <span class="main-container--name-section">Nombre</span>
+                    <input type="text" id = "nombre" name = "nombre" placeholder = "Digite nombre o razón social" autocomplete = "name" required/>
+                </label>
+                <label for = "correo" class="main-container--info">
+                    <span class="main-container--name-section">Email</span>
+                    <input type="email" id = "correo" name = "correo" placeholder = "Digite correo electrónico" autocomplete = "email" required/>
+                </label>
+                <label for = "telefono" class="main-container--info">
+                    <span class="main-container--name-section">Telefono</span>
+                    <input type="text" id = "pais" name = "telefono" placeholder = "Digite número telefónico" autocomplete = "tel" required/>
+                </label>
+                <label for="servicios" class="main-container--info">
+                    <span class="main-container--name-section">Servicios</span>
+                    <input list="servicios" placeholder = "Seleccione el servicio">
+                    <datalist id="servicios">
+                        <option value="Ingeniería"></option>
+                        <option value="Contaduría"></option>
+                        <option value="Otros"></option>
+                    </datalist>
+                    <span class="main-container--name-asunto">Asunto</span>
+                </label>
+                <label for = "asunto" class="main-container--info">
+                    <textarea name="" id="asunto" cols="30" rows="10" placeholder = "Digite su solicitud" required></textarea>
+                </label>
+                <input class="send-button" type = "submit" value="Enviar"/>
+            </form>
+        </section>
+        <section class="main-contact--container">
+            <div class="main-contact-container--info">
+                <span style="background-image: url('../assets/icons/Map.svg');"></span>
+                <p>Infomation technologies building,
+                    Victoria Island, Lagos, Nigeria.</p>
+            </div>
+            <div class="main-contact-container--info">
+                <span style="background-image: url('../assets/icons/Phone.svg');"></span>
+                <p>+57 300 XXX XXXX</p>
+            </div>
+            <div class="main-contact-container--info">
+                <span style="background-image: url('../assets/icons/Email.svg');"></span>
+                <p>XXXXXXX@gmail.com</p>
+            </div>
+            <div class="social-icons">
+                <span href="/" class="social-icons--facebook"></span>
+                <span href="/" class="social-icons--twitter"></span>
+                <span href="/" class="social-icons--instagram"></span>
+                <span href="/" class="social-icons--linkedin"></span>
+            </div>
+            <div class="main-container--map">
+            </div>
+            <a href="#scroll"><button class="main-containter--arrow-init"></button></a>
+        </section>
+    </body>
+</html>
