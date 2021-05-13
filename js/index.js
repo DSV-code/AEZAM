@@ -37,3 +37,13 @@ function show_hide_header_nav_container__submenu(id1, id2, id3) {
 window.onload = function () {
     show_hide_header_nav_container__submenu('id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow');
 }
+
+function hide_header_nav(id) {
+    if (document.getElementById) {
+        var el = document.getElementById(id);
+        el.style.display = (el.style.display == 'block') ? 'none' : 'none';
+    }
+}
+window.onload = function () {
+    hide_header_nav('id-header-nav--container');
+}
