@@ -20,8 +20,7 @@
     <!-- --------------------- HEADER --------------------- -->
     <header>
         <a class="header--title">Servicio de contabilidad</a>
-        <a href="index.html"><button class="header-img--back-arrow"> </button>
-        </a>
+        <button class="header-img--back-arrow" id="goBack"></button>
     </header>
 
     <main>
@@ -78,10 +77,12 @@
                     <button class="arrow" id="id-arrow-c03" onClick="muestra_oculta('id-contenido-c03','id-arrow-c03')"></button>
                 </article>
             </section>
-            <a href="#scroll"><button class="main-containter--arrow-init" onClick="oculta(['id-contenido-c01','id-arrow-c01','id-contenido-c02','id-arrow-c02','id-contenido-c03','id-arrow-c03'])"></button></a>
+            <button class="main-containter--arrow-init" onClick="oculta(['id-contenido-c01','id-arrow-c01','id-contenido-c02','id-arrow-c02','id-contenido-c03','id-arrow-c03'])" id="goTop"></button>
         </section>
     </main>
     <script src="js/servicios.js"></script>
+    <script src="js/goBack.js"></script>
+    <script src="js/goTop.js"></script>
 </body>
 
 </html>
