@@ -21,10 +21,10 @@
         <img class="header-img--logo" src="./assets/icons/Logo.svg" alt="Company logo">
         <button class="header-img--list"
             onClick="show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow')"
-            style="background-image: url('./assets/icons/List.svg');"></button>
+            style="background-image: url('./assets/icons/List.svg');" aria-label="Show the menu"></button>
         <nav class="header-nav--container" id="id-header-nav--container">
-            <button class="header-nav--next-arrow"
-                onClick="hide_header_nav__container('id-header-nav--container')"></button>
+            <button class="header-nav--next-arrow" onClick="hide_header_nav__container('id-header-nav--container')"
+                aria-label="Hide the menu"></button>
             <ul class="header-nav-container--menu">
                 <li>
                     <a class="header-nav-container-menu--list" href="#">Servicio y soporte</a>
@@ -41,9 +41,9 @@
                 <li><a class="header-nav-container-menu--list" href="contactanos.html">Contáctanos</a></li>
             </ul>
             <button class="header-nav--down-arrow" id="id-header-nav--down-arrow"
-                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"></button>
+                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')" aria-label="Show the sub-menu"></button>
             <button class="header-nav--up-arrow" id="id-header-nav--up-arrow"
-                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"></button>
+                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')" aria-label="Hide the sub-menu"></button>
             <div class="header--line"></div>
             <p class="header--city">Bogotá</p>
             <p class="header--addres"> Calle 2 # XX-XX <br> Distrito capital <br> Colombia</p>
@@ -74,7 +74,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
                         volutpat. Ligula rutrum venenatis mi nec nisi.
                     </p>
-                    <a href="ingenieria.html"><button class="arrow"></button></a>
+                    <a href="ingenieria.html"><button class="arrow" aria-label="Send to the engineering section"></button></a>
                 </article>
                 <article class="main-service-container--card">
                     <span class="icon1" style="background-image: url('./assets/icons/Accounting.svg');"></span>
@@ -83,7 +83,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
                         volutpat. Ligula rutrum venenatis mi nec nisi.
                     </p>
-                    <a href="contabilidad.html"><button class="arrow"></button></a>
+                    <a href="contabilidad.html"><button class="arrow" aria-label="Send to the accounting section"></button></a>
                 </article>
             </section>
         </section>
@@ -111,7 +111,7 @@
                     <p class="block-card--title-works">Entregamos un servicio.</p>
                 </article>
             </section>
-            <a href="comoFunciona.html"><button class="arrow"></button></a>
+            <a href="comoFunciona.html"><button class="arrow" aria-label="Send to the section of how it works"></button></a>
         </section>
         <!-- --------------------- ABOUT --------------------- -->
         <section class="main-secondary--container">
@@ -127,7 +127,7 @@
                     equipo responsable y, sobre todo, explica la misión, visión y valores.
                 </p>
             </div>
-            <a href="sobreNosotros.html"><button class="arrow"></button></a>
+            <a href="sobreNosotros.html"><button class="arrow" aria-label="Send to the section about us"></button></a>
         </section>
         <!-- --------------------- CHOOSE --------------------- -->
         <section class="main-secondary--container">
@@ -143,7 +143,7 @@
                     Ligula rutrum venenatis mi nec nisi.
                 </p>
             </div>
-            <a href="porqueElegirnos.html"><button class="arrow"></button></a>
+            <a href="porqueElegirnos.html"><button class="arrow" aria-label="Send to the section why choose us"></button></a>
         </section>
     </main>
     <!-- --------------------- FOOTER --------------------- -->

@@ -1,6 +1,6 @@
 var imageIng = ['up','up','up','up','up','up','up','up'];
 var imageCont = ['up','up','up'];
-function muestra_oculta(id1,id2){
+function show_hide(id1,id2){
     if (document.getElementById){ //se obtiene el id
         var el1 = document.getElementById(id1);
         var el2 = document.getElementById(id2);
