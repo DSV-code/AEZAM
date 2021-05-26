@@ -47,15 +47,14 @@ header{
     height: 32px;
     background: none;
     border: none;
-    background-image: url('../assets/icons/NextArrow.svg');
+    background-image: url('../assets/icons/Arrow_White.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .header-nav--next-arrow:hover{
-    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
-    transform: rotate(-90deg);
+    background-image: url('../assets/icons/Arrow_White--Full.svg');
 }
 .header-nav-container--menu{
     margin-top: 79px;
@@ -98,14 +97,15 @@ header{
     height: 32px;   
     background: none;
     border: none;
-    background-image: url('../assets/icons/DownArrow.svg');
+    background-image: url('../assets/icons/Arrow_White.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+    transform: rotate(90deg);
     cursor: pointer;
 }
 .header-nav--down-arrow:hover{
-    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
+    background-image: url('../assets/icons/Arrow_White--Full.svg');
 }
 .header-nav--up-arrow{
     position: absolute;
@@ -115,15 +115,15 @@ header{
     height: 32px;   
     background: none;
     border: none;
-    background-image: url('../assets/icons/UpArrow.svg');
+    background-image: url('../assets/icons/Arrow_White.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+    transform: rotate(-90deg);
     cursor: pointer;
 }
 .header-nav--up-arrow:hover{
-    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
-    transform: rotate(180deg);
+    background-image: url('../assets/icons/Arrow_White--Full.svg');
 }
 .header--line{
     position: absolute;
@@ -229,7 +229,7 @@ header{
     height: 32px;
     background: none;
     border: none;
-    background-image: url('../assets/icons/CircleArrow.svg');
+    background-image: url('../assets/icons/Arrow_Green.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -238,7 +238,7 @@ header{
 .arrow:hover{
     width: 32px;
     height: 32px;
-    background-image: url('../assets/icons/CaretCircleRight.svg');
+    background-image: url('../assets/icons/Arrow_Green--Full.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;

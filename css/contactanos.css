@@ -164,12 +164,13 @@
     left: calc(50% - 16px);
     background: none;
     border: none;
-    background-image: url('../assets/icons/UpArrowBlue.svg');
+    background-image: url('../assets/icons/Arrow_Green.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+    transform: rotate(-90deg);
     cursor: pointer;
 }
-.main-containter--arrow-init{
-    background-image: url('../assets/icons/UpArrowGreen.svg');
+.main-containter--arrow-init:hover{
+    background-image: url('../assets/icons/Arrow_Green--Full.svg');
 }

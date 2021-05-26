@@ -1,24 +1,23 @@
 /*-----------------------FIRST CONTAINER AND TITTLES -----------------------*/
 .main-container--title{
-    background-color: var(--Aezam-Service2);
-    border:  1px solid var(--Aezam-Service2);
+    background-color: var(--Aezam-Service3);
+    border:  1px solid var(--Aezam-Service3);
 }
 .arrow{
     top: calc(0% + 220px);
     left: calc(100% - 40px);
-    background-image: url('../assets/icons/DownArrowLightBlue.svg');
+    background-image: url('../assets/icons/Arrow_Orange.svg');
 }
 .arrow:hover{
-    background-image: url('../assets/icons/FullLightBlueDownArrow.svg');
+    background-image: url('../assets/icons/Arrow_Orange--Full.svg');
 }
 .main-container--button{
     background-color: var(--Aezam-Service2);
     border:  1px solid var(--Aezam-Service2);
 }
 .main-containter--arrow-init{
-    background-image: url('../assets/icons/UpArrowLightBlue.svg');
+    background-image: url('../assets/icons/Arrow_Blue_Light.svg');
 }
 .main-containter--arrow-init:hover{
-    background-image: url('../assets/icons/FullLightBlueDownArrow.svg');
-    transform: rotate(180deg);
+    background-image: url('../assets/icons/Arrow_Blue_Light--Full.svg');
 }
