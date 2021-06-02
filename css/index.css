@@ -131,23 +131,21 @@ header{
     width: 100px;
     border-top: 1px solid white;
 }
-.header--city{
+.header--addres{
     position: absolute;
     top: 505px;
     left: 20px;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 22px;
     color: #ffff;
 }
-.header--addres{
+.header--city{
     position: absolute;
     top: 538px;
     left: 20px;
-    width: 200px;
-    height: 100px;
     font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 30px;
     color: #ffff;
 }
@@ -417,10 +415,21 @@ header{
     font-size: 1.2rem;
     color: white; 
 }
-.facebook{
+.instagram{
     position: absolute;
     top: 5px;
     left: calc(100% - 140px);
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/Instagram.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.facebook{
+    position: absolute;
+    top: 5px;
+    left: calc(100% - 110px);
     width: 30px;
     height: 30px;
     background-image: url('../assets/icons/Facebook.svg');
@@ -431,21 +440,10 @@ header{
 .twitter{
     position: absolute;
     top: 5px;
-    left: calc(100% - 110px);
-    width: 30px;
-    height: 30px;
-    background-image: url('../assets/icons/Twitter.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.instagram{
-    position: absolute;
-    top: 5px;
     left: calc(100% - 80px);
     width: 30px;
     height: 30px;
-    background-image: url('../assets/icons/Instagram.svg');
+    background-image: url('../assets/icons/Twitter.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

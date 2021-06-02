@@ -152,9 +152,7 @@
 }
 .main-container--map{
     width: 100%;
-    height: 100px;
-    background: green;
-    margin: 20px auto;
+    height: 500px;
 }
 .main-containter--arrow-init{
     position: absolute;
