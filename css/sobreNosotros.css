@@ -1,0 +1,50 @@
+.main-first--container{
+    padding-bottom: 30px;
+    /* padding-bottom: 50px; */
+}
+.main-text--aboutUs{
+    padding-bottom: 15px;
+}
+.main-text-aboutUs {
+    width: 100%;
+    text-align: justify;
+    background: conic-gradient(from 161.98deg at 0% 0%, #B4D1B3 -13.85deg, #72A676 4.8deg, #BAD3BC 335.34deg, #B4D1B3 346.15deg, #72A676 364.8deg);
+}
+.main-text-aboutUs--description{
+    width: 100%;
+    padding: 26px 37px ;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.main-container--title{
+    background-color: var(--Aezam-green);
+    border:  1px solid var(--Aezam-green);
+}
+.main-secondary--img{
+    height: 170px;
+    margin: 0px 0px 0px 25px;
+}
+.main-secondary--text p{
+    margin: 0px 30px 0px 15px;
+} 
+.main-containter--arrow-init{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: calc(100% - 46px);
+    left: calc(50% - 16px);
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/Arrow_Green.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}

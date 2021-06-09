@@ -5,6 +5,7 @@ header{
 /*----------------------- IMAGE -----------------------*/
 .main-first--container{
     margin-top: 70px;
+    padding-bottom: 0px;
     text-align: center;
 }
 .main-container--img{
