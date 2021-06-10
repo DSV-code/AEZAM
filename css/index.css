@@ -178,13 +178,12 @@ header{
 /*-----------------------FIRST CONTAINER AND TITTLES -----------------------*/
 .main-first--container{
     position: relative;
-    margin-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 2px;
     width: 100%;
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
 }
-.main-secondary--container{
+/* .main-secondary--container{
     position: relative;
     display: flex;
     margin-top: 50px;
@@ -192,25 +191,22 @@ header{
     width: 100%;
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
-}
+} */
 .main-container--line{
-    position: absolute;
-    top: -35px;
-    left: 20px;
+    margin: 16px auto 34px auto;
     width: 90%;
+    min-width: 300px;
     border-top: 1px solid #878787;
 }
 .main-container--title{
     position: absolute;
+    top: -15px;
     left: calc(50% - 102px);
-    z-index: 1;
-    top: -50px;
     width: 205px;
     height: 31px;
     margin: 0 auto;
     text-align: center;
-    align-self: center;
-    padding: 2px;
+    padding: 3px;
     background-color: var(--Aezam-green);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border:  1px solid var(--Aezam-green);
@@ -221,7 +217,7 @@ header{
 }
 .arrow{
     position: absolute;
-    top: calc(100% - 35px);
+    top: calc(100% - 40px);
     left: calc(100% - 40px);
     width: 32px;
     height: 32px;
@@ -245,12 +241,12 @@ header{
 /*-----------------------SERVICE AND SUPPORT -----------------------*/
 .main-service-container--card{
     position: relative;
-    width: 80%;
-    min-width: 330px;
-    max-width: 450px;
+    width: 90%;
+    min-width: 280px;
+    max-width: 400px;
     min-height: 100px;
-    margin: 15px auto;
-    padding: 10px;
+    margin: 25px auto;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     background-color: white;
@@ -259,18 +255,15 @@ header{
     margin: 14px 0px 15px 60px;
     font-size: 1.8rem;
     font-weight: bold;
-    line-height: 1.8rem;
+    line-height: 2.2rem;
 }
 .block-card--body{
-    width: 80%;
-    margin-left: 30px;
-    margin-right: 40px;
-    margin-bottom: 10px;
+    width: 70%;
+    margin: 0px auto 20px;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2rem;
-    color: #808080;
 }
 .icon1{
     position: absolute;
@@ -281,7 +274,7 @@ header{
     background-repeat: no-repeat;
 }
 /*----------------------- HOW IT WORKS -----------------------*/
-.main-works-container--card{
+/* .main-works-container--card{
     position: relative;
     width: 70%;
     min-width: 260px;
@@ -317,9 +310,9 @@ header{
     font-size: 1.4rem;
     line-height: 5rem;
     font-weight: bold;
-}
+} */
 /*----------------------- ABOUT AND CHOOSE -----------------------*/
-.main-secondary--img{
+/* .main-secondary--img{
     width: 40%;
     height: 180px;
     min-width: 100px;
@@ -353,9 +346,9 @@ header{
 .btn-whatsapp img{
     width: 40px;
     height: 40px;
-}
+} */
 /*----------------------- FOOTER -----------------------*/
-.footer--container{
+/* .footer--container{
     display: flex;
     width: 100%;
     min-width: 320px;
@@ -458,4 +451,4 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
+} */
