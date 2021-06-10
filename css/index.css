@@ -183,15 +183,14 @@ header{
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
 }
-/* .main-secondary--container{
+.main-secondary--container{
     position: relative;
-    display: flex;
     margin-top: 50px;
     padding-bottom: 20px;
     width: 100%;
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
-} */
+}
 .main-container--line{
     margin: 16px auto 34px auto;
     width: 90%;
@@ -215,9 +214,32 @@ header{
     font-weight: bold;
     color: #ffffff;
 }
-.arrow{
+.arrow-card{
     position: absolute;
     top: calc(100% - 40px);
+    left: calc(100% - 40px);
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/Arrow_Green.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.arrow-card:hover{
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/icons/Arrow_Green--Full.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.arrow{
+    position: absolute;
+    top: calc(100% - 20px);
     left: calc(100% - 40px);
     width: 32px;
     height: 32px;
@@ -262,7 +284,6 @@ header{
     margin: 0px auto 20px;
     text-align: center;
     font-size: 1.4rem;
-    font-weight: 500;
     line-height: 2rem;
 }
 .icon1{
@@ -274,13 +295,12 @@ header{
     background-repeat: no-repeat;
 }
 /*----------------------- HOW IT WORKS -----------------------*/
-/* .main-works-container--card{
+.main-works-container--card{
     position: relative;
     width: 70%;
     min-width: 260px;
-    max-width: 450px;
-    min-height: 50px;
-    margin: 15px auto;
+    max-width: 400px;
+    margin: 25px auto;
     align-self: center;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
@@ -309,10 +329,9 @@ header{
     margin-left: 50px;
     font-size: 1.4rem;
     line-height: 5rem;
-    font-weight: bold;
-} */
+}
 /*----------------------- ABOUT AND CHOOSE -----------------------*/
-/* .main-secondary--img{
+.main-secondary--img{
     width: 40%;
     height: 180px;
     min-width: 100px;
@@ -324,7 +343,6 @@ header{
     text-align: center;
 }
 .main-secondary--text{
-    display: flex;
     width: 60%;
     min-width: 20px;
     margin: 0px 0px;
@@ -346,7 +364,7 @@ header{
 .btn-whatsapp img{
     width: 40px;
     height: 40px;
-} */
+}
 /*----------------------- FOOTER -----------------------*/
 /* .footer--container{
     display: flex;
