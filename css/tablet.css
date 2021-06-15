@@ -1,0 +1,44 @@
+/*----------------------- HEADER -----------------------*/
+
+/*----------------------- FIRST CONTAINER AND TITTLES -----------------------*/
+.main-service-container{
+    display: flex;
+}
+/*----------------------- SERVICE AND SUPPORT -----------------------*/
+.main-service-container--card{
+    width: 43%;
+    min-width: 330px;
+}
+/*----------------------- ABOUT AND CHOOSE -----------------------*/
+.main-secondary--img{
+    min-width: 150px;
+    max-width: 180px;
+    margin: 25px auto auto 120px;
+}
+.main-secondary--text{
+    width: 60%;
+    min-width: 20px;
+    margin: auto 100px auto 30px;
+    align-items: center;
+}
+/*----------------------- FOOTER -----------------------*/
+.instagram{
+    left: calc(100% - 200px);
+}
+.facebook{
+    left: calc(100% - 150px);
+}
+.twitter{
+    position: absolute;
+    top: 5px;
+    left: calc(100% - 100px);
+    width: 30px;
+    height: 30px;
+    background-image: url('../assets/icons/Twitter.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.linkedin{
+    left: calc(100% - 50px);
+}
