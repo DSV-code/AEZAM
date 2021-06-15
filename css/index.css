@@ -185,7 +185,7 @@ header{
 }
 .main-secondary--container{
     position: relative;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     width: 100%;
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
@@ -242,7 +242,7 @@ header{
 }
 .arrow{  
     position: absolute;
-    top: calc(100% + 1.5px);
+    top: calc(100% + 5px);
     left: calc(100% - 56px);
     width: 32px;
     height: 32px;
@@ -336,26 +336,25 @@ header{
 /*----------------------- ABOUT AND CHOOSE -----------------------*/
 .main-secondary-container-img-text{
     display: flex;
+    margin: 25px auto auto 20px;
 }
 .main-secondary--img{
-    width: 37%;
+    width: 40%;
     height: 170px;
-    min-width: 100px;
     max-width: 200px;
-    margin: 25px auto auto 25px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
 .main-secondary--text{
+    display: flex;
     width: 60%;
-    min-width: 20px;
-    margin: auto auto auto 15px;
+    height: 170px;
+    margin: auto 20px auto 15px;
     align-items: center;
 }
 .main-secondary--text p{
-    margin: 0px 30px 0px 10px;
     line-height: 2rem;
     font-size: 1.4rem;
     text-align: center;
@@ -380,11 +379,7 @@ header{
 }
 .footer-container--title{
     width: 100%;
-    min-width: 300px;
     height: 40px;
-    margin-top: 10px;
-    text-align: center;
-    align-self: center;
     background-color: var(--Aezam-green);
     background-image: url('../assets/icons/Logo_White.svg');
     background-position: center;
@@ -392,8 +387,8 @@ header{
 }
 .footer-container--logo{
     width: 40%;
-    height: 100px;
-    min-width: 100px;
+    height: 80px;
+    min-width: 60px;
     max-width: 200px;
     align-self: center;
     background-image: url('../assets/icons/Logo_pi.svg');
@@ -401,6 +396,7 @@ header{
     background-repeat: no-repeat;
 }
 .footer-container--otros{
+    width: 90%;
     margin: 20px 0px 0px 10px;
     font-size: 1.6rem;
     line-height: 1.7rem;
@@ -413,7 +409,7 @@ header{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 }
 .footer-container--info a {
-    margin: 20px 0px 20px 30px;
+    margin: 25px 0px 25px 20px;
     font-size: 1.4rem;
     line-height: 2rem;
     display: block; 
@@ -424,7 +420,6 @@ header{
     display: flex;
     position: relative;
     width: 100%;
-    min-width: 288px;
     height: 40px;
     align-items: center;
     background-color: var(--Aezam-green);
@@ -435,7 +430,7 @@ header{
 .instagram{
     position: absolute;
     top: 5px;
-    left: calc(100% - 100px);
+    left: calc(100% - 80px);
     width: 30px;
     height: 30px;
     background-image: url('../assets/icons/Instagram.svg');
@@ -446,32 +441,10 @@ header{
 .facebook{
     position: absolute;
     top: 5px;
-    left: calc(100% - 70px);
+    left: calc(100% - 50px);
     width: 30px;
     height: 30px;
     background-image: url('../assets/icons/Facebook.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-/* .twitter{
-    position: absolute;
-    top: 5px;
-    left: calc(100% - 80px);
-    width: 30px;
-    height: 30px;
-    background-image: url('../assets/icons/Twitter.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-.linkedin{
-    position: absolute;
-    top: 5px;
-    left: calc(100% - 40px);
-    width: 30px;
-    height: 30px;
-    background-image: url('../assets/icons/Linkedin.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
