@@ -268,7 +268,7 @@ header{
     position: relative;
     width: 88%;
     min-width: 280px;
-    max-width: 400px;
+    max-width: 300px;
     min-height: 100px;
     margin: 25px auto;
     padding: 5px;
@@ -374,7 +374,6 @@ header{
 .footer--container{
     display: flex;
     width: 100%;
-    min-width: 300px;
     background-color: var(--Aezam-backgorund);
 }
 .footer-container--title{
@@ -389,11 +388,14 @@ header{
     width: 40%;
     height: 80px;
     min-width: 60px;
-    max-width: 200px;
+    /* max-width: 200px; */
     align-self: center;
     background-image: url('../assets/icons/Logo_pi.svg');
     background-position: center;
     background-repeat: no-repeat;
+}
+.footer-container--text{
+    width: 60%;
 }
 .footer-container--otros{
     width: 90%;

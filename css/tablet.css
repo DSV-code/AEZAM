@@ -3,42 +3,53 @@
 /*----------------------- FIRST CONTAINER AND TITTLES -----------------------*/
 .main-service-container{
     display: flex;
+    justify-content: center;
 }
 /*----------------------- SERVICE AND SUPPORT -----------------------*/
 .main-service-container--card{
-    width: 43%;
+    width: 40%;
+    margin: 25px 18px auto 18px;
     min-width: 330px;
 }
-/*----------------------- ABOUT AND CHOOSE -----------------------*/
-.main-secondary--img{
-    min-width: 150px;
-    max-width: 180px;
-    margin: 25px auto auto 120px;
+/*----------------------- HOW IT WORKS -----------------------*/
+.main-works-container--card {
+    display: flex;
+    width: 300px;
 }
-.main-secondary--text{
-    width: 60%;
-    min-width: 20px;
-    margin: auto 100px auto 30px;
-    align-items: center;
+.main-works-container--card:nth-child(1) {
+    margin-left: calc(50% - 300px);
+} 
+.main-works-container--card:nth-child(2) {
+    margin-left: calc(50% - 200px);
+}
+.main-works-container--card:nth-child(3) {
+    margin-left: calc(50% - 100px);
+}
+.main-works-container--card:nth-child(4) {
+    margin-left: calc(50% - 0px);
+}
+
+/*----------------------- ABOUT AND CHOOSE -----------------------*/
+.main-secondary-container-img-text{
+    justify-content: center;
 }
 /*----------------------- FOOTER -----------------------*/
+.footer--container{
+    height: 175px;
+}
+.footer-container--text{
+    width: 60%;
+    margin: 10px auto 20px auto;
+    display: flex;  
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-container--info{
+    display: flex;
+}
 .instagram{
     left: calc(100% - 200px);
 }
 .facebook{
     left: calc(100% - 150px);
-}
-.twitter{
-    position: absolute;
-    top: 5px;
-    left: calc(100% - 100px);
-    width: 30px;
-    height: 30px;
-    background-image: url('../assets/icons/Twitter.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.linkedin{
-    left: calc(100% - 50px);
 }
