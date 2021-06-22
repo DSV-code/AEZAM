@@ -28,6 +28,37 @@
 .main-works-container--card:nth-child(4) {
     margin-left: calc(50% - 0px);
 }
+.icon2{
+    display: none;    
+}
+.icon3{
+    display: block;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0px;
+    width: 55px;
+    height: 50px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.icon2_mod{
+    display: none;    
+}
+.icon3_mod{
+    display: block;
+    position: absolute;
+    top: calc(50% - 23px);
+    left: 0px;
+    width: 55px;
+    height: 50px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.block-card--title-works{
+    margin-left: 60px;
+}
 /*----------------------- ABOUT AND CHOOSE -----------------------*/
 .main-secondary-container-img-text{
     justify-content: center;
