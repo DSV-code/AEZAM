@@ -28,10 +28,6 @@
 .main-works-container--card:nth-child(4) {
     margin-left: calc(50% - 0px);
 }
-.icon2_2{
-    background-image: url('../assets/icons/nUno.svg');
-}
-
 /*----------------------- ABOUT AND CHOOSE -----------------------*/
 .main-secondary-container-img-text{
     justify-content: center;
