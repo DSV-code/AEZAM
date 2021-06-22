@@ -318,6 +318,9 @@ header{
     background-position:center;
     background-repeat: no-repeat;
 }
+.icon3{
+    display: none;
+}
 .icon2_mod{
     position: absolute;
     top: calc(50% - 23px);
@@ -327,6 +330,9 @@ header{
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+}
+.icon3_mod{
+    display: none;
 }
 .block-card--title-works{
     margin-left: 50px;
