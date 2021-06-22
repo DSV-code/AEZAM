@@ -318,7 +318,7 @@ header{
     background-position:center;
     background-repeat: no-repeat;
 }
-.icon2_2{
+.icon2_mod{
     position: absolute;
     top: calc(50% - 23px);
     left: 0px;
@@ -346,6 +346,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    border-radius: 5px;
 }
 .main-secondary--text{
     display: flex;
