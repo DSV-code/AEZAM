@@ -191,13 +191,15 @@ header{
     background-color: var(--Aezam-backgorund);
 }
 .main-container--header{
+    position: relative;
     width: 100%;
     height: 31px;
+    align-items: center;
 }
 .main-container--line{
     position: absolute;
     top: 16px;
-    left: calc(0% + 10px);
+    left: calc(50% - 47%);
     width: 95%;
     border-top: 1px solid #878787;
 }
@@ -357,6 +359,7 @@ header{
 .main-secondary--text{
     display: flex;
     width: 60%;
+    max-width: 400px;
     height: 170px;
     margin: auto 20px auto 15px;
     align-items: center;
