@@ -1,0 +1,7 @@
+.prueba{
+    margin: 50px 50px 0 50px;
+    border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
