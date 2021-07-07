@@ -1,6 +1,13 @@
 .main-service-container{
-    border: 0.3rem solid black;
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.main-first--container{
+    padding-bottom: 50px;
+}
+.main-containter--arrow-init{
+    top: calc(100% - 25px);
+}
+.main-service-container--card{
+    min-height: 318px;
 }

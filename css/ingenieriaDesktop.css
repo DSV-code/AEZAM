@@ -1,0 +1,27 @@
+.header--title{
+    font-size: 2rem;
+}
+.block-card--title{
+    height: 40px;
+    font-size: 1.8rem;
+}
+.block-card--title{
+    height: 40px;
+    font-size: 1.8rem;
+}
+.block-card--text{
+    display: block;
+}
+.arrow{
+    display: none;
+}
+.main-containter--arrow-init{
+    display: none;
+}
+.main-container--line{
+    left: calc(50% - 47%);
+    width: 94%;
+}
+.main-container--button{
+    font-size: 1.6rem;
+}
