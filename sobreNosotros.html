@@ -25,17 +25,13 @@
     </header>
 
     <main>
-        <section class="main-first--container" id="scroll">
+        <section class="main-first--container">
             <img class="main-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="Image of a team working">
         </section>
         <section class="main-text--aboutUs">
-            <section class="main-text-aboutUs">
-                <p class="main-text-aboutUs--description">AEZAM se creó en el año 2001 para suplir servicios de
-                    ingeniería
-                    inicialmente enfocada en el mantenimiento de subestaciones eléctricas. Con el transcurso del tiempo
-                    y las necesidades de sus clientes su enfoque migra hacia la prestación de servicios y la consultoría
-                    empresarial.</p>
-            </section>
+            <p>AEZAM se creó en el año 2001 para suplir servicios de
+                ingeniería inicialmente enfocada en el mantenimiento de subestaciones eléctricas. Con el transcurso del tiempo y las necesidades de sus clientes su enfoque migra hacia la prestación de servicios y la consultoría
+                empresarial.</p>
         </section>
         <section class="main-secondary--container">
             <section class="main-container--header">
@@ -44,14 +40,16 @@
                     <p>Misión</p>
                 </div>
             </section>
-            <div class="main-secondary--img"
-                style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
-            <div class="main-secondary--text">
-                <p>
-                    Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del
-                    equipo responsable y, sobre todo, explica la misión, visión y valores.
-                </p>
-            </div>
+            <section class="main-secondary-container-img-text">
+                <div class="main-secondary--img"
+                    style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+                <div class="main-secondary--text">
+                    <p>
+                        Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte
+                        del equipo responsable y, sobre todo, explica la misión, visión y valores.
+                    </p>
+                </div>
+            </section>
         </section>
         <section class="main-secondary--container">
             <section class="main-container--header">
@@ -60,16 +58,17 @@
                     <p>Visión</p>
                 </div>
             </section>
-            <div class="main-secondary--text">
-                <p>
-                    Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del
-                    equipo responsable y, sobre todo, explica la misión, visión y valores.
-                </p>
-            </div>
-            <div class="main-secondary--img"
-                style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+            <section class="main-secondary-container-img-text">
+                <div class="main-secondary--textV">
+                    <p>
+                        Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del equipo responsable y, sobre todo, explica la misión, visión y valores.
+                    </p>
+                </div>
+                <div class="main-secondary--imgV"
+                    style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+            </section>
         </section>
-        <section class="main-first--container">
+        <section class="main-team--container">
             <section class="main-container--header">
                 <div class="main-container--line"></div>
                 <div class="main-container--title">
@@ -120,10 +119,10 @@
                         aria-label="Show more information"></button>
                 </article>
             </section>
-
             <button class="main-containter--arrow-init"
                 onClick="oculta(['id-contenido-i01','id-arrow-i01','id-contenido-i02','id-arrow-i02','id-contenido-i03','id-arrow-i03','id-contenido-i04','id-arrow-i04','id-contenido-i05','id-arrow-i05','id-contenido-i06','id-arrow-i06','id-contenido-i07','id-arrow-i07','id-contenido-i08','id-arrow-i08'])"
-                id="goTop" aria-label="Hide more information"></button>
+                id="goTop" aria-label="Hide more information">
+            </button>
         </section>
     </main>
     <script src="js/goBack.js"></script>
