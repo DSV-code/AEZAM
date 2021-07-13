@@ -12,7 +12,11 @@
     <link rel="shortcut icon" href="./assets/icons/Icono.svg">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/indexTablet.css"  media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/indexDesktop.css"  media="(min-width: 1280px)">
     <link rel="stylesheet" href="./css/ingenieria.css">
+    <link rel="stylesheet" href="./css/ingenieriaTablet.css"  media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/ingenieriaDesktop.css"  media="(min-width: 1280px)">
     <link rel="stylesheet" href="./css/comoFunciona.css">
     <link rel="stylesheet" href="./css/sobreNosotros.css">
 </head>
@@ -26,46 +30,48 @@
 
     <main>
         <section class="main-first--container">
-            <img class="main-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="Image of a team working">
+            <div class="main-container--img"></div>
         </section>
         <section class="main-text--aboutUs">
             <p>AEZAM se creó en el año 2001 para suplir servicios de
                 ingeniería inicialmente enfocada en el mantenimiento de subestaciones eléctricas. Con el transcurso del tiempo y las necesidades de sus clientes su enfoque migra hacia la prestación de servicios y la consultoría
                 empresarial.</p>
         </section>
-        <section class="main-secondary--container">
-            <section class="main-container--header">
-                <div class="main-container--line"></div>
-                <div class="main-container--title">
-                    <p>Misión</p>
-                </div>
+        <section>
+            <section class="main-secondary--container">
+                <section class="main-container--header">
+                    <div class="main-container--line"></div>
+                    <div class="main-container--title">
+                        <p>Misión</p>
+                    </div>
+                </section>
+                <section class="main-secondary-container-img-text">
+                    <div class="main-secondary--img"
+                        style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+                    <div class="main-secondary--text">
+                        <p>
+                            Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte
+                            del equipo responsable y, sobre todo, explica la misión, visión y valores.
+                        </p>
+                    </div>
+                </section>
             </section>
-            <section class="main-secondary-container-img-text">
-                <div class="main-secondary--img"
-                    style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
-                <div class="main-secondary--text">
-                    <p>
-                        Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte
-                        del equipo responsable y, sobre todo, explica la misión, visión y valores.
-                    </p>
-                </div>
-            </section>
-        </section>
-        <section class="main-secondary--container">
-            <section class="main-container--header">
-                <div class="main-container--line"></div>
-                <div class="main-container--title">
-                    <p>Visión</p>
-                </div>
-            </section>
-            <section class="main-secondary-container-img-text">
-                <div class="main-secondary--textV">
-                    <p>
-                        Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del equipo responsable y, sobre todo, explica la misión, visión y valores.
-                    </p>
-                </div>
-                <div class="main-secondary--imgV"
-                    style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+            <section class="main-secondary--container">
+                <section class="main-container--header">
+                    <div class="main-container--line"></div>
+                    <div class="main-container--title">
+                        <p>Visión</p>
+                    </div>
+                </section>
+                <section class="main-secondary-container-img-text">
+                    <div class="main-secondary--textV">
+                        <p>
+                            Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del equipo responsable y, sobre todo, explica la misión, visión y valores.
+                        </p>
+                    </div>
+                    <div class="main-secondary--imgV"
+                        style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+                </section>
             </section>
         </section>
         <section class="main-team--container">
@@ -75,16 +81,15 @@
                     <p>Nuestro Equipo</p>
                 </div>
             </section>
-            <section>
+            <section class="main-service-container">
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
                         alt="Service image">
                     <p class="block-card--title">Abel Morales Bermudez</p>
                     <p class="block-card--title-2">Ingeniero Electricista</p>
-                    <div style="display: none;" id="id-contenido-i01">
+                    <div class="block-card--text" id="id-contenido-i01">
                         <p class="block-card--body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                            volutpat. Ligula rutrum venenatis mi nec nisi.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
                         </p>
                     </div>
                     <button class="arrow" id="id-arrow-i01" onClick="show_hide('id-contenido-i01','id-arrow-i01')"
@@ -95,13 +100,13 @@
                         alt="Service image">
                     <p class="block-card--title">Maria Yined Zapata Velasquez</p>
                     <p class="block-card--title-2">Contadora Pública</p>
-                    <div style="display: none;" id="id-contenido-i01">
+                    <div class="block-card--text" id="id-contenido-i02">
                         <p class="block-card--body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
                             volutpat. Ligula rutrum venenatis mi nec nisi.
                         </p>
                     </div>
-                    <button class="arrow" id="id-arrow-i01" onClick="show_hide('id-contenido-i01','id-arrow-i01')"
+                    <button class="arrow" id="id-arrow-i02" onClick="show_hide('id-contenido-i02','id-arrow-i02')"
                         aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
@@ -109,22 +114,23 @@
                         alt="Service image">
                     <p class="block-card--title">Oscar Stiven Morales Zapata</p>
                     <p class="block-card--title-2">Ingeniero Mecatrónico</p>
-                    <div style="display: none;" id="id-contenido-i01">
+                    <div class="block-card--text" id="id-contenido-i03">
                         <p class="block-card--body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
                             volutpat. Ligula rutrum venenatis mi nec nisi.
                         </p>
                     </div>
-                    <button class="arrow" id="id-arrow-i01" onClick="show_hide('id-contenido-i01','id-arrow-i01')"
+                    <button class="arrow" id="id-arrow-i03" onClick="show_hide('id-contenido-i03','id-arrow-i03')"
                         aria-label="Show more information"></button>
                 </article>
             </section>
-            <button class="main-containter--arrow-init"
-                onClick="oculta(['id-contenido-i01','id-arrow-i01','id-contenido-i02','id-arrow-i02','id-contenido-i03','id-arrow-i03','id-contenido-i04','id-arrow-i04','id-contenido-i05','id-arrow-i05','id-contenido-i06','id-arrow-i06','id-contenido-i07','id-arrow-i07','id-contenido-i08','id-arrow-i08'])"
-                id="goTop" aria-label="Hide more information">
-            </button>
         </section>
+        <button class="main-containter--arrow-init"
+                onClick="oculta(['id-contenido-i01','id-arrow-i01','id-contenido-i02','id-arrow-i02','id-contenido-i03','id-arrow-i03'])"
+                id="goTop" aria-label="Hide more information">
+        </button>
     </main>
+    <script src="js/servicios.js"></script>
     <script src="js/goBack.js"></script>
     <script src="js/goTop.js"></script>
 </body>

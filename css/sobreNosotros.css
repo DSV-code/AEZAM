@@ -3,6 +3,9 @@
     padding-bottom: 0px;
     text-align: center;
 }
+.main-container--img{
+    background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');
+}
 /*-----------------------ABOUT US -----------------------*/
 .main-text--aboutUs{
     width: 100%;
@@ -12,7 +15,7 @@
 }
 .main-text--aboutUs p{
     padding: 26px 37px ;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.4rem;
     line-height: 2rem;
     text-align: center;
@@ -45,14 +48,16 @@
 }
 /*-----------------------TEAM -----------------------*/
 .main-team--container{
-    position: absolute;
+    position: relative;
     width: 100%;
-    margin-bottom: 300px;
 }
 .main-service-container--card{
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     padding: 25px 27px 15px 27px;
     background-image: url('../assets/icons/Profile_Background.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
     text-align: center;
 }
 .main-service-container--img{
@@ -68,15 +73,10 @@
 }
 .block-card--title-2{
     text-align: left;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.7rem;
 }
-/* .main-containter--arrow-init{
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: calc(100% - 10px);
-    left: calc(50% - 16px);
-
-} */
+.block-card--body{
+    margin: 25px auto 25px auto;
+}
