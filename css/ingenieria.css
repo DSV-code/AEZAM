@@ -38,7 +38,7 @@ header{
     border:  1px solid var(--Aezam-Service1);
 }
 .main-first--container{
-    padding-bottom: 20px;
+    margin-bottom: 25px;
 }
 .main-service-container--card{
     padding: 25px;
@@ -85,19 +85,15 @@ header{
     cursor: pointer;
 }
 .main-containter--arrow-init{
-    position: absolute;
+    position: relative;
     width: 32px;
     height: 32px;
-    top: calc(100% - 20px);
     left: calc(50% - 16px);
+    margin-bottom: 25px;
     background: none;
     border: none;
-    background-image: url('../assets/icons/Arrow_Blue.svg');
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
+    background-image: url('../assets/icons/Arrow_Green.svg');
     transform: rotate(-90deg);
-    cursor: pointer;
 }
 .main-containter--arrow-init:hover{
     background-image: url('../assets/icons/Arrow_Blue--Full.svg');
