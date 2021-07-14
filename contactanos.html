@@ -21,63 +21,72 @@
             <a class="header--title">Contáctanos</a>
             <button class="header-img--back-arrow" id="goBack" aria-label="Return to the previous window"></button>
         </header>
-        <!-- --------------------- IMAGE --------------------- -->
-        <section class="main-first--container" id="scroll">
-            <div class="main-container--img"></div>
-        </section>
-        <!-- --------------------- FORMULARIO --------------------- -->
-        <section class ="main-form--container" >
-            <form action ="./php/contactanos.php" method="POST">
-                <label for ="nombre" class="main-container--info">
-                    <span class="main-container--name-section">Nombre</span>
-                    <input type="text" id="nombre" name="nombre" placeholder="Digite nombre o razón social" autocomplete="name" required/>
-                </label>
-                <label for="correo" class="main-container--info">
-                    <span class="main-container--name-section">Email</span>
-                    <input type="email" id="correo" name="correo" placeholder="Digite correo electrónico" autocomplete="email" required/>
-                </label>
-                <label for="telefono" class="main-container--info">
-                    <span class="main-container--name-section">Telefono</span>
-                    <input type="text" id="pais" name="telefono" placeholder="Digite número telefónico" autocomplete="tel" required/>
-                </label>
-                <label for="servicios" class="main-container--info">
-                    <span class="main-container--name-section">Servicios</span>
-                    <input list="servicios" placeholder="Seleccione el servicio">
-                    <datalist id="servicios">
-                        <option value="Ingeniería"></option>
-                        <option value="Contaduría"></option>
-                        <option value="Otros"></option>
-                    </datalist>
-                    <span class="main-container--name-asunto">Asunto</span>
-                </label>
-                <label for="asunto" class="main-container--info">
-                    <textarea name="" id="asunto" cols="30" rows="10" placeholder="Digite su solicitud" required></textarea>
-                </label>
-                <input class="send-button" type="submit" value="Enviar"/>
-            </form>
-        </section>
-        <section class="main-map--container">
-            <iframe class="main-container--map" frameborder="0" scrolling="no" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.0498102274682!2d-74.13961371305065!3d4.62280090970521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ea67dfa7813%3A0x960799962b1b5e5c!2sAV.%20Boyaca%20-%20CL%202!5e0!3m2!1ses!2sbr!4v1622657931378!5m2!1ses!2sbr" loading="lazy"></iframe>
-        </section>
-        <section class="main-contact--container">
-            <div class="main-contact-container--info">
-                <span style="background-image: url('./assets/icons/Map.svg');"></span>
-                <p>Avenida Boyaca - Calle 2, Americas Occidental, Bogotá, Colombia</p>
+
+        <main>
+            <!-- --------------------- IMAGE --------------------- -->
+            <section class="main-first--container" id="scroll">
+                <div class="main-container--img"></div>
+            </section>
+            <!-- --------------------- FORMULARIO --------------------- -->
+            <section class ="main-form--container" >
+                <form action ="./php/contactanos.php" method="POST">
+                    <label for ="nombre" class="main-container--info">
+                        <span class="main-container--name-section">Nombre</span>
+                        <input type="text" id="nombre" name="nombre" placeholder="Digite nombre o razón social" autocomplete="name" required/>
+                    </label>
+                    <label for="correo" class="main-container--info">
+                        <span class="main-container--name-section">Email</span>
+                        <input type="email" id="correo" name="correo" placeholder="Digite correo electrónico" autocomplete="email" required/>
+                    </label>
+                    <label for="telefono" class="main-container--info">
+                        <span class="main-container--name-section">Telefono</span>
+                        <input type="text" id="pais" name="telefono" placeholder="Digite número telefónico" autocomplete="tel" required/>
+                    </label>
+                    <label for="servicios" class="main-container--info">
+                        <span class="main-container--name-section">Servicios</span>
+                        <input list="servicios" placeholder="Seleccione el servicio">
+                        <datalist id="servicios">
+                            <option value="Ingeniería"></option>
+                            <option value="Contaduría"></option>
+                            <option value="Otros"></option>
+                        </datalist>
+                        <span class="main-container--name-asunto">Asunto</span>
+                    </label>
+                    <label for="asunto" class="main-container--info">
+                        <textarea name="" id="asunto" cols="30" rows="10" placeholder="Digite su solicitud" required></textarea>
+                    </label>
+                    <input class="send-button" type="submit" value="Enviar"/>
+                </form>
+            </section>
+            <section class="main-map--container">
+                <iframe class="main-container--map" frameborder="0" scrolling="no" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2812.0498102274682!2d-74.13961371305065!3d4.62280090970521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9ea67dfa7813%3A0x960799962b1b5e5c!2sAV.%20Boyaca%20-%20CL%202!5e0!3m2!1ses!2sbr!4v1622657931378!5m2!1ses!2sbr" loading="lazy"></iframe>
+            </section>
+            <section class="main-contact--container">
+                <div class="main-contact-container--info">
+                    <span style="background-image: url('./assets/icons/Map.svg');"></span>
+                    <p>Avenida Boyaca - Calle 2, Americas Occidental, Bogotá, Colombia</p>
+                </div>
+                <div class="main-contact-container--info">
+                    <span style="background-image: url('./assets/icons/Phone.svg');"></span>
+                    <p>+57 300 XXX XXXX</p>
+                </div>
+                <div class="main-contact-container--info">
+                    <span style="background-image: url('./assets/icons/Email.svg');"></span>
+                    <p>XXXXXXX@gmail.com</p>
+                </div>
+                <div class="social-icons">
+                    <span href="/" class="social-icons--instagram"></span>
+                    <span href="/" class="social-icons--facebook"></span>
+                </div>
+            </section>
+            <button class="main-containter--arrow-init" id="goTop" aria-label="Go to the top of the page"></button>
+            <div class="btn-whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=+573225352386" target="_blank">
+                    <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="WhatsApp icon">
+                </a>
             </div>
-            <div class="main-contact-container--info">
-                <span style="background-image: url('./assets/icons/Phone.svg');"></span>
-                <p>+57 300 XXX XXXX</p>
-            </div>
-            <div class="main-contact-container--info">
-                <span style="background-image: url('./assets/icons/Email.svg');"></span>
-                <p>XXXXXXX@gmail.com</p>
-            </div>
-            <div class="social-icons">
-                <span href="/" class="social-icons--instagram"></span>
-                <span href="/" class="social-icons--facebook"></span>
-            </div>
-        </section>
-        <button class="main-containter--arrow-init" id="goTop" aria-label="Go to the top of the page"></button>
+        </main>
+        
         <script src="js/goBack.js"></script>
         <script src="js/goTop.js"></script>
     </body>
