@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+
+.container{
+    /* width: 400px; */
+    margin: 50px 50px 0 50px;
+    border: 0.3rem solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box{
+    width: 10rem;
+    height: 10rem;
+    margin: 25px 0 25px 0;
+}
+.box1{
+    background-color: blue;
+    /* flex-grow:2; */
+    /* flex: 3; */
+}
+.box2{
+    background-color: blueviolet;
+}
+.box3{
+    background-color: burlywood;
+    /* margin-left: auto;
+    margin-right: 10px; */
+}
+.box4{
+    background-color: cadetblue;
+    /* margin-left: auto;
+    margin-right: 10px; */
+}
+.box5{
+    background-color: coral;
+}
+.box6{
+    background-color: salmon;
+}

@@ -12,16 +12,20 @@
     <link rel="shortcut icon" href="./assets/icons/Icono.svg">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/indexTablet.css"  media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/indexDesktop.css"  media="(min-width: 1280px)">
     <link rel="stylesheet" href="./css/ingenieria.css">
+    <link rel="stylesheet" href="./css/ingenieriaTablet.css"  media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/ingenieriaDesktop.css"  media="(min-width: 1280px)">
     <link rel="stylesheet" href="./css/contabilidad.css">
+    <link rel="stylesheet" href="./css/contabilidadTablet.css"  media="(min-width: 768px)">
 </head>
 
 <body>
     <!-- --------------------- HEADER --------------------- -->
     <header>
         <a class="header--title">Servicio de contabilidad</a>
-        <a href="index.html"><button class="header-img--back-arrow"> </button>
-        </a>
+        <button class="header-img--back-arrow" id="goBack" aria-label="Return to the previous window"></button>
     </header>
 
     <main>
@@ -36,52 +40,67 @@
         </section>
         <!-- --------------------- SERVICE --------------------- -->
         <section class="main-first--container">
-            <div class="main-container--line"></div>
-            <div class="main-container--title">
-                <p>Servicios</p>
-            </div>
-            <section>
+            <section class="main-container--header">
+                <div class="main-container--line"></div>
+                <div class="main-container--title">
+                    <p>Servicios</p>
+                </div>
+            </section>
+            <section class="main-service-container">
                 <article class="main-service-container--card">
-                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
+                    <img class="main-service-container--img" src="./assets/imgs/Ejemplo.jpeg"
+                        alt="Service image">
                     <p class="block-card--title">Asesoría en creación y liquidación de empresas</p>
-                    <div style="display: none;" id="id-contenido-c01">
+                    <div class="block-card--text" id="id-contenido-c01">
                         <p class="block-card--body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button"
+                                aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
-                    <button class="arrow" id="id-arrow-c01" onClick="muestra_oculta('id-contenido-c01','id-arrow-c01')"></button>
+                    <button class="arrow" id="id-arrow-c01" onClick="show_hide('id-contenido-c01','id-arrow-c01')"
+                        aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
-                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
+                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
+                        alt="Service image">
                     <p class="block-card--title">Asesoria en liquidación y elaboración de impuestos</p>
-                    <div style="display: none;" id="id-contenido-c02">
+                    <div class="block-card--text" id="id-contenido-c02">
                         <p class="block-card--body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button"
+                                aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
-                    <button class="arrow" id="id-arrow-c02" onClick="muestra_oculta('id-contenido-c02','id-arrow-c02')"></button>
+                    <button class="arrow" id="id-arrow-c02"
+                        onClick="show_hide('id-contenido-c02','id-arrow-c02')" aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
-                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg" alt="Service image">
+                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
+                        alt="Service image">
                     <p class="block-card--title">Servicio de digitacion de informes contables</p>
-                    <div style="display: none;" id="id-contenido-c03">
+                    <div class="block-card--text" id="id-contenido-c03">
                         <p class="block-card--body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat. Ligula rutrum venenatis mi nec nisi.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button"
+                                aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
-                    <button class="arrow" id="id-arrow-c03" onClick="muestra_oculta('id-contenido-c03','id-arrow-c03')"></button>
+                    <button class="arrow" id="id-arrow-c03"
+                        onClick="show_hide('id-contenido-c03','id-arrow-c03')" aria-label="Show more information"></button>
                 </article>
             </section>
-            <a href="#scroll"><button class="main-containter--arrow-init" onClick="oculta(['id-contenido-c01','id-arrow-c01','id-contenido-c02','id-arrow-c02','id-contenido-c03','id-arrow-c03'])"></button></a>
         </section>
+        <button class="main-containter--arrow-init"
+                onClick="oculta(['id-contenido-c01','id-arrow-c01','id-contenido-c02','id-arrow-c02','id-contenido-c03','id-arrow-c03'])"
+                id="goTop" aria-label="Hide more information">
+        </button>
     </main>
     <script src="js/servicios.js"></script>
+    <script src="js/goBack.js"></script>
+    <script src="js/goTop.js"></script>
 </body>
-
 </html>

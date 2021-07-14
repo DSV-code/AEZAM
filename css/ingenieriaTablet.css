@@ -1,0 +1,7 @@
+.main-service-container{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main-service-container--card{
+    min-height: 318px;
+}

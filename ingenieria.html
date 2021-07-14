@@ -12,15 +12,18 @@
     <link rel="shortcut icon" href="./assets/icons/Icono.svg">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/indexTablet.css"  media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/indexDesktop.css"  media="(min-width: 1280px)">
     <link rel="stylesheet" href="./css/ingenieria.css">
+    <link rel="stylesheet" href="./css/ingenieriaTablet.css"  media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/ingenieriaDesktop.css"  media="(min-width: 1280px)">    
 </head>
 
 <body>
     <!-- --------------------- HEADER --------------------- -->
     <header>
         <a class="header--title">Servicio de ingeniería</a>
-        <a href="index.html"><button class="header-img--back-arrow"> </button>
-        </a>
+        <button class="header-img--back-arrow" id="goBack" aria-label="Return to the previous window"></button>
     </header>
 
     <main>
@@ -35,137 +38,136 @@
         </section>
         <!-- --------------------- SERVICE --------------------- -->
         <section class="main-first--container">
-            <div class="main-container--line"></div>
-            <div class="main-container--title">
-                <p>Servicios</p>
-            </div>
-            <section>
+            <section class="main-container--header">
+                <div class="main-container--line"></div>
+                <div class="main-container--title">
+                    <p>Servicios</p>
+                </div>
+            </section>
+            <section class="main-service-container">
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
                         alt="Service image">
-                    <p class="block-card--title">Diseño de transformadores</p>
-                    <div style="display: none;" id="id-contenido-i01">
+                    <p class="block-card--title">Diseño y pruebas de transformadores con tensión serie hasta 30 kV</p>
+                    <div class="block-card--text" id="id-contenido-i01">
                         <p class="block-card--body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                            volutpat. Ligula rutrum venenatis mi nec nisi.
+                            La experiencia obtenida en este sector específico de la ingeniería eléctrica nos permite ofrecer el servicio de diseño y pruebas de transformadores con tensión serie hasta 30 kV con refrigeración en aceite hasta 5 MVA y refrigeración en aire hasta 3 MVA. Transformadores clase F y H, AN y con tensión seria hasta 1.2 kV.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
+                        <a href="contactanos.html"><button class="main-container--button" aria-label="Ask for information">
                                 Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-i01"
-                        onClick="muestra_oculta('id-contenido-i01','id-arrow-i01')"></button>
+                        onClick="show_hide('id-contenido-i01','id-arrow-i01')" aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
                         alt="Service image">
-                    <p class="block-card--title">Diseño de reactores</p>
-                    <div style="display: none;" id="id-contenido-i02">
+                    <p class="block-card--title">Diseño de reactancias en serie y en paralelo.</p>
+                    <div class="block-card--text" id="id-contenido-i02">
                         <p class="block-card--body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                            volutpat. Ligula rutrum venenatis mi nec nisi.
+                            Estamos en capacidad de diseñar las reactancias, elementos requeridos para el control de armónicos y mejoramiento de la onda de corriente.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button" aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-i02"
-                        onClick="muestra_oculta('id-contenido-i02','id-arrow-i02')"></button>
+                        onClick="show_hide('id-contenido-i02','id-arrow-i02')" aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
                         alt="Service image">
                     <p class="block-card--title">Asesoría para el montaje y puesta en servicio de trasnformadores</p>
-                    <div style="display: none;" id="id-contenido-i03">
+                    <div class="block-card--text" id="id-contenido-i03">
                         <p class="block-card--body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
                             volutpat. Ligula rutrum venenatis mi nec nisi.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button" aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-i03"
-                        onClick="muestra_oculta('id-contenido-i03','id-arrow-i03')"></button>
+                        onClick="show_hide('id-contenido-i03','id-arrow-i03')" aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
-                    <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
+                    <img class="main-service-container--img" src="./assets/imgs/Prueba.jpeg"
                         alt="Service image">
-                    <p class="block-card--title">Análisis de calidad de energía</p>
-                    <div style="display: none;" id="id-contenido-i04">
+                    <p class="block-card--title">Análisis ou medición de calidad de energía</p>
+                    <div class="block-card--text" id="id-contenido-i04">
                         <p class="block-card--body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                            volutpat. Ligula rutrum venenatis mi nec nisi.
+                            A partir del uso de un analizador de redes eléctricas, se graba la información de todos los parámetros eléctricos de un sistema de potencia durante un periodo de tiempo acordado. Esta información es analizada posteriormente para la toma de decisiones de mejora en el sistema en estudio.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button" aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-i04"
-                        onClick="muestra_oculta('id-contenido-i04','id-arrow-i04')"></button>
+                        onClick="show_hide('id-contenido-i04','id-arrow-i04')" aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
                         alt="Service image">
-                    <p class="block-card--title">Medición de resistencia de sistemas de puesta a tierra</p>
-                    <div style="display: none;" id="id-contenido-i05">
+                    <p class="block-card--title">Medición de resistencia de sistemas de puesta a tierra (SPT)</p>
+                    <div class="block-card--text" id="id-contenido-i05">
                         <p class="block-card--body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                            volutpat. Ligula rutrum venenatis mi nec nisi.
+                            Esta medición se obtiene con el uso de un Telurómetro y permite medir la resistencia óhmica de un electrodo asociado a una malla de puesta a tierra. Medición requerida en los sistemas de puesta a tierra y cuyo valor debe ser conforme con El RETIE (Reglamento Técnico de Instalaciones Eléctricas). Esto con el fin de garantizar que una buena puesta a tierra, garantice el pleno funcionamiento de las protecciones e igualmente garantice la protección del ser humano y el medio ambiente. 
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button" aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-i05"
-                        onClick="muestra_oculta('id-contenido-i05','id-arrow-i05')"></button>
+                        onClick="show_hide('id-contenido-i05','id-arrow-i05')" aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
                         alt="Service image">
                     <p class="block-card--title">Medición de resistividad del terreno</p>
-                    <div style="display: none;" id="id-contenido-i06">
+                    <div class="block-card--text" id="id-contenido-i06">
                         <p class="block-card--body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                            volutpat. Ligula rutrum venenatis mi nec nisi.
+                            La medida de este valor es de vital importancia para el diseño de un sistema de puesta a tierra (SPT). Consiste en la medición de la resistividad del terreno en el sitio donde se planea construir una malla. El equipo empleado es el Telurómetro.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button" aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-i06"
-                        onClick="muestra_oculta('id-contenido-i06','id-arrow-i06')"></button>
+                        onClick="show_hide('id-contenido-i06','id-arrow-i06')" aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
                         alt="Service image">
                     <p class="block-card--title">Diseño y construcción de sistemas de puesta a tierra</p>
-                    <div style="display: none;" id="id-contenido-i07">
+                    <div class="block-card--text" id="id-contenido-i07">
                         <p class="block-card--body">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
                             volutpat. Ligula rutrum venenatis mi nec nisi.
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button" aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-i07"
-                        onClick="muestra_oculta('id-contenido-i07','id-arrow-i07')"></button>
+                        onClick="show_hide('id-contenido-i07','id-arrow-i07')" aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
                         alt="Service image">
                     <p class="block-card--title">Diseño, construcción y montaje de bancos de condensadores</p>
-                    <div style="display: none;" id="id-contenido-i08">
+                    <div class="block-card--text" id="id-contenido-i08">
                         <p class="block-card--body">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                            volutpat. Ligula rutrum venenatis mi nec nisi.
+                            Diseñamos bancos correctores de factor de potencia automáticos; conjuntos de condensadores debidamente conectados y requeridos para mantener el factor de potencia dentro de los valores exigidos por los organismos de control (en nuestro país, CREG).
                         </p>
-                        <a href="contactanos.html"><button class="main-container--button">
-                            Solicitar información</button></a>
+                        <a href="contactanos.html"><button class="main-container--button" aria-label="Ask for information">
+                                Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-i08"
-                        onClick="muestra_oculta('id-contenido-i08','id-arrow-i08')"></button>
+                        onClick="show_hide('id-contenido-i08','id-arrow-i08')" aria-label="Show more information"></button>
                 </article>
             </section>
-            <a href="#scroll"><button class="main-containter--arrow-init"
-                    onClick="oculta(['id-contenido-i01','id-arrow-i01','id-contenido-i02','id-arrow-i02','id-contenido-i03','id-arrow-i03','id-contenido-i04','id-arrow-i04','id-contenido-i05','id-arrow-i05','id-contenido-i06','id-arrow-i06','id-contenido-i07','id-arrow-i07','id-contenido-i08','id-arrow-i08'])"></button></a>
         </section>
+        <button class="main-containter--arrow-init"
+                    onClick="oculta(['id-contenido-i01','id-arrow-i01','id-contenido-i02','id-arrow-i02','id-contenido-i03','id-arrow-i03','id-contenido-i04','id-arrow-i04','id-contenido-i05','id-arrow-i05','id-contenido-i06','id-arrow-i06','id-contenido-i07','id-arrow-i07','id-contenido-i08','id-arrow-i08'])" id="goTop" aria-label="Hide more information">
+        </button>
     </main>
     <script src="js/servicios.js"></script>
+    <script src="js/goBack.js"></script>
+    <script src="js/goTop.js"></script>
 </body>
 
 </html>

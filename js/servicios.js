@@ -1,6 +1,6 @@
 var imageIng = ['up','up','up','up','up','up','up','up'];
 var imageCont = ['up','up','up'];
-function muestra_oculta(id1,id2){
+function show_hide(id1,id2){
     if (document.getElementById){ //se obtiene el id
         var el1 = document.getElementById(id1);
         var el2 = document.getElementById(id2);
@@ -10,19 +10,19 @@ function muestra_oculta(id1,id2){
         // console.log(id1.slice(-3, -2))
         if (id1.slice(-3, -2) == 'i'){
             if (imageIng[containerNum-1] == 'up'){
-                el2.style.backgroundImage = "url('../assets/icons/UpArrowBlue.svg')"
+                el2.style.backgroundImage = "url('./assets/icons/Arrow_Blue.svg')"
                 imageIng[containerNum-1]= 'down';
             } else if (imageIng[containerNum-1] == 'down'){
-                el2.style.backgroundImage = "url('../assets/icons/DownArrowBlue.svg')"
+                el2.style.backgroundImage = "url('./assets/icons/Arrow_Blue--Full.svg')"
                 imageIng[containerNum-1] = 'up';
             }
         }
         if (id1.slice(-3, -2) == 'c'){
             if (imageCont[containerNum-1] == 'up'){
-                el2.style.backgroundImage = "url('../assets/icons/UpArrowLightBlue.svg')"
+                el2.style.backgroundImage = "url('./assets/icons/Arrow_Blue_Light.svg')"
                 imageCont[containerNum-1]= 'down';
             } else if (imageCont[containerNum-1] == 'down'){
-                el2.style.backgroundImage = "url('../assets/icons/DownArrowLightBlue.svg')"
+                el2.style.backgroundImage = "url('./assets/icons/Arrow_Blue_Light--Full.svg')"
                 imageCont[containerNum-1] = 'up';
             }
         }      

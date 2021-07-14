@@ -1,0 +1,63 @@
+.main-service-container--card{
+    min-width: 400px;
+    margin: 25px 30px;
+}
+.main-container--line{
+    left: calc(50% - 30%);
+    width: 60%;
+}
+.arrow{  
+    left: calc(100% - 250px);
+}.main-works-container--card {
+    display: flex;
+    width: 300px;
+}
+.main-works-container--card:nth-child(1) {
+    margin-left: calc(50% - 380px);
+} 
+.main-works-container--card:nth-child(2) {
+    margin-left: calc(50% + 80px);
+    margin-top: -75px;
+}
+.main-works-container--card:nth-child(3) {
+    margin-left: calc(50% - 380px);
+}
+.main-works-container--card:nth-child(4) {
+    margin-left: calc(50% + 80px);
+    margin-top: -75px;
+}
+.block-card--title{
+    font-size: 2rem;
+}
+.block-card--body{
+    font-size: 1.6rem;
+}
+.block-card--title-works{
+    font-size: 1.6rem;
+}
+/*----------------------- ABOUT AND CHOOSE -----------------------*/
+.main-secondary--text{
+    margin: auto 20px auto 120px;
+}
+.main-secondary--text p{
+    font-size: 1.6rem;
+}
+/*----------------------- FOOTER -----------------------*/
+/* .footer--container{
+    height: 175px;
+} */
+.footer-container--info a {
+    margin: 25px 80px 25px 20px;
+}
+.footer-container--otros{
+    width: 70%;
+}
+/* .footer-container--info{
+    display: flex;
+} */
+/* .instagram{
+    left: calc(100% - 200px);
+} */
+/* .facebook{
+    left: calc(100% - 100px);
+} */

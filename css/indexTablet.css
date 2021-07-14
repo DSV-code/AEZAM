@@ -1,0 +1,91 @@
+/*----------------------- HEADER -----------------------*/
+
+/*----------------------- FIRST CONTAINER AND TITTLES -----------------------*/
+.main-service-container{
+    display: flex;
+    justify-content: center;
+}
+.arrow{  
+    left: calc(100% - 80px);
+}
+/*----------------------- SERVICE AND SUPPORT -----------------------*/
+.main-service-container--card{
+    width: 40%;
+    margin: 25px 18px auto 18px;
+    min-width: 330px;
+}
+/*----------------------- HOW IT WORKS -----------------------*/
+.main-works-container--card {
+    display: flex;
+    width: 300px;
+}
+.main-works-container--card:nth-child(1) {
+    margin-left: calc(50% - 300px);
+} 
+.main-works-container--card:nth-child(2) {
+    margin-left: calc(50% - 200px);
+}
+.main-works-container--card:nth-child(3) {
+    margin-left: calc(50% - 100px);
+}
+.main-works-container--card:nth-child(4) {
+    margin-left: calc(50% - 0px);
+}
+.icon2{
+    display: none;    
+}
+.icon3{
+    display: block;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0px;
+    width: 55px;
+    height: 50px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.icon2_mod{
+    display: none;    
+}
+.icon3_mod{
+    display: block;
+    position: absolute;
+    top: calc(50% - 23px);
+    left: 0px;
+    width: 55px;
+    height: 50px;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+.block-card--title-works{
+    margin-left: 60px;
+}
+/*----------------------- ABOUT AND CHOOSE -----------------------*/
+.main-secondary-container-img-text{
+    justify-content: center;
+}
+/*----------------------- FOOTER -----------------------*/
+.footer--container{
+    height: 175px;
+}
+.footer-container--otros{
+    width: 85%;
+}
+.footer-container--text{
+    width: 60%;
+    margin: 10px auto 20px auto;
+    display: flex;  
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-container--info{
+    display: flex;
+}
+.instagram{
+    left: calc(100% - 200px);
+}
+.facebook{
+    left: calc(100% - 100px);
+}

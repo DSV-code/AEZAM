@@ -7,12 +7,14 @@
 */
 :root{
     /*Colors*/
-    --Aezam-green: #116b1d; 
+    --Aezam-green: #2A6E3F; 
+    --Aezam-green--text: #075611;
     --Aezam-backgorund: #F7F5FB;
     --Aezam-lightGreen: #B7CEBD;
     --Aezam-Service1: #112A53;
     --Aezam-Service2: #6CA8AF;
-
+    --Aezam-Service3: #F49608;
+    /* --Aezam-Service3: #F2C867; */
 }
 * {
     box-sizing: border-box;

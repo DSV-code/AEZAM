@@ -4,25 +4,26 @@
     text-align: center;
 }
 .main-container--img{
-    width: 345px;
+    margin: auto;
+    width: 92%;
     height: 200px;
     border-radius: 5px;
+    background-image: url('../assets/imgs/Analizador-280x210.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
 }
 /*----------------------- TEXT -----------------------*/
 .main-text{
     width: 80%;
-    min-width: 320px;
-    margin: 36px auto;
+    min-width: 280px;
+    margin: 30px auto;
     font-style: normal;
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2rem;
     text-align: justify;
 }
-.main-containter--arrow-init{
-    background-image: url('../assets/icons/UpArrowGreen.svg');
-}
 .main-containter--arrow-init:hover{
-    background-image: url('../assets/icons/CaretCircleRight.svg');
-    transform: rotate(-90deg);
+    background-image: url('../assets/icons/Arrow_Green--Full.svg');
 }

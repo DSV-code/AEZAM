@@ -1,0 +1,82 @@
+.main-first--container{
+    margin: 70px 0px 30px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.main-container--img{
+    background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');
+}
+/*-----------------------ABOUT US -----------------------*/
+.main-text--aboutUs{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: justify;
+    background: conic-gradient(from 161.98deg at 0% 0%, #B4D1B3 -13.85deg, #72A676 4.8deg, #BAD3BC 335.34deg, #B4D1B3 346.15deg, #72A676 364.8deg);
+}
+.main-text--aboutUs p{
+    padding: 26px 37px ;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+/*-----------------------MISSION -----------------------*/
+.main-container--title{
+    background-color: var(--Aezam-green);
+    border:  1px solid var(--Aezam-green);
+}
+.main-secondary--textV{
+    display: flex;
+    width: 54%;
+    max-width: 400px;
+    height: 170px;
+    margin: auto 15px auto 0px;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+.main-secondary--imgV{
+    width: 36%;
+    height: 170px;
+    max-width: 150px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 5px;
+}
+/*-----------------------TEAM -----------------------*/
+.main-team--container{
+    position: relative;
+    width: 100%;
+}
+.main-service-container--card{
+    margin-bottom: 25px;
+    padding: 25px 27px 15px 27px;
+    background-image: url('../assets/icons/Profile_Background.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main-service-container--img{
+    width: 130px;
+    height: 170px;
+}
+.block-card--title{
+    width: 245px;
+    margin: 20px 0px 10px 0px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+}
+.block-card--title-2{
+    text-align: left;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+.block-card--body{
+    margin: 25px auto 25px auto;
+}

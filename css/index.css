@@ -9,7 +9,7 @@ header{
     min-width: 320px;
     height: 80px;
     background: var(--Aezam-lightGreen);
-    z-index: 2;
+    z-index: 1;
 }
 .header-img--logo{
     position: absolute;
@@ -47,15 +47,14 @@ header{
     height: 32px;
     background: none;
     border: none;
-    background-image: url('../assets/icons/NextArrow.svg');
+    background-image: url('../assets/icons/Arrow_White.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .header-nav--next-arrow:hover{
-    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
-    transform: rotate(-90deg);
+    background-image: url('../assets/icons/Arrow_White--Full.svg');
 }
 .header-nav-container--menu{
     margin-top: 79px;
@@ -98,14 +97,15 @@ header{
     height: 32px;   
     background: none;
     border: none;
-    background-image: url('../assets/icons/DownArrow.svg');
+    background-image: url('../assets/icons/Arrow_White.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+    transform: rotate(90deg);
     cursor: pointer;
 }
 .header-nav--down-arrow:hover{
-    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
+    background-image: url('../assets/icons/Arrow_White--Full.svg');
 }
 .header-nav--up-arrow{
     position: absolute;
@@ -115,15 +115,15 @@ header{
     height: 32px;   
     background: none;
     border: none;
-    background-image: url('../assets/icons/UpArrow.svg');
+    background-image: url('../assets/icons/Arrow_White.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
+    transform: rotate(-90deg);
     cursor: pointer;
 }
 .header-nav--up-arrow:hover{
-    background-image: url('../assets/icons/FullWhiteDownArrow.svg');
-    transform: rotate(180deg);
+    background-image: url('../assets/icons/Arrow_White--Full.svg');
 }
 .header--line{
     position: absolute;
@@ -131,27 +131,25 @@ header{
     width: 100px;
     border-top: 1px solid white;
 }
-.header--city{
+.header--addres{
     position: absolute;
     top: 505px;
     left: 20px;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 22px;
     color: #ffff;
 }
-.header--addres{
+.header--city{
     position: absolute;
     top: 538px;
     left: 20px;
-    width: 200px;
-    height: 100px;
     font-weight: 900;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 30px;
     color: #ffff;
 }
-/*-----------------------SCROLL IMAGES -----------------------*/
+/*----------------------- SCROLL IMAGES -----------------------*/
 .main-img--container{
     margin-top: 80px;
     width: 100%;
@@ -177,42 +175,42 @@ header{
     border-radius: 10px;
     filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
 }
-/*-----------------------FIRST CONTAINER AND TITTLES -----------------------*/
+/*----------------------- FIRST CONTAINER AND TITTLES -----------------------*/
 .main-first--container{
     position: relative;
-    margin-top: 50px;
-    padding-bottom: 20px;
+    margin-bottom: 35px;
     width: 100%;
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
 }
 .main-secondary--container{
     position: relative;
-    display: flex;
-    margin-top: 50px;
-    padding-bottom: 20px;
+    margin-bottom: 40px;
     width: 100%;
     min-width: 320px;
     background-color: var(--Aezam-backgorund);
 }
+.main-container--header{
+    position: relative;
+    width: 100%;
+    height: 31px;
+    align-items: center;
+}
 .main-container--line{
     position: absolute;
-    top: -35px;
-    left: 20px;
-    width: 90%;
+    top: 16px;
+    left: calc(50% - 47%);
+    width: 95%;
     border-top: 1px solid #878787;
 }
 .main-container--title{
     position: absolute;
     left: calc(50% - 102px);
-    z-index: 1;
-    top: -50px;
     width: 205px;
     height: 31px;
     margin: 0 auto;
     text-align: center;
-    align-self: center;
-    padding: 2px;
+    padding: 3px;
     background-color: var(--Aezam-green);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border:  1px solid var(--Aezam-green);
@@ -221,15 +219,38 @@ header{
     font-weight: bold;
     color: #ffffff;
 }
-.arrow{
+.arrow-card{
     position: absolute;
-    top: calc(100% - 35px);
-    left: calc(100% - 40px);
+    top: calc(100% - 44px);
+    left: calc(100% - 35px);
     width: 32px;
     height: 32px;
     background: none;
     border: none;
-    background-image: url('../assets/icons/CircleArrow.svg');
+    background-image: url('../assets/icons/Arrow_Green.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.arrow-card:hover{
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/icons/Arrow_Green--Full.svg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.arrow{  
+    position: absolute;
+    top: calc(100% + 5px);
+    left: calc(100% - 56px);
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    background-image: url('../assets/icons/Arrow_Green.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
@@ -238,41 +259,37 @@ header{
 .arrow:hover{
     width: 32px;
     height: 32px;
-    background-image: url('../assets/icons/CaretCircleRight.svg');
+    background-image: url('../assets/icons/Arrow_Green--Full.svg');
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
-/*-----------------------SERVICE AND SUPPORT -----------------------*/
+/*----------------------- SERVICE AND SUPPORT -----------------------*/
 .main-service-container--card{
     position: relative;
-    width: 80%;
-    min-width: 330px;
-    max-width: 450px;
+    width: 88%;
+    min-width: 280px;
+    max-width: 300px;
     min-height: 100px;
-    margin: 15px auto;
-    padding: 10px;
+    margin: 25px auto;
+    padding: 5px;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
     background-color: white;
 }
 .block-card--title{
-    margin: 14px 0px 15px 60px;
+    margin: 16px 0px 11px 65px;
     font-size: 1.8rem;
     font-weight: bold;
-    line-height: 1.8rem;
+    line-height: 2.2rem;
 }
 .block-card--body{
-    width: 80%;
-    margin-left: 30px;
-    margin-right: 40px;
-    margin-bottom: 10px;
+    width: 70%;
+    margin: 0px auto 20px;
     text-align: center;
     font-size: 1.4rem;
-    font-weight: 500;
     line-height: 2rem;
-    color: #808080;
 }
 .icon1{
     position: absolute;
@@ -287,9 +304,8 @@ header{
     position: relative;
     width: 70%;
     min-width: 260px;
-    max-width: 450px;
-    min-height: 50px;
-    margin: 15px auto;
+    max-width: 400px;
+    margin: 25px auto;
     align-self: center;
     border-radius: 5px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
@@ -304,7 +320,10 @@ header{
     background-position:center;
     background-repeat: no-repeat;
 }
-.icon2_2{
+.icon3{
+    display: none;
+}
+.icon2_mod{
     position: absolute;
     top: calc(50% - 23px);
     left: 0px;
@@ -314,51 +333,62 @@ header{
     background-position:center;
     background-repeat: no-repeat;
 }
+.icon3_mod{
+    display: none;
+}
 .block-card--title-works{
     margin-left: 50px;
     font-size: 1.4rem;
     line-height: 5rem;
-    font-weight: bold;
 }
 /*----------------------- ABOUT AND CHOOSE -----------------------*/
+.main-secondary-container-img-text{
+    display: flex;
+    margin: 25px auto auto 20px;
+}
 .main-secondary--img{
     width: 40%;
-    height: 180px;
-    min-width: 100px;
+    height: 170px;
     max-width: 200px;
-    margin: 0px 10px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    border-radius: 5px;
 }
 .main-secondary--text{
     display: flex;
     width: 60%;
-    min-width: 20px;
-    margin: 0px 0px;
+    max-width: 400px;
+    height: 170px;
+    margin: auto 20px auto 15px;
     align-items: center;
 }
 .main-secondary--text p{
-    margin: 0px 30px 0px 10px;
     line-height: 2rem;
     font-size: 1.4rem;
     text-align: center;
+}
+.btn-whatsapp{
+    display: block;
+    position: fixed;
+    left: calc(100% - 40px);
+    top: calc(100% - 70px);
+    z-index: 3;
+}
+.btn-whatsapp img{
+    width: 40px;
+    height: 40px;
 }
 /*----------------------- FOOTER -----------------------*/
 .footer--container{
     display: flex;
     width: 100%;
-    min-width: 320px;
     background-color: var(--Aezam-backgorund);
 }
 .footer-container--title{
     width: 100%;
-    min-width: 375px;
     height: 40px;
-    margin-top: 10px;
-    text-align: center;
-    align-self: center;
     background-color: var(--Aezam-green);
     background-image: url('../assets/icons/Logo_White.svg');
     background-position: center;
@@ -366,15 +396,19 @@ header{
 }
 .footer-container--logo{
     width: 40%;
-    height: 100px;
-    min-width: 100px;
-    max-width: 200px;
+    height: 80px;
+    min-width: 60px;
+    /* max-width: 200px; */
     align-self: center;
     background-image: url('../assets/icons/Logo_pi.svg');
     background-position: center;
     background-repeat: no-repeat;
 }
+.footer-container--text{
+    width: 60%;
+}
 .footer-container--otros{
+    width: 90%;
     margin: 20px 0px 0px 10px;
     font-size: 1.6rem;
     line-height: 1.7rem;
@@ -387,7 +421,7 @@ header{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
 }
 .footer-container--info a {
-    margin: 20px 0px 20px 30px;
+    margin: 25px 0px 25px 20px;
     font-size: 1.4rem;
     line-height: 2rem;
     display: block; 
@@ -398,35 +432,12 @@ header{
     display: flex;
     position: relative;
     width: 100%;
-    min-width: 288px;
     height: 40px;
     align-items: center;
     background-color: var(--Aezam-green);
     padding-left: 6px;
     font-size: 1.2rem;
     color: white; 
-}
-.facebook{
-    position: absolute;
-    top: 5px;
-    left: calc(100% - 140px);
-    width: 30px;
-    height: 30px;
-    background-image: url('../assets/icons/Facebook.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.twitter{
-    position: absolute;
-    top: 5px;
-    left: calc(100% - 110px);
-    width: 30px;
-    height: 30px;
-    background-image: url('../assets/icons/Twitter.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 .instagram{
     position: absolute;
@@ -439,13 +450,13 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
 }
-.linkedin{
+.facebook{
     position: absolute;
     top: 5px;
     left: calc(100% - 50px);
     width: 30px;
     height: 30px;
-    background-image: url('../assets/icons/Linkedin.svg');
+    background-image: url('../assets/icons/Facebook.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

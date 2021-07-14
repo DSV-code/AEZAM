@@ -12,7 +12,8 @@
     <link rel="shortcut icon" href="./assets/icons/Icono.svg">
     <link rel="stylesheet" href="./css/variables.css">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 769px)">
+    <link rel="stylesheet" href="./css/indexTablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./css/indexDesktop.css" media="(min-width: 1280px)">
 </head>
 
 <body>
@@ -21,10 +22,10 @@
         <img class="header-img--logo" src="./assets/icons/Logo.svg" alt="Company logo">
         <button class="header-img--list"
             onClick="show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow')"
-            style="background-image: url('./assets/icons/List.svg');"></button>
+            style="background-image: url('./assets/icons/List.svg');" aria-label="Show the menu"></button>
         <nav class="header-nav--container" id="id-header-nav--container">
-            <button class="header-nav--next-arrow"
-                onClick="hide_header_nav__container('id-header-nav--container')"></button>
+            <button class="header-nav--next-arrow" onClick="hide_header_nav__container('id-header-nav--container')"
+                aria-label="Hide the menu"></button>
             <ul class="header-nav-container--menu">
                 <li>
                     <a class="header-nav-container-menu--list" href="#">Servicio y soporte</a>
@@ -41,16 +42,18 @@
                 <li><a class="header-nav-container-menu--list" href="contactanos.html">Contáctanos</a></li>
             </ul>
             <button class="header-nav--down-arrow" id="id-header-nav--down-arrow"
-                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"></button>
+                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
+                aria-label="Show the sub-menu"></button>
             <button class="header-nav--up-arrow" id="id-header-nav--up-arrow"
-                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"></button>
+                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
+                aria-label="Hide the sub-menu"></button>
             <div class="header--line"></div>
-            <p class="header--city">Bogotá</p>
-            <p class="header--addres"> Calle 2 # XX-XX <br> Distrito capital <br> Colombia</p>
+            <p class="header--addres"> Avenida Boyaca - Calle 2 </p>
+            <p class="header--city"> Bogotá <br> Colombia</p>
         </nav>
     </header>
 
-    <main>
+    <main onClick="hide_header_nav('id-header-nav--container')">
         <!-- --------------------- SCROLL SECTION --------------------- -->
         <section class="main-img--container">
             <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
@@ -62,96 +65,121 @@
         </section>
         <!-- --------------------- SERVICE --------------------- -->
         <section class="main-first--container">
-            <div class="main-container--line"></div>
-            <div class="main-container--title">
-                <p>Servicio y Soporte</p>
-            </div>
-            <section>
+            <section class="main-container--header">
+                <div class="main-container--line"></div>
+                <div class="main-container--title">
+                    <p>Servicio y Soporte</p>
+                </div>
+            </section>
+            <section class="main-service-container">
                 <article class="main-service-container--card">
-                    <span class="icon1" style="background-image: url('../assets/icons/Engineering.svg');"></span>
+                    <span class="icon1" style="background-image: url('./assets/icons/Engineering.svg');"></span>
                     <p class="block-card--title">Ingeniería</p>
                     <p class="block-card--body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                        volutpat. Ligula rutrum venenatis mi nec nisi.
+                        Ofrecemos un servicio basado en mediciones y enfocado a solucionar problemas brindando una opción técnica y económica favorable para el cliente.
                     </p>
-                    <a href="ingenieria.html"><button class="arrow"></button></a>
+                    <a href="ingenieria.html"><button class="arrow-card"
+                            aria-label="Send to the engineering section"></button></a>
                 </article>
                 <article class="main-service-container--card">
-                    <span class="icon1" style="background-image: url('../assets/icons/Accounting.svg');"></span>
-                    <p class="block-card--title">Administrativos</p>
+                    <span class="icon1" style="background-image: url('./assets/icons/Accounting.svg');"></span>
+                    <p class="block-card--title">Contabilidad</p>
                     <p class="block-card--body">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
-                        volutpat. Ligula rutrum venenatis mi nec nisi.
+                        Proporcionamos soluciones a temas contables complejos, consulta técnica contable en material de normas y apoyo en procesamiento de estados financieros.
                     </p>
-                    <a href="contabilidad.html"><button class="arrow"></button></a>
+                    <a href="contabilidad.html"><button class="arrow-card"
+                            aria-label="Send to the accounting section"></button></a>
                 </article>
             </section>
         </section>
         <!-- --------------------- WORKS  --------------------- -->
         <section class="main-first--container">
-            <div class="main-container--line"></div>
-            <div class="main-container--title">
-                <p>Cómo funciona</p>
-            </div>
-            <section>
+            <section class="main-container--header">
+                <div class="main-container--line"></div>
+                <div class="main-container--title">
+                    <p>Cómo funciona</p>
+                </div>
+            </section>
+            <section class="main-works-container">
                 <article class="main-works-container--card">
-                    <span class="icon2_2" style="background-image: url('../assets/icons/Steps1.svg');"></span>
+                    <span class="icon2_mod" style="background-image: url('./assets/icons/Steps1.svg');"></span>
+                    <span class="icon3_mod" style="background-image: url('./assets/icons/nUno.svg');"></span>
                     <p class="block-card--title-works">Escuchamos tus necesidades</p>
                 </article>
                 <article class="main-works-container--card">
-                    <span class="icon2" style="background-image: url('../assets/icons/Steps2.svg');"></span>
+                    <span class="icon2" style="background-image: url('./assets/icons/Steps2.svg');"></span>
+                    <span class="icon3" style="background-image: url('./assets/icons/nDos.svg');"></span>
                     <p class="block-card--title-works">Analizamos tus requisitos.</p>
                 </article>
                 <article class="main-works-container--card">
-                    <span class="icon2" style="background-image: url('../assets/icons/Steps3.svg');"></span>
+                    <span class="icon2" style="background-image: url('./assets/icons/Steps3.svg');"></span>
+                    <span class="icon3" style="background-image: url('./assets/icons/nTres.svg');"></span>
                     <p class="block-card--title-works">Proponemos una solución.</p>
                 </article>
                 <article class="main-works-container--card">
-                    <span class="icon2" style="background-image: url('../assets/icons/Steps4.svg');"></span>
+                    <span class="icon2" style="background-image: url('./assets/icons/Steps4.svg');"></span>
+                    <span class="icon3" style="background-image: url('./assets/icons/nCuatro.svg');"></span>
                     <p class="block-card--title-works">Entregamos un servicio.</p>
                 </article>
+                <a href="comoFunciona.html"><button class="arrow"
+                        aria-label="Send to the section of how it works"></button></a>
             </section>
-            <a href="comoFunciona.html"><button class="arrow"></button></a>
         </section>
         <!-- --------------------- ABOUT --------------------- -->
         <section class="main-secondary--container">
-            <div class="main-container--line"></div>
-            <div class="main-container--title">
-                <p>Nosotros</p>
-            </div>
-            <div class="main-secondary--img"
-                style="background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
-            <div class="main-secondary--text">
-                <p>
-                    Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte del
-                    equipo responsable y, sobre todo, explica la misión, visión y valores.
-                </p>
-            </div>
-            <a href="sobreNosotros.html"><button class="arrow"></button></a>
+            <section class="main-container--header">
+                <div class="main-container--line"></div>
+                <div class="main-container--title">
+                    <p>Nosotros</p>
+                </div>
+            </section>
+            <section class="main-secondary-container-img-text">
+                <div class="main-secondary--img"
+                    style="background-image: url('./assets/imgs/MallaPuestaTierra-150x200.jpg');"></div>
+                <div class="main-secondary--text">
+                    <p>
+                        Sección o categoría que resume a modo descriptivo cómo nació el negocio, quiénes forman parte
+                        del equipo responsable y, sobre todo, explica la misión, visión y valores.
+                    </p>
+                </div>
+                <a href="sobreNosotros.html"><button class="arrow"
+                        aria-label="Send to the section about us"></button></a>
+            </section>
         </section>
         <!-- --------------------- CHOOSE --------------------- -->
         <section class="main-secondary--container">
-            <div class="main-container--line"></div>
-            <div class="main-container--title">
-                <p>Por qué Elegirnos</p>
-            </div>
-            <div class="main-secondary--img" style="background-image: url('../assets/imgs/Tablero-2448x3264.jpg');">
-            </div>
-            <div class="main-secondary--text">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque volutpat.
-                    Ligula rutrum venenatis mi nec nisi.
-                </p>
-            </div>
-            <a href="porqueElegirnos.html"><button class="arrow"></button></a>
+            <section class="main-container--header">
+                <div class="main-container--line"></div>
+                <div class="main-container--title">
+                    <p>Por qué Elegirnos</p>
+                </div>
+            </section>
+            <section class="main-secondary-container-img-text">
+                <div class="main-secondary--img" style="background-image: url('./assets/imgs/Tablero-2448x3264.jpg');">
+                </div>
+                <div class="main-secondary--text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Egestas cursus adipiscing quisque
+                        volutpat.
+                        Ligula rutrum venenatis mi nec nisi.
+                    </p>
+                </div>
+                <a href="porqueElegirnos.html"><button class="arrow"
+                        aria-label="Send to the section why choose us"></button></a>
+            </section>
         </section>
+        <div class="btn-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=+573225352386" target="_blank">
+                <img src="http://s2.accesoperu.com/logos/btn_whatsapp.png" alt="WhatsApp icon">
+            </a>
+        </div>
     </main>
     <!-- --------------------- FOOTER --------------------- -->
-    <footer role="contentinfo">
+    <footer>
         <div class="footer-container--title"></div>
         <section class="footer--container">
             <div class="footer-container--logo"></div>
-            <div>
+            <div class="footer-container--text">
                 <div class="footer-container--otros">
                     <p>Otros</p>
                     <div class="footer-container--line"></div>
@@ -165,13 +193,13 @@
         </section>
         <section class="footer-container--additional-info">
             <div>
-                <p>Copyright ©&nbsp;2021. All rights reserved.</p>
+                <p>©&nbsp;2021. Todos los derechos reservados.</p>
             </div>
             <div class="nav-footer-social-networks">
-                <span href="/" class="facebook"></span>
-                <span href="/" class="twitter"></span>
-                <span href="/" class="instagram"></span>
-                <span href="/" class="linkedin"></span>
+                <a href="https://www.instagram.com/aezamltda" class="instagram"></a>
+                <a href="/" class="facebook"></a>
+                <a href="/" class="twitter"></a>
+                <a href="/" class="linkedin"></a>
             </div>
         </section>
     </footer>
