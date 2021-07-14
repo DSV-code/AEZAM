@@ -1,11 +1,11 @@
 /*----------------------- IMAGE -----------------------*/
-.main-first--container{
-    padding-bottom: 20px;
+.main-container--img{
+    background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');
 }
 .main-form--container{
     width: 90%;
-    min-width: 320px;  
-    margin: 15px auto; 
+    min-width: 280px;  
+    margin: 35px auto 0px auto; 
 }
 .main-container--info{
     position: relative;
@@ -13,7 +13,7 @@
 .main-container--info input{
     width: 100%;
     height: 50px;
-    margin-bottom: 21px;
+    margin-bottom: 25px;
     padding: 0px 10px;
     background: none;
     border: 2px solid #808080;
@@ -57,7 +57,6 @@
     width: 100%;
     height: 31px;
     margin: 20px auto;
-    padding: 2px;
     background-color: var(--Aezam-green);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border:  1px solid black;
@@ -76,23 +75,30 @@
     background-color: var(--Aezam-backgorund);
     z-index: 1;
 }
+.main-map--container{
+    width: 80%;
+    min-width: 280px;  
+    margin: 10px auto;
+}
+.main-container--map{
+    width: 100%;
+    height: 500px;
+}
 .main-contact--container{
-    position: relative;
     width: 90%;
-    min-width: 320px;  
-    margin: 15px auto;
-    padding-bottom: 40px;
+    min-width: 280px;  
+    margin: 25px auto;
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2rem;
 }
 .main-contact-container--info{
     position: relative;
-    margin: 20px;
+    margin: 0px 40px 20px 40px;
 }
 .main-contact-container--info span{
     position: absolute;
-    left: calc(0% - 30px);
+    left: calc(0% - 35px);
     width: 25px;
     height: 25px;
     background-size: cover;
@@ -102,36 +108,12 @@
 .social-icons{
     position: relative;
     width: 100%;
-    height: 24PX;
-    min-width: 320px;
-    padding-bottom: 30px;
-}
-.social-icons--facebook{
-    position: absolute;
-    top: 5px;
-    left: calc(0% - 0px);
-    width: 10px;
-    height: 22px;
-    background-image: url('../assets/icons/FacebookGreen.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.social-icons--twitter{
-    position: absolute;
-    top: 5px;
-    left: calc(0% + 30px);
-    width: 22px;
-    height: 22px;
-    background-image: url('../assets/icons/TwitterGreen.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 24px;
 }
 .social-icons--instagram{
     position: absolute;
     top: 5px;
-    left: calc(0% + 70px);
+    left: calc(0% + 7px);
     width: 22px;
     height: 22px;
     background-image: url('../assets/icons/InstagramGreen.svg');
@@ -139,36 +121,15 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-.social-icons--linkedin{
+.social-icons--facebook{
     position: absolute;
     top: 5px;
-    left: calc(0% + 110px);
-    width: 22px;
+    left: calc(0% + 60px);
+    width: 10px;
     height: 22px;
-    background-image: url('../assets/icons/LinkedinGreen.svg');
+    background-image: url('../assets/icons/FacebookGreen.svg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.main-container--map{
-    width: 100%;
-    height: 500px;
-}
-.main-containter--arrow-init{
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    top: calc(100% - 40px);
-    left: calc(50% - 16px);
-    background: none;
-    border: none;
-    background-image: url('../assets/icons/Arrow_Green.svg');
-    background-size: cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    transform: rotate(-90deg);
-    cursor: pointer;
-}
-.main-containter--arrow-init:hover{
-    background-image: url('../assets/icons/Arrow_Green--Full.svg');
-}
+
