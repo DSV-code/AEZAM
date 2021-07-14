@@ -1,0 +1,39 @@
+.main-form--container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+}
+.main-container--info{
+    width: 90%;
+    margin: auto;
+}
+.main-container--name-section{
+    top: calc(0% - 10px);
+}
+.box-asunto{
+    width: 95%;
+    grid-column: span 2;
+}
+.send-button{
+    width: 95%;
+	grid-row: 4;
+    grid-column: span 2;
+}
+.main-contact--container{
+    display: grid;
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.main-contact-container--info span{
+    left: calc(0% - 0px);
+    top: calc(0% - 40px);
+}
+.social-icons{
+    grid-column: span 3;
+}
+.social-icons--instagram{
+    left: calc(0% + 40px);
+}
+.social-icons--facebook{
+    left: calc(0% + 100px);
+}

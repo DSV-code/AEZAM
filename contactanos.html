@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="./css/ingenieria.css">
         <link rel="stylesheet" href="./css/comoFunciona.css">
         <link rel="stylesheet" type="text/css" href="./css/contactanos.css">
+        <link rel="stylesheet" href="./css/contactanosTablet.css"  media="(min-width: 768px)">
+        <link rel="stylesheet" href="./css/contactanosDesktop.css"  media="(min-width: 1280px)">   
     </head>
     <body>
         <!-- --------------------- HEADER --------------------- -->
@@ -28,21 +30,21 @@
                 <div class="main-container--img"></div>
             </section>
             <!-- --------------------- FORMULARIO --------------------- -->
-            <section class ="main-form--container" >
-                <form action ="./php/contactanos.php" method="POST">
-                    <label for ="nombre" class="main-container--info">
+            <section>
+                <form class ="main-form--container" action ="./php/contactanos.php" method="POST">
+                    <label for ="nombre" class="main-container--info box-nombre">
                         <span class="main-container--name-section">Nombre</span>
                         <input type="text" id="nombre" name="nombre" placeholder="Digite nombre o razón social" autocomplete="name" required/>
                     </label>
-                    <label for="correo" class="main-container--info">
+                    <label for="correo" class="main-container--info box-correo">
                         <span class="main-container--name-section">Email</span>
                         <input type="email" id="correo" name="correo" placeholder="Digite correo electrónico" autocomplete="email" required/>
                     </label>
-                    <label for="telefono" class="main-container--info">
+                    <label for="telefono" class="main-container--info box-telefono">
                         <span class="main-container--name-section">Telefono</span>
                         <input type="text" id="pais" name="telefono" placeholder="Digite número telefónico" autocomplete="tel" required/>
                     </label>
-                    <label for="servicios" class="main-container--info">
+                    <label for="servicios" class="main-container--info box-servicios">
                         <span class="main-container--name-section">Servicios</span>
                         <input list="servicios" placeholder="Seleccione el servicio">
                         <datalist id="servicios">
@@ -50,10 +52,10 @@
                             <option value="Contaduría"></option>
                             <option value="Otros"></option>
                         </datalist>
-                        <span class="main-container--name-asunto">Asunto</span>
                     </label>
-                    <label for="asunto" class="main-container--info">
-                        <textarea name="" id="asunto" cols="30" rows="10" placeholder="Digite su solicitud" required></textarea>
+                    <label for="asunto" class="main-container--info box-asunto">
+                        <span class="main-container--name-asunto">Asunto</span>
+                        <textarea style="resize:none" id="asunto" cols="30" rows="10" placeholder="Digite su solicitud" required></textarea>
                     </label>
                     <input class="send-button" type="submit" value="Enviar"/>
                 </form>
