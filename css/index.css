@@ -367,6 +367,7 @@ header{
 .main-secondary-container-img-text{
     display: flex;
     margin: 25px auto auto 20px;
+    justify-content: center;
 }
 .main-secondary--img{
     width: 40%;
