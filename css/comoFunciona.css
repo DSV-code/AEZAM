@@ -24,6 +24,9 @@
     line-height: 2rem;
     text-align: justify;
 }
+.main-containter--arrow-init{
+    background-image: url('../assets/icons//Arrow_Green.svg');
+}
 .main-containter--arrow-init:hover{
     background-image: url('../assets/icons/Arrow_Green--Full.svg');
 }
