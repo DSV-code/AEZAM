@@ -1,3 +1,67 @@
+/*----------------------- HEADER -----------------------*/
+.header-nav--container{
+    display: block !important;
+    left: calc(100% - 900px);
+    width: 900px;
+    height: 80px;
+    background: var(--Aezam-lightGreen);
+}
+.header-nav--next-arrow{
+    display: none;
+}
+.header-nav-container--menu{
+    display: flex;
+    margin-top: 30px;
+}
+.header-nav-container-menu--list1a{
+    margin-bottom: 0px;
+    margin-right: 30px;
+    color: var(--Aezam-green);
+}
+.header-nav-container-menu--list1b{
+    margin-bottom: 0px;
+    color: var(--Aezam-green);
+}
+.header-nav-container-menu--list1b:hover{
+    width: 170px;
+    background: var(--Aezam-green);
+    color: #ffff;
+}
+.header-nav-container--submenu{
+    height: 94px;
+    margin-top: 25px;
+    background: var(--Aezam-lightGreen);
+    border-radius: 5px;
+}
+.header-nav-container-submenu--list{
+    margin-top: 10px;
+    color: var(--Aezam-green);
+}
+.header-nav-container-submenu--list:hover{
+    width: 130px;
+    background:var(--Aezam-green);
+    color:  #fff;
+}
+.header-nav--down-arrow{
+    top: 24px;
+    left: 180px;
+}
+.header-nav--up-arrow{
+    display: none;
+    top: 24px;
+    left: 180px;
+}
+.header--line{
+    display: none;
+}
+.header--addres{
+    display: none;
+}
+.header--city{
+    display: none;
+}
+
+/*----------------------- OTHERS -----------------------*/
 .main-service-container--card{
     min-width: 400px;
     margin: 25px 30px;

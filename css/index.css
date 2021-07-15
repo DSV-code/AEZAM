@@ -60,18 +60,33 @@ header{
     margin-top: 79px;
     list-style: none;
 }
-.header-nav-container-menu--list{
+.header-nav-container-menu--list1a{
     display: block;
     margin-bottom: 26px;
     margin-left: 15px;
+    padding-left: 10px;
     font-weight: 900;
     font-size: 18px;
     line-height: 22px;
     text-decoration: none;
     color: #ffff;
+    border-radius: 5px;
+    pointer-events: none;
 }
-.header-nav-container-menu--list:hover{
-    width: 180px;
+.header-nav-container-menu--list1b{
+    display: block;
+    margin-bottom: 26px;
+    margin-left: 15px;
+    padding-left: 10px;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 5px;
+}
+.header-nav-container-menu--list1b:hover{
+    width: 170px;
     background: #ffff;
     color: var(--Aezam-green);
 }
@@ -83,11 +98,18 @@ header{
     display: block;
     margin-bottom: 26px;
     margin-left: 50px;
+    padding-left: 10px;
     font-weight: 900;
     font-size: 18px;
     line-height: 22px;
     text-decoration: none;
     color: #ffff;
+    border-radius: 5px;
+}
+.header-nav-container-submenu--list:hover{
+    width: 130px;
+    background: #fff;
+    color: var(--Aezam-green)
 }
 .header-nav--down-arrow{
     position: absolute;
