@@ -48,15 +48,12 @@
 }
 /*-----------------------TEAM -----------------------*/
 .main-team--container{
-    margin-bottom: 25px; /*Agregue esta linea*/
     position: relative;
     width: 100%;
 }
 .main-service-container--card{
-    /* margin-bottom: 25px;        Aqui esta el error */
-    /* padding: 25px 27px 15px 27px; */
-    padding: 25px;
-
+    margin-bottom: 25px;
+    padding: 25px 27px 15px 27px;
     background-image: url('../assets/icons/Profile_Background.svg');
     background-size: cover;
     background-position:center;

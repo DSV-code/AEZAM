@@ -25,16 +25,7 @@ function show_hide(id1,id2){
                 el2.style.backgroundImage = "url('./assets/icons/Arrow_Blue_Light--Full.svg')"
                 imageCont[containerNum-1] = 'up';
             }
-        } 
-        if (id1.slice(-3, -2) == 'p'){
-            if (imageCont[containerNum-1] == 'up'){
-                el2.style.backgroundImage = "url('./assets/icons/Arrow_Blue_Light.svg')"
-                imageCont[containerNum-1]= 'down';
-            } else if (imageCont[containerNum-1] == 'down'){
-                el2.style.backgroundImage = "url('./assets/icons/Arrow_Blue_Light--Full.svg')"
-                imageCont[containerNum-1] = 'up';
-            }
-        }     
+        }      
     }
 }
 function oculta(id){
