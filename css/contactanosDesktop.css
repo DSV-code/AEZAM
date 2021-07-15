@@ -1,0 +1,9 @@
+.social-icons--instagram{
+    left: calc(50% - 50px);
+}
+.social-icons--facebook{
+    left: calc(50% + 50px);
+}
+.main-containter--arrow-init{
+    display: none;
+}
