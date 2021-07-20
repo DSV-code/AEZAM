@@ -1,7 +1,7 @@
 var gotop = document.getElementById('goTop');
-gotop.addEventListener("click", goTop);
+gotop.addEventListener("click", go_top);
 
-function goTop() {
+function go_top() {
     window.scrollTo(0,0);
 }
 window.onload = function () {

@@ -57,7 +57,10 @@
                                 aria-label="Ask for information">
                                 Solicitar información</button></a>
                     </div>
-                    <button class="arrow" id="id-arrow-c01" onClick="show_hide('id-contenido-c01','id-arrow-c01')"
+                    <button class="arrow" id="id-arrow-c01" 
+                        onClick="show_hide('id-contenido-c01','id-arrow-c01')"
+                        onMouseover="over_mouse('id-arrow-c01')"
+                        onMouseout="out_mouse('id-arrow-c01')"
                         aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
@@ -73,7 +76,10 @@
                                 Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-c02"
-                        onClick="show_hide('id-contenido-c02','id-arrow-c02')" aria-label="Show more information"></button>
+                        onClick="show_hide('id-contenido-c02','id-arrow-c02')" 
+                        onMouseover="over_mouse('id-arrow-c02')"
+                        onMouseout="out_mouse('id-arrow-c02')"
+                        aria-label="Show more information"></button>
                 </article>
                 <article class="main-service-container--card">
                     <img class="main-service-container--img" src="./assets/imgs/Analizador-150x200.jpg"
@@ -88,12 +94,15 @@
                                 Solicitar información</button></a>
                     </div>
                     <button class="arrow" id="id-arrow-c03"
-                        onClick="show_hide('id-contenido-c03','id-arrow-c03')" aria-label="Show more information"></button>
+                        onClick="show_hide('id-contenido-c03','id-arrow-c03')" 
+                        onMouseover="over_mouse('id-arrow-c03')"
+                        onMouseout="out_mouse('id-arrow-c03')"
+                        aria-label="Show more information"></button>
                 </article>
             </section>
         </section>
         <button class="main-containter--arrow-init"
-                onClick="oculta(['id-contenido-c01','id-arrow-c01','id-contenido-c02','id-arrow-c02','id-contenido-c03','id-arrow-c03'])"
+                onClick="info_hide(['id-contenido-c01','id-arrow-c01','id-contenido-c02','id-arrow-c02','id-contenido-c03','id-arrow-c03'])"
                 id="goTop" aria-label="Hide more information">
         </button>
         <div class="btn-whatsapp">
