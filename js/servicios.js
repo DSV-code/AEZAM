@@ -1,5 +1,6 @@
 var imageIng = ['down','down','down','down','down','down','down','down'];
 var imageCont = ['down','down','down'];
+var imageSobre = ['down','down','down'];
 function show_hide(id1,id2){
     if (document.getElementById){ //se obtiene el id
         var el1 = document.getElementById(id1);
@@ -18,23 +19,24 @@ function show_hide(id1,id2){
             }
         }
         if (id1.slice(-3, -2) == 'c'){
-            if (imageIng[containerNum-1] == 'up'){
+            if (imageCont[containerNum-1] == 'up'){
                 el2.style.transform = "rotate(90deg)";
-                imageIng[containerNum-1]= 'down';
-            } else if (imageIng[containerNum-1] == 'down'){
+                imageCont[containerNum-1]= 'down';
+            } else if (imageCont[containerNum-1] == 'down'){
                 el2.style.transform = "rotate(-90deg)";
-                imageIng[containerNum-1] = 'up';
+                imageCont[containerNum-1] = 'up';
             }
-        }      
+        }  
+        if (id1.slice(-3, -2) == 's'){
+            if (imageSobre[containerNum-1] == 'up'){
+                el2.style.transform = "rotate(90deg)";
+                imageSobre[containerNum-1]= 'down';
+            } else if (imageSobre[containerNum-1] == 'down'){
+                el2.style.transform = "rotate(-90deg)";
+                imageSobre[containerNum-1] = 'up';
+            }
+        }    
     }
-}
-function over_mouse(id1){
-    var el1 = document.getElementById(id1);
-    el1.style.backgroundImage = "url('./assets/icons/Arrow_Blue--Full.svg')"
-}
-function out_mouse(id1){
-    var el1 = document.getElementById(id1);
-    el1.style.backgroundImage = "url('./assets/icons/Arrow_Blue.svg')"
 }
 function info_hide(id){
     if (document.getElementById){
@@ -45,11 +47,15 @@ function info_hide(id){
             el1.style.display = 'none';
             if (id[i].slice(-3, -2) == 'i'){
                 el2.style.transform = "rotate(90deg)";
-                imageIng[aux] = 'up';
+                imageIng[aux] = 'down';
             }
             if (id[i].slice(-3, -2) == 'c'){
                 el2.style.transform = "rotate(90deg)";
-                imageCont[aux] = 'up';
+                imageCont[aux] = 'down';
+            }
+            if (id[i].slice(-3, -2) == 's'){
+                el2.style.transform = "rotate(90deg)";
+                imageSobre[aux] = 'down';
             }
             aux++;
         }

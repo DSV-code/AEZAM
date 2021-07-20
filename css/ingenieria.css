@@ -59,6 +59,9 @@ header{
     background-image: url('../assets/icons/Arrow_Blue.svg');
     transform: rotate(90deg);
 }
+.arrow:hover{
+    background-image: url('../assets/icons/Arrow_Blue--Full.svg');
+}
 .block-card--text{
     display: none;
 }
