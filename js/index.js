@@ -46,9 +46,14 @@ function hide_header_nav(id) {
 }
 function show_hide_submenu_desktop(id1){
     if (document.getElementById){
-        // var el1 = document.getElementById(id1);
         var el1 = document.getElementById(id1);
         el1.style.display = (el1.style.display == 'block') ? 'none' : 'block';
+    }
+}
+function hide_submenu_desktop(id){
+    if (document.getElementById) {
+        var el = document.getElementById(id);
+        el.style.display = (el.style.display == 'block') ? 'none' : 'none';
     }
 }
 window.onload = function () {
