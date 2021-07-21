@@ -10,9 +10,9 @@ function show_hide_header_nav__container(id1, id2, id3, id4) {
         el4.style.display = (el4.style.display == 'block') ? 'none' : 'none';
     }
 }
-window.onload = function () {
-    show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow');
-}
+// window.onload = function () {
+//     show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow');
+// }
 
 function hide_header_nav__container(id) {
     if (document.getElementById) {
@@ -20,9 +20,9 @@ function hide_header_nav__container(id) {
         el.style.display = (el.style.display == 'block') ? 'none' : 'block';
     }
 }
-window.onload = function () {
-    show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow');
-}
+// window.onload = function () {
+//     show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow');
+// }
 
 function show_hide_header_nav_container__submenu(id1, id2, id3) {
     if (document.getElementById) {
@@ -34,9 +34,9 @@ function show_hide_header_nav_container__submenu(id1, id2, id3) {
         el3.style.display = (el3.style.display == 'none') ? 'block' : 'none';
     }
 }
-window.onload = function () {
-    show_hide_header_nav_container__submenu('id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow');
-}
+// window.onload = function () {
+//     show_hide_header_nav_container__submenu('id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow');
+// }
 
 function hide_header_nav(id) {
     if (document.getElementById) {
@@ -44,6 +44,13 @@ function hide_header_nav(id) {
         el.style.display = (el.style.display == 'block') ? 'none' : 'none';
     }
 }
+function show_hide_submenu_desktop(id1){
+    if (document.getElementById){
+        // var el1 = document.getElementById(id1);
+        var el1 = document.getElementById(id1);
+        el1.style.display = (el1.style.display == 'block') ? 'none' : 'block';
+    }
+}
 window.onload = function () {
-    hide_header_nav('id-header-nav--container');
+    // hide_header_nav('id-header-nav--container');
 }

@@ -1,11 +1,3 @@
-.main-first--container{
-    margin: 70px 0px 30px;
-    padding-bottom: 0px;
-    text-align: center;
-}
-.main-container--img{
-    background-image: url('../assets/imgs/MallaPuestaTierra-150x200.jpg');
-}
 /*-----------------------ABOUT US -----------------------*/
 .main-text--aboutUs{
     width: 100%;
@@ -82,4 +74,11 @@
 }
 .block-card--body{
     margin: 25px auto 25px auto;
+}
+.arrow{
+    background-image: url('../assets/icons/Arrow_Green.svg');
+    transform: rotate(90deg);
+}
+.arrow:hover{
+    background-image: url('../assets/icons/Arrow_Green--Full.svg');
 }

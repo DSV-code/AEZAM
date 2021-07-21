@@ -28,7 +28,7 @@
                 aria-label="Hide the menu"></button>
             <ul class="header-nav-container--menu">
                 <li>
-                    <a class="header-nav-container-menu--list1a" href="#">Servicio y soporte</a>
+                    <a class="header-nav-container-menu--list1a header-nav-container-menu--list-desktop" onClick="show_hide_submenu_desktop('id-header-nav-container--submenu')">Servicio y soporte</a>
                     <ul class="header-nav-container--submenu" id="id-header-nav-container--submenu">
                         <li><a class="header-nav-container-submenu--list" 
                                 href="ingenieria.html">Ingeniería</a></li>
@@ -36,10 +36,10 @@
                                 href="contabilidad.html">Contabilidad</a></li>
                     </ul>
                 </li>
-                <li><a class="header-nav-container-menu--list1b" href="comoFunciona.html">Como funciona</a></li>
-                <li><a class="header-nav-container-menu--list1b" href="sobreNosotros.html">Sobre nosotros</a></li>
-                <li><a class="header-nav-container-menu--list1b" href="porqueElegirnos.html">Porque elegirnos</a></li>
-                <li><a class="header-nav-container-menu--list1b" href="contactanos.html">Contáctanos</a></li>
+                <li><a class="header-nav-container-menu--list1b header-nav-container-menu--list-desktop" href="comoFunciona.html">Como funciona</a></li>
+                <li><a class="header-nav-container-menu--list1b header-nav-container-menu--list-desktop" href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a class="header-nav-container-menu--list1b header-nav-container-menu--list-desktop" href="porqueElegirnos.html">Porque elegirnos</a></li>
+                <li><a class="header-nav-container-menu--list1b header-nav-container-menu--list-desktop" href="contactanos.html">Contáctanos</a></li>
             </ul>
             <button class="header-nav--down-arrow" id="id-header-nav--down-arrow"
                 onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
@@ -53,7 +53,7 @@
         </nav>
     </header>
 
-    <main onClick="hide_header_nav('id-header-nav--container')">
+    <main onClick="hide_header_nav('id-header-nav--container'); show_hide_submenu_desktop('id-header-nav-container--submenu')">
         <!-- --------------------- SCROLL SECTION --------------------- -->
         <section class="main-img--container">
             <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">
