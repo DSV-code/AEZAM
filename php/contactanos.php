@@ -2,13 +2,13 @@
     //conectarnos con el servidor
     // $conectar=mysqli_connect('localhost','root','');
     // $conectar=mysqli_connect('127.0.0.1','root','');
-    $conectar=mysqli_connect('sql10.freesqldatabase.com','sql10424863','81UUNY8n12');
+    $conectar=mysqli_connect('befzyhqhol0qs60hcbdq-mysql.services.clever-cloud.com','u2ybok9fse9ivedq','DUqWY0ZdHzeHQUhA4jTT');
     //verificamos la conexion
     if(!$conectar){
         echo"No se pudo conectar con el servidor";
     }else{
         // $base=$conectar->select_db('prueba');
-        $base=$conectar->select_db('sql10424863');
+        $base=$conectar->select_db('befzyhqhol0qs60hcbdq');
         if(!$base){
             echo"No se encontro la base de datos";
         }
@@ -17,7 +17,7 @@
     $nombre=$_POST['nombre'];
     $correo=$_POST['correo'];
     //hacemos la sentencia de sql
-    $sql="INSERT INTO datos2 VALUES('$nombre', '$correo')";
+    $sql="INSERT INTO info_aezam VALUES('$nombre', '$correo')";
     // $sql= "INSERT INTO `datos` (`nombre`, `correo`, `asunto`) VALUES ('l', 'l', 'l')";
     //ejecutamos la sentencia sql
     $ejecutar=$conectar->query($sql);
