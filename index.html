@@ -21,14 +21,16 @@
     <header>
         <img class="header-img--logo" src="./assets/icons/Logo.svg" alt="Company logo">
         <button class="header-img--list"
-            onClick="show_hide_header_nav__container('id-header-nav--container', 'id-header-nav-container--submenu', 'id-header-nav--down-arrow', 'id-header-nav--up-arrow')"
+            onClick="show_function('id-header-nav--container')"
             style="background-image: url('./assets/icons/List.svg');" aria-label="Show the menu"></button>
         <nav class="header-nav--container" id="id-header-nav--container">
-            <button class="header-nav--next-arrow" onClick="hide_header_nav__container('id-header-nav--container')"
+            <button class="header-nav--next-arrow" 
+                onClick="hide_function('id-header-nav--container','id-header-nav-container--submenu','id-header-nav-arrow')"
                 aria-label="Hide the menu"></button>
             <ul class="header-nav-container--menu">
                 <li>
-                    <a class="header-nav-container-menu--list1a header-nav-container-menu--list-desktop" onClick="show_hide_submenu_desktop('id-header-nav-container--submenu')">Servicio y soporte</a>
+                    <a class="header-nav-container-menu--list1a header-nav-container-menu--list-desktop" 
+                        onClick="show_hide_submenu_desktop('id-header-nav-container--submenu')">Servicio y soporte</a>
                     <ul class="header-nav-container--submenu" id="id-header-nav-container--submenu">
                         <li><a class="header-nav-container-submenu--list" 
                                 href="ingenieria.html">Ingeniería</a></li>
@@ -41,19 +43,15 @@
                 <li><a class="header-nav-container-menu--list1b header-nav-container-menu--list-desktop" href="porqueElegirnos.html">Porque elegirnos</a></li>
                 <li><a class="header-nav-container-menu--list1b header-nav-container-menu--list-desktop" href="contactanos.html">Contáctanos</a></li>
             </ul>
-            <button class="header-nav--down-arrow" id="id-header-nav--down-arrow"
-                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
+            <button class="header-nav--arrow" id="id-header-nav-arrow"
+                onClick="show_hide_function__submenu('id-header-nav-container--submenu','id-header-nav-arrow')" 
                 aria-label="Show the sub-menu"></button>
-            <button class="header-nav--up-arrow" id="id-header-nav--up-arrow"
-                onClick="show_hide_header_nav_container__submenu('id-header-nav-container--submenu','id-header-nav--down-arrow','id-header-nav--up-arrow')"
-                aria-label="Hide the sub-menu"></button>
             <div class="header--line"></div>
             <p class="header--addres"> Avenida Boyaca - Calle 2 </p>
             <p class="header--city"> Bogotá <br> Colombia</p>
         </nav>
     </header>
-
-    <main onClick="hide_header_nav('id-header-nav--container'); hide_submenu_desktop('id-header-nav-container--submenu')">
+    <main onClick="hide_function('id-header-nav--container','id-header-nav-container--submenu','id-header-nav-arrow'); hide_submenu_desktop('id-header-nav-container--submenu')">
         <!-- --------------------- SCROLL SECTION --------------------- -->
         <section class="main-img--container">
             <img class="main-img-container--img" src="./assets/imgs/Analizador-280x210.jpg" alt="">

@@ -3,7 +3,7 @@
     display: none;
 }
 .header-nav--container{
-    display: block !important;
+    display: block;
     left: calc(100% - 900px);
     width: 900px;
     height: 80px;
@@ -18,7 +18,7 @@
     margin-top: 30px;
 }
 .header-nav-container-menu--list1a{
-    cursor: pointer;;
+    cursor: pointer;
 }
 .header-nav-container-menu--list1b:hover{
     width: 170px;
@@ -61,10 +61,7 @@
     background:var(--Aezam-green);
     color:  #fff;
 }
-.header-nav--down-arrow{
-    display: none !important;
-}
-.header-nav--up-arrow{
+.header-nav--arrow{
     display: none;
 }
 .header--line{
